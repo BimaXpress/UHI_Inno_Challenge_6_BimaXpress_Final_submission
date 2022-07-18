@@ -1,0 +1,14 @@
+{
+  "emailer": {
+    "email": "",
+    "imap": "",
+    "password": "",
+    "smtp": ""
+  },
+  "dataEntryFcmToken": [
+    "e5MtqjSITc6WOJd4QX4vTc:APA91bH9vFS-oOC6p4VTDK728s4sLJILkVIjighITN91Huo811E_TkmvqhYTJwDnzZDsvaDdb5mjJBhhP7p3gg_-87uxzjtos-V4vk4C-SsJJEMf1jRfc0mrLyYQ00Ho9zge1ukW5-mv"
+  ],
+  "hospitalFcmToken": [
+    "cRQL7s0QS4CMa1F3qMH7Wt:APA91bE2njFWbEsEmtdkqBjXbakVtxONW1R2Cs2Ku8oNtds5YK6RdIrqLAD5Xd6xpbXrWRvrEw4-Sx6Byy884LykEQzNFEhaP-NLnLpIfvkevALEJEVPDFuAZDIZ9yCNo1QHrl1mjOsA"
+  ]
+}

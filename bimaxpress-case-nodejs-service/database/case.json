@@ -1,0 +1,208 @@
+{
+	"_id": "6232285b9ecbb411d420b9de",
+	"hospitalId": "6232285b9ecbb411d420b34f",
+	"companyDetails": {
+		"insuranceCompany": "HDFC_ERGO_General_Insurance",
+		"tpaCompany": "Genins_India_Insurance_TPA_Limited"
+	},
+	"patientDetails": {
+		"name": "Arjun Patidar",
+		"gender": "Male",
+		"email":"",
+		"dateOfBirth": "27/12/1996",
+		"ageMonth": "01",
+		"ageYear": "25",
+		"ipdPatientNumber": "123456789",
+		"occupation": "Software Eng",
+		"contactNumber": {
+			"number": 8965852267,
+			"countryCode": "+91"
+		},
+		"relativeContactNumber": {
+			"number": 8965852267,
+			"countryCode": "+91"
+		},
+		"healthId": "",
+		"policyNumber": "",
+		"employeeId": "",
+		"natureOfIllness": "",
+		"durationOfPresentAilments": "",
+		"dateOfFirstConsultation": "",
+		"ailmentAsPerUser": "",
+		"causeOfAilment": "",
+		"provisionDiagnosis": "",
+		"pastHistoryOfPresentAilments": "",
+		"icdCode": "",
+		"proposedLineOfTreatment": [
+			"Medical Management",
+			"Surgical Management",
+			"Intensive Care",
+			"Investigation",
+			"Non Allopatic Treatment"
+		],
+		"ifInvestigationOrMedicalManagement": "",
+		"routeOfDrugAdministration": "",
+		"surgicalNameofSurgery": "",
+		"icdCode10Pcs": "",
+		"relevantClinic": {
+			"checked": "Maternity",
+			"maternity": {
+				"maternity": [
+					"G",
+					"P",
+					"L",
+					"A"
+				],
+				"expectedDateOfDelivery": ""
+			},
+			"injury": {
+				"occur": ""
+			},
+			"accident": {
+				"inCaseOfAccident": {
+					"checked": true,
+					"dateOfInjury": "",
+					"reportedToPolice":{
+						"checked":true,
+						"firNumber":"123456qw"
+					}
+				},
+				"alcoholConsumption": true,
+				"testConducted": true,
+				"isItRTA": true
+			},
+			"other": {
+				"otherDetails": ""
+			}
+		},
+		"ifOtherTreatment": "",
+		"healthInsurance": {
+			"checked": true,
+			"companyName": "",
+			"details": ""
+		},
+		"physician": {
+			"checked": true,
+			"name": "",
+			"contactNumber": {
+				"number":"",
+				"countryCode":""
+			}
+		},
+		"currentAddress": {
+			"buildingNumber": "",
+			"area": "",
+			"landmark": "",
+			"city": "",
+			"state": "",
+			"country": "",
+			"pinCode": 123456
+		}
+	},
+	"hospitalDetails": {
+		"name": "",
+		"email": "",
+		"currentAddress": {
+			"buildingNumber": "",
+			"area": "",
+			"landmark": "",
+			"city": "",
+			"state": "",
+			"country": "",
+			"pinCode": 123456
+		},
+		"rohiniCode":"",
+		"doctorDetails": {
+			"name": "",
+			"email": "",
+			"contactNumber": {
+				"number": 8965852267,
+				"countryCode": "+91"
+			},
+			"registrationNo":"",
+			"qualification": "",
+			"specialization":""
+			
+		},
+		"contactNumber": {
+			"number": 8965852267,
+			"countryCode": "+91"
+		},
+		"dateOfAdmission": "27/12/2020",
+		"timeOfAdmission": "10:30 AM",
+		"emergencyOrPlannedEvent": "Emergency",
+		"daysInHospital": 10,
+		"daysInICU": 2,
+		"roomType": "General ward",
+		"chargelist": {
+			"perDayRoomRent": 2400,
+			"nursing": 5000,
+			"costOfInvestigation": 5600,
+			"icuCharges": 2000,
+			"otCharges": 3000,
+			"physicianCharge": 5000,
+			"professionalFeesSurgeon": 6000,
+			"costOfImplant": 3400,
+			"anesthetist": 6000,
+			"consumables": 8000,
+			"otherHospitalIfAny": 2000,
+			"allIncludingPackage": 3000
+		},
+		"total": 56000,
+		"anyPastHistory": {
+			"anyChronicIllness": true,
+			"diabetes": {
+				"month": 2,
+				"year": 1920
+			},
+			"heartDisease": {
+				"month": 12,
+				"year": 1920
+			},
+			"hypertension": {
+				"month": 11,
+				"year": 1920
+			},
+			"hyperlipidemias": {
+				"month": 5,
+				"year": 1920
+			},
+			"osteoarthritis": {
+				"month": 8,
+				"year": 1920
+			},
+			"asthmaCOPDBronchitis": {
+				"month": 9,
+				"year": 1920
+			},
+			"cancer": {
+				"month": 1,
+				"year": 1920
+			},
+			"alcoholDragAbuse": {
+				"month": 11,
+				"year": 1920
+			},
+			"anyHIVOrAilments": {
+				"month": 4,
+				"year": 1920
+			}
+		},
+		"anyOtherAilments": ""
+	},
+	"auditTrial": [
+		{
+			"action": "FormCreation",
+			"lastDate": "date",
+			"summary": "PreAuth Creation",
+			"amount": 0,
+			"documents": [
+				"https://firebasestorage.googleapis.com/v0/b/bimaxpress-cashless.appspot.com/o/abnew%40gmail.com%2Fcase21%2Fgo%20to%202%20step%20verification.png?alt=media&token=None"
+			]
+		}
+	],
+	"formStatus": "Draft",
+	"step": 1,
+	"createdAt": "2022-03-16T18:11:39.386+0000",
+	"updatedAt": "2022-03-16T18:11:39.386+0000"
+}

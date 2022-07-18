@@ -1,0 +1,256 @@
+{
+    "_id": "6232285b9ecbb411d420b9de",
+    "hospitalId": "6232285b9ecbb411d420b34f",
+    "companyDetails": {
+        "insuranceCompany": "HDFC_ERGO_General_Insurance",
+        "tpaCompany": "Genins_India_Insurance_TPA_Limited"
+    },
+
+    "formStatus": "Draft",
+
+    "primaryInsured": {
+        "policyNumber": "",
+        "siAndCertificate": "",
+        "companyAndMAID": "",
+        "companyName": "",
+        "employeeNo": "",
+        "name": "",
+        "address": {
+            "buildingNumber": "",
+            "area": "",
+            "landmark": "",
+            "city": "",
+            "state": "",
+            "country": "",
+            "pinCode": 123456
+        },
+        "email": ""
+    },
+
+    "insuranceHistory": {
+        "currentMediclaim": {
+            "checked": true,
+            "companyName": "",
+            "policyNumber": "",
+            "sumInsured": ""
+        },
+        "hospitalizedLastFourYears": {
+            "checked": true,
+            "date": "",
+            "diagnosis": ""
+        },
+        "previouslyMediclaim": {
+            "checked": true,
+            "companyName": ""
+        },
+        "dateOfCommencement": ""
+    },
+
+    "personHospitalized": {
+        "ipdNumber": 84512846531,
+        "name": "Arjun Patidar",
+        "gender": "Male",
+        "ageMonth": "01",
+        "ageYear": "25",
+        "dateOfBirth": "27/12/1996",
+        "healthId": "",
+        "relationship": {
+            "relationship": "",
+            "inCaseOther": ""
+        },
+
+        "occupation": {
+            "occupation": "",
+            "inCaseOther": ""
+        },
+
+        "address": {
+            "diffrentFromPrimary": true,
+            "buildingNumber": "",
+            "area": "",
+            "landmark": "",
+            "city": "",
+            "state": "",
+            "country": "",
+            "pinCode": 123456
+        },
+
+        "email": ""
+    },
+
+    "hospitalization": {
+        "hospitalName": "",
+        "roomCatagory": "",
+        "relevantClinic": {
+            "checked": "Maternity",
+            "maternity": {
+                "maternity": ["G", "P", "L", "A"],
+                "expectedDateOfDelivery": ""
+            },
+            "injury": {
+                "occur": ""
+            },
+            "accident": {
+                "inCaseOfAccident": {
+                    "checked": true,
+                    "dateOfInjury": "",
+                    "reportedToPolice": {
+                        "checked": true,
+                        "firNumber": "123456qw"
+                    }
+                },
+                "alcoholConsumption": true,
+                "testConducted": true,
+                "isItRTA": true
+            },
+            "other": {
+                "otherDetails": ""
+            }
+        },
+
+        "dateInjuryAndDiseaseAndDelivery": "",
+
+        "doctorDetails": {
+            "name": "",
+            "email": "",
+            "contactNumber": {
+                "number": 8965852267,
+                "countryCode": "+91"
+            },
+            "registrationNo": "",
+            "qualification": "",
+            "specialization": ""
+        },
+
+        "dateOfAdmition": "",
+        "timeofAdmition": "",
+
+        "dateOfDischarge": "",
+        "timeofDischarge": "",
+
+        "systemOfMedicine": ""
+    },
+
+    "claim": {
+        "treatmentClaimedExpenses": {
+            "preHospitalaization": 0,
+            "hospitalizationExpense": 0,
+            "postHospitalaization": 0,
+            "healthCheckupCost": 0,
+            "ambulanceCharges": 0,
+            "otherCharges": 0,
+            "otherChargesCode": "",
+            "total": 0
+        },
+
+        "preHospitalizationPeriod": 0,
+        "postHospitalizationPeriod": 0,
+        "claimForDomiciliary": false,
+
+        "caseBenifitLumpSum": {
+            "hospitalDailycash": 0,
+            "surgicalCash": 0,
+            "criticalIllnessbenifit": 0,
+            "convalescence": 0,
+            "prePostLumpSumBenifit": 0,
+            "otherCharges": 0,
+            "otherChargesCode": "",
+            "total": 0
+        }
+    },
+
+    "claimDocumentCheclist": {
+        "documentChecklist": ["ECG", "Others"],
+        "inCaseOthers": ""
+    },
+
+    "detailsOfBills": {
+        "bill1": {
+            "billNumber": "",
+            "billDate": "",
+            "issuedBy": "",
+            "towards": "Hospital Main Bill",
+            "amount": 0
+        },
+
+        "bill2": {
+            "billNumber": "",
+            "billDate": "",
+            "issuedBy": "",
+            "towards": "Hospital Main Bill",
+            "amount": 0
+        },
+        "bill3": {
+            "billNumber": "",
+            "billDate": "",
+            "issuedBy": "",
+            "towards": "Hospital Main Bill",
+            "amount": 0
+        },
+        "bill4": {
+            "billNumber": "",
+            "billDate": "",
+            "issuedBy": "",
+            "towards": "Hospital Main Bill",
+            "amount": 0
+        },
+        "bill5": {
+            "billNumber": "",
+            "billDate": "",
+            "issuedBy": "",
+            "towards": "Hospital Main Bill",
+            "amount": 0
+        },
+        "bill6": {
+            "billNumber": "",
+            "billDate": "",
+            "issuedBy": "",
+            "towards": "Hospital Main Bill",
+            "amount": 0
+        },
+        "bill7": {
+            "billNumber": "",
+            "billDate": "",
+            "issuedBy": "",
+            "towards": "Hospital Main Bill",
+            "amount": 0
+        },
+        "bill8": {
+            "billNumber": "",
+            "billDate": "",
+            "issuedBy": "",
+            "towards": "Hospital Main Bill",
+            "amount": 0
+        },
+        "bill9": {
+            "billNumber": "",
+            "billDate": "",
+            "issuedBy": "",
+            "towards": "Hospital Main Bill",
+            "amount": 0
+        },
+
+        "bill10": {
+            "billNumber": "",
+            "billDate": "",
+            "issuedBy": "",
+            "towards": "Hospital Main Bill",
+            "amount": 0
+        }
+    },
+
+    "primaryInsuredBankAccount": {
+        "accountHolder": "",
+        "accountNumber": 796468464,
+        "bankName": "ICICI",
+        "branchNameAndAddress": "",
+        "accountType": "",
+        "micrNumber": "",
+        "ifcCode": "",
+        "pan": "",
+        "checkAndDD": ""
+    },
+
+    "createdAt": "2022-03-16T18:11:39.386+0000",
+    "updatedAt": "2022-03-16T18:11:39.386+0000"
+}

@@ -1,0 +1,1671 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <title>Future general health</title>
+    <style>
+        body {
+            background-color: rgba(95, 83, 83, 0.5);
+            /* font-size: 12px; */
+            font-size: 11px;
+            font-weight: bold;
+        }
+
+        .container {
+        
+            /* border: 2px solid black; */
+
+              position: relative;
+			overflow: hidden;
+            background-color: white;
+            margin: 0px 200px;
+          
+            height: 1000px;
+            max-width: 720px;
+            margin: auto;
+          
+			margin: 0px 0px 0px 0px;
+			padding: 0px;
+			border: none;
+			width: 794px;
+			margin: auto;
+            padding-left: 60px;
+            padding-right: 25px;
+              padding-top: 34px;
+            padding-bottom: 24px;
+		            
+        }
+
+        .top {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: space-evenly;
+        }
+
+        .left-top {
+
+            width: 200px;
+            height: 53px;
+            /* background-color: aquamarine; */
+            /* padding: 0px 7px -1px 6px; */
+            margin: 0px 0px 0px 30px;
+        }
+        .left-top img {
+
+         
+        }
+
+        .middle-top {
+            padding-top: 10px;
+        }
+
+        .right-top {
+            width: 200px;
+            height: 53px;
+            /* background-color: aquamarine; */
+            /* padding: 0px 7px -1px 6px; */
+            margin: 0px 0px 0px 30px;
+        }
+
+        .subcont {
+            padding: 4px 0px 24px 0px;
+        }
+
+        .section {}
+
+
+        .heading {
+            display: flex;
+            font-weight: bold;
+            justify-content: space-between
+        }
+
+        .heading-left {}
+
+        .heading-right {}
+
+        .mainHeading {
+            background-color: rgb(255, 93, 93);
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            text-align: center;
+            border: 2px solid black;
+
+        }
+
+        .subHeading {
+            font-weight: bold;
+            text-align: center;
+            background-color: rgb(223, 217, 217);
+        }
+
+        .row {
+            margin-top: 5px;
+        }
+
+        .list {}
+
+        .sublist {}
+
+
+        /* table css */
+        .tableHeading {
+            color: red;
+            font-weight: bold;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        th {
+            text-align: center;
+        }
+
+        .trow {}
+
+
+        .thead1 {
+            width: 225px;
+
+        }
+
+        .thead2 {
+            width: 150px;
+
+        }
+
+        .thead3 {
+            width: 333px;
+
+        }
+
+        .tdata {
+            text-align: center;
+        }
+
+        .data {
+            padding-left: 12px;
+            text-align: start;
+        }
+
+        .yn {
+            width: 40px;
+            text-align: center;
+        }
+
+        .blank {
+            width: 30px;
+        }
+
+        .drow {
+            text-align: center;
+        }
+
+        .foot {
+            font-size: 9px;
+            font-weight: bold;
+
+        }
+
+        /* extra  */
+        .subHead {
+            font-weight: bold;
+            text-align: center;
+            margin: 5px;
+            text-decoration: underline;
+        }
+
+        .thead1b {
+            width: 450px;
+
+        }
+
+        .thead2b {
+            width: 150px;
+
+        }
+
+        .thead3b {
+            width: 333px;
+
+        }
+
+        .thead4b {
+            width: 150px;
+
+        }
+
+        .spanBox {
+            font-size: 8px;
+            text-align: center;
+            display: inline-block;
+            border: 1px solid #444;
+            vertical-align: middle;
+            line-height: 13px;
+            width: 13px;
+            height: 13px;
+            margin-top: -19px;
+            margin-left: -1px;
+            margin-top: 2px;
+        }
+
+        .spanLine {
+            font-size: 10.5px;
+
+            display: inline-block;
+            border-bottom: 1px solid black;
+            vertical-align: middle;
+            line-height: 2px;
+            width: 10px;
+            height: 9px;
+            margin-top: 0px;
+            margin-left: -4.35px;
+            text-align:center;
+        }
+
+        .my-4 {
+            margin-left: 4px;
+        }
+
+        .my-20 {
+            margin-left: 20px;
+        }
+
+        .my-10 {
+            margin-left: 10px;
+        }
+    </style>
+
+
+</head>
+
+<body>
+ <button id="download"> Download Form</button>
+  <div  id="invoice">
+
+    <div class="container">
+
+        <!-- top  -->
+        <div class="top">
+            <div class="left-top">
+                <img src="./static/img/insuranceCompanyLogo/Future_Generali.jpeg" style="width: 155px;
+                padding: 7px 5px;"   alt="">
+
+            </div>
+            <div class="middle-top">
+                <div>
+                    <span> Phone: </span>
+                    <span> 1800 209 1016 / 1800 103 8889</span>
+                </div>
+                <div>
+                    <span> Phone: </span>
+                    <span>1800 209 1017 / 1800 103 9998</span>
+                </div>
+                <div>
+                    <span> Email: </span>
+                    <span>
+
+
+                        fgh.cashless@futuregenerali.in</span>
+                </div>
+            </div>
+            <div class="right-top">
+                <img src="/future_generali/logo_1.jpeg" style="width: 100px ; padding: 12px;"   alt="">
+
+            </div>
+
+        </div>
+
+        <!-- heading 1 -->
+
+        <div class="subcont">
+            <div class="heading">
+                <div class="heading-left"> Hospital Id No:</div>
+                <div class="heading-right" style="margin-right:25px;"> FGH‐PAF‐03</div>
+            </div>
+
+            <div class="mainHeading">PRE‐AUTHORIZATION / CLAIM FORM FOR CASHLESS FACILITY</div>
+
+            <div class="section">
+                <div class="subHeading"> <span>-------------------------</span> TO BE FILLED BY THE INSURED/PATIENT
+                    <span>-------------------------</span>
+                </div>
+                <!-- row-  -->
+                <div class="row">
+                    <span class="list">Patient Name:</span>
+                     <div style="position:absolute; left: 558px; top: 115px; ">
+                        <span class="data"></span>
+                      </div> 
+                   
+                    <span class="my-4"></span>
+                    <span class="spanLine" style="width:295px">  <span class="data"> <%-patientDetailsName%></span></span>
+                 
+             
+
+                    <span class="sublist">Health Card No</span>
+                    {% comment %} <div style="position:absolute; left: 911px; top: 114px; ">
+                        <span class="data"> {{bunny.patient_details.Health_Id|upper}}</span>
+                       
+                      </div> {% endcomment %}
+                    <span class="my-4"></span>
+                      <span class="spanLine" style="width:230px">  <span class="data"> {{bunny.patient_details.Health_Id|upper}}</span></span>
+                 
+         
+              
+                </div>
+
+                <div class="row">
+                    <span class="list">Gender:</span>
+                    {% if bunny.patient_details.Gender == 'male' %}
+                    <!-- patient_details_gender -->
+                    <span class="my-20"></span>
+
+                    <span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">Male</span>
+
+                    <span class="spanBox"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">Female</span>
+                    {% elif bunny.patient_details.Gender == 'female' %}
+                    <span class="my-20"></span>
+
+                    <span class="spanBox"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">Male</span>
+
+                    <span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">Female</span>
+                    {% else %}
+                    <span class="my-20"></span>
+
+                    <span class="spanBox"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">Male</span>
+
+                    <span class="spanBox"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">Female</span>
+                    {% endif %}
+
+                    <span class="my-20"></span>
+                    <span class="sublist">Age: </span>
+                  {% comment %} <div style="position:absolute; left: 690px; top: 130px; ">
+                        <span class="data"> {{bunny.patient_details.AgeYear}}</span>
+                        <!-- patient_details_ageYear -->
+                      </div> {% endcomment %}
+                    <span class="spanLine" style="width:75px">  <span class="data"> {{bunny.patient_details.AgeYear|upper}}</span></span>
+                 
+                    <span class="sublist">(yrs) </span>
+                      
+                    <span class="my-20"></span>
+                    <span class="sublist">DOB: </span>
+                    {% comment %} <div style="position:absolute; left: 819px; top: 130px; ">
+                        <span class="data"> {{bunny.patient_details.DOB}}</span>
+                      </div> {% endcomment %}
+                 <span class="spanLine" style="width:100px">  <span class="data">{{bunny.patient_details.DOB.8|upper}}{{bunny.patient_details.DOB.9|upper}}{{bunny.patient_details.DOB.7|upper}}{{bunny.patient_details.DOB.5|upper}}{{bunny.patient_details.DOB.6|upper}}{{bunny.patient_details.DOB.4|upper}}{{bunny.patient_details.DOB.0|upper}}{{bunny.patient_details.DOB.1|upper}}{{bunny.patient_details.DOB.2|upper}}{{bunny.patient_details.DOB.3|upper}}</span></span>
+
+                    <span class="sublist">Policy No: </span>
+                    {% comment %} <div style="position:absolute; left: 976px; top: 130px; ">
+                        <span class="data"> {{bunny.patient_details.Policy_Id|upper}}</span>
+                      </div> {% endcomment %}
+                  <span class="spanLine" style="width:200px">  <span class="data"> {{bunny.patient_details.Policy_Id|upper}}</span></span>
+                 
+
+                </div>
+
+                <div class="row">
+                    <span class="list">Patient/Attendant Mobile No.</span>
+                    {% comment %} <div style="position:absolute; left: 622px; top: 147px; ">
+                        <span class="data"> {{bunny.patient_details.Phone|upper}}</span>
+                      </div> {% endcomment %}
+
+                 <span class="spanLine" style="width:140px">  <span class="data"> {{bunny.patient_details.Phone|upper}}</span></span>
+                 
+
+
+                    <span class="sublist">Employee ID</span>
+                  
+                 
+                       <span class="spanLine" style="width:120px">  <span class="data"> {{bunny.patient_details.EmployeeId}}</span></span>
+       
+
+                    <span class="sublist">Company Name</span>
+                   
+                       <span class="spanLine" style="width:180px">  <span class="data"> {{bunny.patient_details.HealthInsuranceYesCompanyName}}</span></span>
+   
+
+
+
+                </div>
+
+
+                <div class="row">
+                    <span class="list">Currently do you have any other Mediclaim / Health Insurance </span>
+                    {% if bunny.patient_details.Physician == 'yes' %}
+                    <span class="my-20"></span>
+                    <span class="spanBox"><img height="10px" src="/static/dist/tick.png" width="10px"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">Yes</span>
+
+                    <span class="my-20"></span>
+
+                    <span class="spanBox"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">No</span>
+                    {% else %}
+                    <span class="my-20"></span>
+                    <span class="spanBox"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">Yes</span>
+
+                    <span class="my-20"></span>
+
+                    <span class="spanBox"><img height="10px" src="/static/dist/tick.png" width="10px"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">No</span>
+                    {% endif %}
+
+                    <span class="my-20"></span>
+                    <span class="sublist"> (if yes, provide other insurance details)</span>
+
+
+
+
+
+                </div>
+
+                <div class="row">
+                    <span class="list">Insurance Co. Name </span>
+
+                   
+                    <span class="my-4"></span>
+                   
+                    <span class="spanLine" style="width:270px">  <span class="data">{{bunny.patient_details.Insurance_Company|upper}} </span></span>
+                 
+                
+
+                    <span class="my-20"></span>
+
+                    <span class="sublist">Policy No:</span>
+                   
+                    <span class="my-4"></span>
+                      <span class="spanLine" style="width:220px">  <span class="data">{{bunny.patient_details.Policy_Id|upper}} </span></span>
+
+
+
+                </div>
+
+                <div class="row">
+                    <span class="list">Sum Insured </span>
+                    <span class="my-4"></span>
+                   
+                  <span class="spanLine" style="width:210px">  <span class="data"> </span></span>
+                 
+
+                    <span class="my-20"></span>
+
+                    <span class="sublist">since how long you have this cover</span>
+                    <span class="my-4"></span>
+                     <span class="spanLine" style="width:250px">  <span class="data"> </span></span>
+
+
+
+
+                </div>
+
+                <div class="row">
+                    <span class="list">Do you have Family Physician</span>
+                    {% if bunny.patient_details.Physician == 'yes' %}
+                    <span class="my-20"></span>
+                    <span class="spanBox"><img height="10px" src="/static/dist/tick.png" width="10px"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">Yes </span>
+
+                    <span class="my-20"></span>
+
+                    <span class="spanBox"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">No</span>
+                    {% else %}
+                    <span class="my-20"></span>
+                    <span class="spanBox"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">Yes </span>
+
+                    <span class="my-20"></span>
+
+                    <span class="spanBox"><img height="10px" src="/static/dist/tick.png" width="10px"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">No</span>
+                    {% endif %}
+
+                    <span class="my-20"></span>
+
+                    <span class="sublist">Name of Family Physician: </span>
+                 
+                       <span class="spanLine" style="width:140px">  <span class="data"> {{bunny.patient_details.PhysicianYesPhysicianName|upper}} </span></span>
+
+
+
+                
+
+
+
+                    <span class="sublist">Mobile No: </span>
+                  
+                   <span class="spanLine" style="width:116px">  <span class="data">{{bunny.patient_details.PhysicianYesPhysicianContactNum|upper}} </span></span>
+
+
+
+
+                </div>
+
+
+
+
+            </div>
+
+            <!-- table section  -->
+            <div class="section">
+                <div class="subHeading" style=" margin: 10px 0px;"> <span>-------------------------</span> TO BE FILLED BY THE TREATING DOCTOR
+                    /HOSPITAL<span>-------------------------</span> </div>
+                <!-- row-  -->
+                <div class="row">
+                    <span class="list">Name of the Hospital:</span>
+                  
+                    <span class="my-4"></span>
+                     <span class="spanLine" style="width:340px">  <span class="data">{{hospitaldata.name|upper}}</span></span>
+                  
+
+                    <span class="my-20"></span>
+                    <span class="sublist">City:</span>
+                   
+                    <span class="my-4"></span>
+                     <span class="spanLine" style="width:203px">  <span class="data">{{hospitaldata.city|upper}}</span></span>
+                  
+                </div>
+
+                <div class="row">
+                    <span class="list">Type of hospitalization:</span>
+                    {% if bunny.patient_details.Type == "emergency" %}
+                            <span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span><span class="cls_014">Emergency</span>
+                            <span class="spanBox"></span>  <span class="cls_014">Planned</span>
+                                    {% else %}
+                                    <span class="spanBox"></span><span class="cls_014">Emergency</span>
+                                    <span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>  <span class="cls_014">Planned</span>
+
+                                {% endif %}
+                </div>
+                
+                
+
+                    <span class="my-20"></span>
+                    <span class="sublist"> Expected Admission Date: </span>
+                    {% comment %} <div style="position:absolute; left: 877px; top: 252px; ">
+                        <span class="data"> {{bunny.hospital_details.expectedDateOfAdmission|upper}}</span>
+                      </div> {% endcomment %}
+                      <span class="my-4"></span>
+                   <span class="spanLine" style="width:70px">  <span class="data">{{bunny.hospital_details.Date_of_Admission.8|upper}}{{bunny.hospital_details.Date_of_Admission.9|upper}}{{bunny.hospital_details.Date_of_Admission.7|upper}}{{bunny.hospital_details.Date_of_Admission.5|upper}}{{bunny.hospital_details.Date_of_Admission.6|upper}}{{bunny.hospital_details.Date_of_Admission.4|upper}}{{bunny.hospital_details.Date_of_Admission.0|upper}}{{bunny.hospital_details.Date_of_Admission.1|upper}}{{bunny.hospital_details.Date_of_Admission.2|upper}}{{bunny.hospital_details.Date_of_Admission.3|upper}}
+                   </span>  </span>
+
+              
+
+
+                    <span class="my-20"></span>
+                    <span class="sublist">Time of Admission </span>
+               <span class="my-4"></span>
+                       <span class="spanLine" style="width:110px">  <span class="data"> 
+                 <span class="data">{{bunny.hospital_details.admission_time.0|upper}}
+                            {{bunny.hospital_details.admission_time.1|upper}}
+                           :
+
+                            {{bunny.hospital_details.admission_time.3|upper}}
+                            {{bunny.hospital_details.admission_time.4|upper}}
+                       </span></span>
+                    
+                   
+
+
+
+
+                </div>
+
+                <div class="row">
+                    <span class="list">Expected Length of Stay:</span>
+                    <span class="my-4"></span>
+                     <span class="spanLine" style="width:35px">  <span class="data"> {{bunny.hospital_details.Days_In_Hospital|upper}} </span></span>
+
+                    <span class="sublist">(days) </span>
+
+                    <span class="my-20"></span>
+
+                    <span class="sublist">Name of Treating Doctor:</span>
+                    <span class="my-4"></span>
+     <span class="spanLine" style="width:150px">  <span class="data">{{bunny.hospital_details.Treating_Doctor_Name|upper}} </span></span>
+
+                  
+
+                    <span class="sublist">Mobile No:</span>
+                    <span class="my-4"></span>
+                     <span class="spanLine" style="width:130px">  <span class="data">{{doctor_details.phone}}</span></span>
+                  
+                      
+
+
+                </div>
+
+
+                <div class="row">
+                    <span class="list">Nature of Illness / Disease with Presenting Complaints: </span>
+                    <span class="my-4"></span>
+                     <span class="spanLine" style="width:450px">   <span class="data">  {{bunny.patient_details.Nature_Of_Illness|upper}}</span></span>
+                 
+
+
+                </div>
+
+
+                <div class="row">
+                    <span class="list"></span>
+                    <span class="my-10"></span>
+                        <span class="spanLine" style="width:704px">  <span class="data"></span></span>
+               
+
+                </div>
+
+
+                <div class="row">
+                    <span class="list">Relevant Clinical Findings: </span>
+                    <span class="my-4"></span>
+                     <span class="spanLine" style="width:578px">      <span class="data"> {{bunny.patient_details.Relevant_Critical_Findings|upper}}</span></span>
+                
+
+
+
+
+                </div>
+
+                <div class="row">
+                    <span class="list">Duration of present Ailment </span>
+
+                    <span class="my-10"></span>
+                     <span class="spanLine" style="width:60px">  <span class="data"></span></span>
+                
+                    <span class="sublist"> Years</span>
+                     <span class="spanLine" style="width:60px">  <span class="data"> </span></span>
+
+              
+                  
+                    <span class="sublist"> Months</span>
+
+                    <span class="my-4"></span>
+                     <span class="spanLine" style="width:60px">  <span class="data">{{bunny.patient_details.Duration_Of_Present_Ailments|upper}}</span></span>
+               
+                    <span class="sublist"> Days </span>
+
+
+                    <span class="my-20"></span>
+
+                    <span class="sublist"> Date of First Consultation:</span>
+                    <span class="my-4"></span>
+                     <span class="spanLine" style="width:142px">  <span class="data">
+                       <span class="data"> {{bunny.patient_details.Date_Of_First_Consultation.8|upper}}</span>{{bunny.patient_details.Date_Of_First_Consultation.9|upper}}{{bunny.patient_details.Date_Of_First_Consultation.7|upper}}{{bunny.patient_details.Date_Of_First_Consultation.5|upper}}{{bunny.patient_details.Date_Of_First_Consultation.6|upper}}{{bunny.patient_details.Date_Of_First_Consultation.4|upper}}{{bunny.patient_details.Date_Of_First_Consultation.0|upper}}{{bunny.patient_details.Date_Of_First_Consultation.1|upper}}{{bunny.patient_details.Date_Of_First_Consultation.2|upper}}{{bunny.patient_details.Date_Of_First_Consultation.3|upper}}
+                     </span></span>
+                
+
+                </div>
+
+                <div class="row">
+                    <span class="list">Past History of Present Ailment if any</span>
+                    <span class="my-4"></span>
+                     <span class="spanLine" style="width:520px">  <span class="data">{{bunny.patient_details.Past_History_Of_Present_Ailments|upper}}</span></span>
+                  
+
+
+
+                </div>
+
+                <div class="row">
+                    <span class="list">Provisional Diagnosis: </span>
+                    <span class="my-4"></span>
+                     <span class="spanLine" style="width:380px">  <span class="data">{{bunny.patient_details.Provision_Diagnosis|upper}}</span></span>
+                   
+
+                    <span class="my-10"></span>
+
+                    <span class="sublist">ICD Code: </span>
+                    <span class="my-4"></span>
+                     <span class="spanLine" style="width:144px">  <span class="data">{{bunny.patient_details.ICD_Code|upper}}</span></span>
+                 
+
+
+
+                </div>
+
+
+                <div class="row">
+                    <span class="list">Proposed Line of Treatment during Hospitalization:</span>
+                    <span class="my-10"></span>
+                    
+                       {% if bunny.patient_details.doctor_proposedLineOfTreatment_Medical_Managment == "yes" %}
+                    <span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>
+                  
+                    <span class="sublist">Medical </span>
+                        {% else %}
+                    <span class="spanBox"></span>
+                  
+                    <span class="sublist">Medical </span>
+                        {% endif %}
+                    <span class="my-10"></span>
+                      {% if bunny.patient_details.doctor_proposedLineOfTreatment_Surgical_Managment == "yes" %}
+                    <span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>
+              
+                    <span class="sublist">Surgical</span>
+                          {% else %}
+                           <span class="spanBox"></span>
+              
+                    <span class="sublist">Surgical</span>
+                           {% endif %}
+
+                    <span class="my-10"></span>
+                       {% if bunny.patient_details.doctor_proposedLineOfTreatment_Intensive_Care == "yes" %}
+                    <span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>
+                    <span class="sublist">Intensive</span>
+                        {% else %}
+                    <span class="spanBox"></span>
+                    <span class="sublist">Intensive</span>
+                         {% endif %}
+
+                    <span class="my-10"></span>
+                     {% if bunny.patient_details.doctor_proposedLineOfTreatment_Allopathic_Treatment == "yes" %}
+                    <span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>
+              
+                    <span class="sublist"> Investigation</span>
+                     {% else %}
+                    <span class="spanBox"></span>
+              
+                    <span class="sublist"> Investigation</span>
+                      {% endif %}
+                    <span class="my-10"></span>
+                    
+                    {% if bunny.patient_details.doctor_proposedLineOfTreatment_Allopathic_Treatment == "yes" %}
+                    <span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>
+              
+                    <span class="sublist"> Non Allopathic treatment</span>
+                     {% else %}
+                    <span class="spanBox"></span>
+                    <span class="sublist"> Non Allopathic treatment</span>
+                      {% endif %}
+                    <span class="my-10"></span>
+
+
+
+
+
+
+
+                </div>
+
+
+                <div class="row">
+                    <span class="list">If Investigation & /or Medical Management, provide details: </span>
+                    <span class="my-4"></span>
+                     <span class="spanLine" style="width:404px">  <span class="data">{{bunny.patient_details.If_Investigation_Or_Medical_Management_Provide_Details}}</span></span>
+                  
+
+
+                </div>
+
+                <!-- spanBox  -->
+                <div class="row">
+                    <span class="list"></span>
+                    <span class="my-10"></span>
+                     <span class="spanLine" style="width:688px">  <span class="data"></span></span>
+                  
+
+                </div>
+
+                <div class="row">
+                    <span class="list">Route of Drug Administration: </span>
+                    <span class="my-4"></span>
+                     <span class="spanLine" style="width:150px">  <span class="data">{{bunny.patient_details.Route_Of_Drug_Administration}}</span></span>
+                  
+
+
+
+                    <span class="my-10"></span>
+
+                    <span class="sublist">If Surgical, Name of Surgery: </span>
+                    <span class="my-4"></span>
+                     <span class="spanLine" style="width:245px">  <span class="data"> {{bunny.patient_details.If_Surgical_Name_of_Surgery}}</span></span>
+                  
+
+
+                </div>
+
+                <div class="row">
+                    <span class="list">Type of Anesthesia:</span>
+                    <span class="my-20"></span>
+                    <span class="spanBox"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">Local </span>
+
+                    <span class="my-20"></span>
+
+                    <span class="spanBox"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">General </span>
+
+                    <span class="my-20"></span>
+
+                    <span class="spanBox"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">Regional</span>
+
+                    <span class="my-20"></span>
+
+                    <span class="spanBox"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist"> Dissociative </span>
+
+                    <span class="my-20"></span>
+                    <span class="my-10"></span>
+
+                    <span class="sublist"> ICD PCS Code:</span>
+                    <span class="my-4"></span>
+                     <span class="spanLine" style="width:160px">   {{bunny.patient_details.ICD_Code_10_PCS}}</span></span>
+                
+
+                </div>
+
+                <div class="row">
+                    <span class="list">If other treatments provide details: </span>
+                    <span class="my-4"></span>
+                     <span class="spanLine" style="width:532px">  <span class="data"> {{bunny.patient_details.If_Other_Treatment_Provide_Details}}</span></span>
+                  
+
+
+                </div>
+
+                <div class="row">
+                    <span class="list">In case of Accident / Injury:</span>
+                    <span class="my-20"></span>
+                      {% if bunny.patient_details.In_Case_Of_Accident == 'Yes' %}
+                    <span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">RTA </span>
+  {% else %}
+    <span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">RTA </span>
+     {% endif %}
+                   
+                    
+                    
+                 
+                
+
+                    <span class="my-20"></span>
+
+                    <span class="spanBox"></span>
+                    <span class="my-4"></span>
+   
+
+                    <span class="sublist">Intentional Self Injury </span>
+
+
+                    <span class="my-20"></span>
+                    <span class="my-10"></span>
+
+                    <span class="sublist"> Date of Accident / Injury:</span>
+                    <span class="my-4"></span>
+                     <span class="spanLine" style="width:196px">  <span class="data">{{bunny.hospital_details.DateofInjury.8|upper}}{{bunny.hospital_details.DateofInjury.9|upper}}{{bunny.hospital_details.DateofInjury.7|upper}}{{bunny.hospital_details.DateofInjury.5|upper}}{{bunny.hospital_details.DateofInjury.6|upper}}{{bunny.hospital_details.DateofInjury.4|upper}}{{bunny.hospital_details.DateofInjury.0|upper}}{{bunny.hospital_details.DateofInjury.1|upper}}{{bunny.hospital_details.DateofInjury.2|upper}}{{bunny.hospital_details.DateofInjury.3|upper}}
+                     </span></span>
+               
+
+                </div>
+
+                <div class="row">
+                    <span class="list">How did injury occur:</span>
+                    <span class="my-4"></span>
+                     <span class="spanLine" style="width:590px">  <span class="data">{{bunny.patient_details.How_Did_Injury_Occur}}</span></span>
+                
+
+
+                </div>
+
+                <!-- spanBox  -->
+                <div class="row">
+                    <span class="list"></span>
+                    <span class="my-10"></span>
+                     <span class="spanLine" style="width:690px">  <span class="data"></span></span>
+                 
+            
+
+                </div>
+
+                <div class="row">
+                    <span class="list">Injury / Diseases caused due to Substance Abuse / Alcohol Consumptions:</span>
+                    <span class="my-20"></span>
+             {% if bunny.patient_details.Injury_Disease_Caused_Due_To_Substance_Abuse_Alcohol_Consumption_ == 'yes' %}
+                    <span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">Yes </span>
+
+                    <span class="my-20"></span>
+
+                    <span class="spanBox"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">No</span>
+                    {% else %}
+                     <span class="spanBox"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">Yes </span>
+
+                    <span class="my-20"></span>
+
+                    <span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">No</span>
+                     {% endif %}
+
+
+                </div>
+
+                <div class="row">
+                    <span class="list">Test conducted to establish this:</span>
+                    <span class="my-10"></span>
+                      {% if bunny.patient_details.doctor_testAlcohol == "yes" %}
+                    <span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">Yes </span>
+
+                    <span class="my-10"></span>
+                    <span class="my-4"></span>
+
+                    <span class="spanBox"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">No</span>
+                    {% else %}
+                    <span class="spanBox"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">Yes </span>
+
+                    <span class="my-10"></span>
+                    <span class="my-4"></span>
+
+                    <span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">No</span>
+                     {% endif %}
+                    <span class="my-20"></span>
+
+                    <span class="sublist">Reported to Police:</span>
+                    <span class="my-10"></span>
+                     {% if bunny.patient_details.Reported_To_Police == "yes" %}
+                    <span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">Yes </span>
+
+                    <span class="my-10"></span>
+
+                    <span class="spanBox"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">No</span>
+                    {% else %}
+                    <span class="spanBox"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">Yes </span>
+
+                    <span class="my-10"></span>
+
+                    <span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">No</span>
+                    {% endif %}
+                    <span class="my-20"></span>
+
+
+
+                    <span class="sublist">FIR / MLC No: </span>
+                     <span class="spanLine" style="width:150px">  <span class="data">{{bunny.patient_details.FIR_Number|upper}}</span></span>
+                
+
+
+
+
+
+
+
+
+                </div>
+
+                <div class="row">
+                    <span class="list">In case of Maternity: </span>
+
+                    <span class="my-10"></span>
+                    <span class="sublist"> G</span>
+                    <span class="my-4"></span>
+                   {% if bunny.patient_details.G == 'yes' %}
+                        <span class="spanLine" style="width:30px"><img height="9px" src="/static/dist/tick.png" width="9px"></span>
+                     {% else %}
+     <span class="spanLine" style="width:30px"></span>
+                       {% endif %}
+                    <span class="sublist"> P</span>
+
+                    <span class="my-4"></span>
+                          {% if bunny.patient_details.P == 'yes' %}
+                    <span class="spanLine" style="width:25px"><img height="9px" src="/static/dist/tick.png" width="9px"></span>
+                   {% else %}
+     <span class="spanLine" style="width:30px"></span>
+                       {% endif %}
+                    <span class="sublist"> L </span>
+
+                    <span class="my-4"></span>
+                   {% if bunny.patient_details.L == 'yes' %}
+                    <span class="spanLine" style="width:25px"><img height="9px" src="/static/dist/tick.png" width="9px"></span>
+                   {% else %}
+      <span class="spanLine" style="width:30px"></span>
+                       {% endif %}
+
+                    <span class="sublist"> A </span>
+                    <span class="my-4"></span>
+                     {% if bunny.patient_details.A == 'yes' %}
+                    <span class="spanLine" style="width:25px"><img height="9px" src="/static/dist/tick.png" width="9px"></span>
+                   {% else %}
+         <span class="spanLine" style="width:30px"></span>
+                       {% endif %}
+
+
+
+
+                    <span class="my-10"></span>
+
+                    <span class="sublist">LMP Date</span>
+                    <span class="my-4"></span>
+                     <span class="spanLine" style="width:140px">  <span class="data"></span></span>
+             
+                    <span class="my-20"></span>
+
+                    <span class="sublist">Date of Delivery</span>
+                    <span class="my-4"></span>
+                     <span class="spanLine" style="width:130px">  <span class="data">{{bunny.hospital_details.ExpectedDateOfDelivery.8|upper}}{{bunny.hospital_details.ExpectedDateOfDelivery.9|upper}}{{bunny.hospital_details.ExpectedDateOfDelivery.7|upper}}{{bunny.hospital_details.ExpectedDateOfDelivery.5|upper}}{{bunny.hospital_details.ExpectedDateOfDelivery.6|upper}}{{bunny.hospital_details.ExpectedDateOfDelivery.4|upper}}{{bunny.hospital_details.ExpectedDateOfDelivery.0|upper}}{{bunny.hospital_details.ExpectedDateOfDelivery.1|upper}}{{bunny.hospital_details.ExpectedDateOfDelivery.2|upper}}{{bunny.hospital_details.ExpectedDateOfDelivery.3|upper}}
+                     </span></span>
+             
+
+
+                </div>
+
+                <div class="row">
+                    <span class="list">Mode of Delivery:</span>
+                    <span class="my-20"></span>
+                    <span class="spanBox"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist"> VD </span>
+
+                    <span class="my-20"></span>
+
+                    <span class="spanBox"></span>
+                    <span class="my-4"></span>
+                    <span class="sublist">LSCS</span>
+
+                </div>
+
+
+
+
+
+
+
+
+
+            </div>
+
+            <div class="section">
+                <div class="tableHeading"  style=" margin: 10px 0px;">PAST HISTORY OF ANY CHRONIC ILLNESS WITH DURATION: </div>
+                <!-- table  -->
+                <table>
+                    <tr class="trow">
+                        <th class="thead1">Disease / Ailment </th>
+
+                        <th class="thead2" colspan="4"></th>
+                        <th class="thead3">Duration (Specify Year / Month / Days)</th>
+
+                    </tr>
+                    <tr class="trow">
+                        <td class="tdata data"> Hypertension </td>
+                        <td class="tdata yn">Yes</td>
+                        {% if bunny.patient_details.HypertensionMonth == None %}
+                        <td class="tdata blank"> </td>
+                        {% else %}
+                        <td class="tdata blank"> <img height="9px" src="/static/dist/tick.png" width="9px"> </td>
+                        {% endif %}
+                        <td class="tdata yn">No</td>
+                        <td class="tdata blank"></td>
+                        <td class="tdata drow">
+                          <span class="data">{{bunny.patient_details.HypertensionMonth|upper}}/{{bunny.patient_details.HypertensionYear|upper}}  </span>
+                                 
+                        </td>
+
+                    </tr>
+                    <tr class="trow">
+                        <td class="tdata data">Hyperlipidemia </td>
+                        <td class="tdata yn">Yes</td>
+                        {% if bunny.patient_details.HyperlipidemiasMonth == None %}
+                        <td class="tdata blank"> </td>
+                        {% else %}
+                        <td class="tdata blank"> <img height="9px" src="/static/dist/tick.png" width="9px">  </td>
+                        {% endif %}
+                        <td class="tdata yn">No</td>
+                        <td class="tdata blank"></td>
+                        <td class="tdata">
+                             <span class="data">  {{bunny.patient_details.HyperlipidemiasMonth|upper}}/{{bunny.patient_details.HyperlipidemiasYear|upper}}</span></td>
+
+                    </tr>
+                    <tr class="trow">
+                        <td class="tdata data">Cancer </td>
+                        <td class="tdata yn">Yes</td>
+                        {% if bunny.patient_details.CancerMonth == None %}
+                        <td class="tdata blank"> </td>
+                        {% else %}
+                        <td class="tdata blank"> <img height="9px" src="/static/dist/tick.png" width="9px">  </td>
+                       
+                        {% endif %}
+                        <td class="tdata yn">No</td>
+                        <td class="tdata blank"></td>
+                        <td class="tdata">    <span class="data"> {{bunny.patient_details.CancerMonth|upper}}/{{bunny.patient_details.CancerYear|upper}}  </span>
+                             </td>
+
+                    </tr>
+                    
+                    <tr class="trow">
+                        <td class="tdata data">Osteoarthritis </td>
+                        <td class="tdata yn">Yes</td>
+                        {% if bunny.patient_details.OsteoarthritisMonth == None %}
+                        <td class="tdata blank"> </td>
+                        {% else %}
+                        <td class="tdata blank"> <img height="9px" src="/static/dist/tick.png" width="9px">  </td>
+                       
+                        {% endif %}
+                        <td class="tdata yn">No</td>
+                        <td class="tdata blank"></td>
+                        <td class="tdata">    <span class="data"> {{bunny.patient_details.OsteoarthritisMonth|upper}}/{{bunny.patient_details.OsteoarthritisYear|upper}}  </span>
+                             </td>
+
+                    </tr>
+                  
+                    <tr class="trow">
+                        <td class="tdata data">Diabetes </td>
+                        <td class="tdata yn">Yes</td>
+                        {% if bunny.patient_details.MandatoryPastHistoryMonth == None %}
+                        <td class="tdata blank"> </td>
+                        {% else %}
+                        <td class="tdata blank"> <img height="9px" src="/static/dist/tick.png" width="9px">  </td>
+                        {% endif %}
+                        <td class="tdata yn">No</td>
+                        <td class="tdata blank"></td>
+                        <td class="tdata">    <span class="data"> {{bunny.patient_details.MandatoryPastHistoryMonth|upper}}/{{bunny.patient_details.MandatoryPastHistoryYear|upper}}  </span>
+                             </td>
+
+                    </tr>
+                   
+                    <tr class="trow">
+                        <td class="tdata data">Cardiovascular Diseases </td>
+                        <td class="tdata yn">Yes</td>
+                        <td class="tdata blank"> </td>
+                        <td class="tdata yn">No</td>
+                        <td class="tdata blank"></td>
+                        <td class="tdata"></td>
+
+                    </tr>
+
+                    <tr class="trow">
+                        <td class="tdata data">Asthma / COPD / Bronchitis </td>
+                        <td class="tdata yn">Yes</td>
+                        {% if bunny.patient_details.AsthmaOrCOPDOrBronchitisMonth == None %}
+                        <td class="tdata blank"> </td>
+                        {% else %}
+                        <td class="tdata blank"> <img height="9px" src="/static/dist/tick.png" width="9px">  </td>
+                        {% endif %}
+                        <td class="tdata yn">No</td>
+                        <td class="tdata blank"></td>
+                        <td class="tdata">    <span class="data"> {{bunny.patient_details.AsthmaOrCOPDOrBronchitisMonth|upper}}/{{bunny.patient_details.AsthmaOrCOPDOrBronchitisYear|upper}}  </span>
+                             </td>
+
+                    </tr>
+
+
+                   
+                    <tr class="trow">
+                        <td class="tdata data">Any Surgery / Hospitalization </td>
+                        <td class="tdata yn">Yes</td>
+                        <td class="tdata blank"> </td>
+                        <td class="tdata yn">No</td>
+                        <td class="tdata blank"></td>
+                        <td class="tdata"></td>
+
+                    </tr>
+                    <tr class="trow">
+                        <td class="tdata data">Any Other Disease / Disability </td>
+                        <td class="tdata yn">Yes</td>
+                        <td class="tdata blank"> </td>
+                        <td class="tdata yn">No</td>
+                        <td class="tdata blank"></td>
+                        <td class="tdata"> <span class="data">{{bunny.patient_details.OtherAliments|upper}}  </span>
+                              </td>
+
+                    </tr>
+                    <tr class="trow">
+                        <td class="tdata data">Congenital </td>
+                        <td class="tdata yn">Yes</td>
+                        <td class="tdata blank"> </td>
+                        <td class="tdata yn">No</td>
+                        <td class="tdata blank"></td>
+                        <td class="tdata">Internal / External </td>
+
+                    </tr>
+
+
+                    
+                  
+                    <tr class="trow">
+                        <td class="tdata data">Any HIV or STD/Related Ailments </td>
+                        <td class="tdata yn">Yes</td>
+                        {% if bunny.patient_details.anyHIVOrSTDOrRelatedAlimentsMonth == None %}
+                        <td class="tdata blank"> </td>
+                        {% else %}
+                        <td class="tdata blank"> <img height="9px" src="/static/dist/tick.png" width="9px">  </td>
+                        {% endif %}
+                        <td class="tdata yn">No</td>
+                        <td class="tdata blank"></td>
+                        <td class="tdata">    <span class="data"> {{bunny.patient_details.anyHIVOrSTDOrRelatedAlimentsMonth|upper}}/{{bunny.patient_details.anyHIVOrSTDOrRelatedAlimentsYear|upper}}  </span>
+                             </td>
+
+                    </tr>
+                    <tr class="trow">
+                        <td class="tdata data">Alcohol or Drug Abuse </td>
+                        <td class="tdata yn">Yes</td>
+                        {% if bunny.patient_details.AlcoholOrDrugAbuseMonth == None %}
+                        <td class="tdata blank"> </td>
+                        {% else %}
+                        <td class="tdata blank"> <img height="9px" src="/static/dist/tick.png" width="9px">  </td>
+                        {% endif %}
+                        <td class="tdata yn">No</td>
+                        <td class="tdata blank"></td>
+                        <td class="tdata">    <span class="data"> {{bunny.patient_details.AlcoholOrDrugAbuseMonth|upper}}/{{bunny.patient_details.AlcoholOrDrugAbuseYear|upper}}  </span>
+                             </td>
+
+                    </tr>
+                  
+
+
+                </table>
+
+
+
+
+
+
+
+
+
+            </div>
+
+
+            <span class="my-4"></span>
+            <hr size="2px" color="black">
+
+            <div class="foot">Future Generali India Insurance Company Limited <br>
+                Registered office address : Indiabulls Finance Centre, Tower 3, 6th Floor, Senapati Bapat Marg,
+                Elphinstone (W), Mumbai ‐ 400 013 <br>
+                Corporate Identity No (CIN ) : U66030MH2006PLC165287 Telephone No 022 4097 6666 and Fax No 22 4097 6900
+                <br>
+                Email : <a href="fgcare@futuregenerali.in">fgcare@futuregenerali.in</a> website address <a
+                    href="https://www.futuregenerali.in/Corporate/Index.aspx">www.futuregenerali.in</a>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+
+    <!-- second Page  -->
+
+     <div style="width: 100%;     height: 22px;  "></div>
+
+    <div class="container" style="height:950px">
+
+        <!-- top  -->
+        <div class="top">
+            <div class="left-top">
+                <img src="./static/img/insuranceCompanyLogo/Future_Generali.jpeg" style="width: 155px;
+                padding: 7px 5px;"   alt="">
+
+            </div>
+            <div class="middle-top">
+                <div>
+                    <span> Phone: </span>
+                    <span> 1800 209 1016 / 1800 103 8889</span>
+                </div>
+                <div>
+                    <span> Phone: </span>
+                    <span>1800 209 1017 / 1800 103 9998</span>
+                </div>
+                <div>
+                    <span> Email: </span>
+                    <span>
+
+
+                        fgh.cashless@futuregenerali.in</span>
+                </div>
+            </div>
+            <div class="right-top">
+                <img src="./static/img/insuranceCompanyLogo/Future_Generali_health.jpg" style="width: 100px ; padding: 12px;"   alt="">
+
+
+            </div>
+
+        </div>
+
+        <!-- heading 1 -->
+
+        <div class="subcont">
+
+
+
+
+
+
+            <!-- table section  -->
+
+
+            <div class="section">
+
+                <!-- table  -->
+                <table>
+                    <tr class="trow">
+                        <th class="thead1b">Expense Head </th>
+
+                        <th class="thead2b">Amount (Rs.)</th>
+                        <th class="thead3b">Expense Head</th>
+                        <th class="thead4b">Amount (Rs.)</th>
+
+                    </tr>
+                    <tr class="trow">
+                        <td class="tdata data">Room Rent per day + Nursing/Service charges + Diet </td>
+                        <td class="tdata blank">  <span class="data"> {{bunny.hospital_details.Per_Day_Room_Rent|upper}} </span> </td>
+                        <td class="tdata data">Investigations + Diagnostics</td>
+                        <td class="tdata blank">         <span class="data"> {{bunny.hospital_details.Cost_Of_Investigation|upper}} </span></td>
+
+
+                    </tr>
+                    <tr class="trow">
+                        <td class="tdata data">ICU charges per day </td>
+                        <td class="tdata blank">  <span class="data"> {{bunny.hospital_details.ICU_Charges|upper}}</span></td>
+                        <td class="tdata data">Medicines / Consumables </td>
+                        <td class="tdata blank">   <span class="data"> {{bunny.hospital_details.Consumables|upper}} </span></td>
+
+
+                    </tr>
+                    <tr class="trow">
+                        <td class="tdata data">Doctor / Consultant visit charges</td>
+                        <td class="tdata blank">   <span class="data"> {{bunny.hospital_details.consultation_fees|upper}} </span></td>
+                        <td class="tdata data">Equipment / Monitor etc </td>
+                        <td class="tdata blank"></td>
+
+
+                    </tr>
+                    <tr class="trow">
+                        <td class="tdata data">Surgeon charges + Anesthetist </td>
+                        <td class="tdata blank"> <span class="data">{{bunny.hospital_details.ProfessionalFeesSurgeon|upper}} </span> </td>
+                        <td class="tdata data">Miscellaneous (specify)</td>
+                        <td class="tdata blank"></td>
+
+                    </tr>
+                    <tr class="trow">
+                        <td class="tdata data">Operation Theatre Charges </td>
+                        <td class="tdata blank">  <span class="data">{{bunny.hospital_details.OT_Charges|upper}}</span> </td>
+                        <td class="tdata data">Implant Charges (If any)</td>
+                        <td class="tdata blank">  <span class="data"> {{bunny.hospital_details.cost_Of_Implant|upper}} </span></td>
+                    </tr>
+                    <tr class="trow">
+                        <td class="tdata data">Package Charges </td>
+                        <td class="tdata blank">     <span class="data">{{bunny.hospital_details.total|upper}}  </span></td>
+                        <td class="tdata data"></td>
+                        <td class="tdata blank"></td>
+                    </tr>
+
+                </table>
+
+
+            </div>
+
+            <!-- content  -->
+
+
+            <span class="my-20"></span>
+            <div class="tableHeading"> Estimate of Expenses: Total Amount Rs. _____________________________ Class of
+                Accommodation: ___________________</div>
+
+
+            <div class="section">
+                <div class="subHeading"> <span>-------------------------</span> DECLARATION
+                    <span>-------------------------</span>
+                </div>
+                <!-- row-  -->
+                <div class="row">
+                    <span class="list"> have completed this form and will be responsible for correctness of the
+                        medical
+                        information certified by me. I agree that Future Generali
+                        shall not be liable to make payment in case of any discrepancy between the preauthorization
+                        form
+                        and discharge summary.</span>
+              
+
+
+
+                </div>
+                <div class="row">
+                    <div class="tableHeading"> Name of the treating Doctor:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        {{bunny.hospital_details.Treating_Doctor_Name|upper}} &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Qualification:_____________________________________
+                    </div>
+                    <div class="tableHeading"> MCI Registration No with State Code: ____________________________
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <span class="list"> Signature of Doctor: ________________________________________________Stamp /
+                        Seal of Hospital _____________________</span>
+              
+
+
+
+                </div>
+
+                <div class="row">
+                    <span class="tableHeading">BENEFICIARY CONSENT / AUTHORISATION </span>
+                    <span class="my-4"></span>
+                    <span class="list">I have ‘No Objection’ to Future Generali obtaining details of my treatment /
+                        collecting documents and also hereby
+                        authorize Future Generali to pay the hospital bill from the sum insured of my insurance
+                        policy. I also undertake to pay all non medical / non authorized expenses
+                        in the hospital bill directly to the hospital at the time of discharge. In case Future
+                        Generali issues "Denial of cashless facility" to the provider, I have 'No
+                        objection' in paying the hospital bill for the treatment given. All information provided
+                        above is true and I agree that if I have provided any false or untrue
+                        information, my right to claim the expenses shall be absolutely forfeited.</span>
+              
+
+
+
+                </div>
+
+
+                <div class="row">
+                    <div class="tableHeading">NAME OF INSURED: ________________________________________ SIGNATURE OF
+                        INSURED: ______________________________
+                    </div>
+                    <div class="tableHeading"> INSURED Email ID: ___________________________________________ INSURED
+                        Mobile No: __________________________________</div>
+
+                </div>
+
+
+
+
+
+
+
+
+            </div>
+
+
+
+            <!-- *********Declaration by the patient/representative*********** -->
+
+            <div class="subHead"> Declaration by the patient/representative </div>
+
+            <div class="section">
+                <!-- row-  -->
+                <div class="row">
+                    <span class="list"> agree to allow the hospital to submit all original documents pertaining to
+                        hospitalization to the insurer after the discharge. I agree to sign on the final bill and
+                        the discharge summary before my discharge. Payment to hospital is governed by the terms and
+                        conditions of the policy. In case the insurer is not liable to settle
+                        the hospital bill, I undertake to settle the bill as per the terms and conditions of the policy.
+                        All non medical expenses and expenses not relevant to current
+                        hospitalization and the amounts over and above the limit authorized by the insurer not governed
+                        by the terms and conditions of the policy will be paid by me. In
+                        case any clarification is needed on admissibility of a particular item I shall contact insurer
+                        at the toll free no on the reverse of the form. I hereby declare to abide
+                        by the terms and conditions of the policy and it at any time the facts disclosed by me are found
+                        to be false or incorrect I forfeit my claim and agree to indemnify
+                        the insurer. I agree and understand that insurer is in no way warranting the services of the
+                        hospital and the insurer is in no way guaranteeing that the services
+                        provided by the hospital will be of a particular quality or standard. I hereby warrant the truth
+                        of the forgoing particulars in every respect and I agree that if I
+                        made or shall make any false or untrue statement, suppression or concealment, my right to claim
+                        reimbursement of the said expenses shall be absolutely
+                        forfeited. I further declare that, in respect of the above treatment, no benefits are admissible
+                        under any other medical scheme or insurance. I agree to indemnify
+                        the hospital against all expenses incurred on my behalf, which are not reimbursed by the
+                        insurer.</span>
+              
+                </div>
+
+                <div class="row">
+                    <span class="list"> Patient’s /Insured’s Name <span class="spanLine" style="width:170px">  <span class="data"> {{bunny.patient_details.Name|upper}}</span></span>
+                 Contact No:  <span class="spanLine" style="width:105px">  <span class="data"> {{bunny.patient_details.Phone|upper}}</span></span>Patient’s / Insured’s Signature _________________</span>
+
+                </div>
+
+            </div>
+      
+      
+            <div class="subHead"> Hospital Declaration </div>
+
+            <div class="section">
+                <!-- row-  -->
+                <div class="row">
+                    <span class="list"> We have no objection to any authorized insurance company official verifying documents pertaining to hospitalization. All valid original documents duly counter
+                        singed by the insured/patient as per the check list below will be sent to insurance company within 7 days of the patient’s discharge. All non medical expenses or
+                        expenses not relevant to hospitalization/illness, or expenses disallowed in the authorization letter of the insurance company, or arising out of incorrect
+                        information in the preauthorization form will be collected from the patient.
+                        WE AGREE THAT INSURANCE COMPANY WILL NOT BE LIABLE TO MAKE THE PAYMENT IN THE EVENT OF ANY DISCREPANCY BETWEEN THE FACTS IN THIS FORM
+                        AND DISCHARGE SUMMARY OR OTHER DOCUMENTS. The patient declaration has been signed by the patient or by his / her representative in our presence. We
+                        agree to provide clarification for the queries raised regarding this hospitalization and we take the sole responsibility for any delay in offering clarifications. We
+                        will abide by the terms and conditions agreed in the MOU.</span>
+              
+                </div>
+
+                <div class="row">
+                    <span class="list">Hospital Seal: </span>
+                    <span class="my-20"></span>
+                    <span class="my-20"></span>
+                    <span class="my-20"></span>
+                    <span class="my-20"></span>
+                    <span class="my-20"></span>
+                    <span class="my-20"></span>
+                    <span class="my-20"></span>
+                    <span class="my-20"></span>
+                    <span class="my-20"></span>
+                    <span class="list">Doctor’s Signature:                 </span>
+                </div>
+
+
+
+            </div>
+            <span class="my-4"></span>
+            <hr style="border-top: 2px  dotted rgb(0, 0, 0);" >
+
+
+            <div class="section">
+                <!-- row-  -->
+                <div class="row">
+                    <span class="list">Documents to be provided by the hospital in support of the claim</span>
+              
+
+                   <ol type="1">
+
+                    <li>Authorization Letter</li>
+                    <li>Original Detailed Discharge Summary</li>
+                    <li>Original Hospital Main Bill and Detailed Break Up</li>
+                    <li>All Original Pharmacy Bills and Investigation Bill if any</li>
+                    <li>All Investigation Reports & Prescriptions Including OT Notes</li>
+                    
+                   </ol>
+                </div>
+
+               
+
+                
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+            <span class="my-4"></span>
+            <hr size="2px" color="black">
+
+            <div class="foot">Future Generali India Insurance Company Limited <br>
+                Registered office address : Indiabulls Finance Centre, Tower 3, 6th Floor, Senapati Bapat Marg,
+                Elphinstone (W), Mumbai ‐ 400 013 <br>
+                Corporate Identity No (CIN ) : U66030MH2006PLC165287 Telephone No 022 4097 6666 and Fax No 22 4097 6900
+                <br>
+                Email : <a href="fgcare@futuregenerali.in">fgcare@futuregenerali.in</a> website address <a
+                    href="https://www.futuregenerali.in/Corporate/Index.aspx">www.futuregenerali.in</a>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+    </div>
+</div>
+
+<script>
+  
+
+  window.onload = function() {
+            document.getElementById("download")
+                .addEventListener("click", () => {
+                    const invoice = this.document.getElementById("invoice");
+                    console.log(invoice);
+                    console.log(window);
+                    var opt = {
+                        margin: 0,
+                        filename: 'Future_Generali.pdf',
+                        image: {
+                            type: 'jpeg',
+                            quality: 0.98
+                        },
+                        html2canvas: {
+                            scale: 4
+                        },
+                        jsPDF: {
+                            unit: 'in',
+                            format: 'letter',
+                            orientation: 'portrait'
+                        }
+                    };
+                    html2pdf().from(invoice).set(opt).save();
+                })
+        }
+</script>
+
+
+
+
+</body>
+
+</html>

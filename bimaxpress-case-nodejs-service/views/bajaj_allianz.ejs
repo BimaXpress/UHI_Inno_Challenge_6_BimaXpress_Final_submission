@@ -1,0 +1,1516 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>BAJAJ</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <style>
+        body {
+            background-color: #7a7977;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        html {
+            margin: 20px 320px 20px 340px;
+        }
+
+        .invoice {
+            width: 760px
+        }
+
+        .form-container {
+            background-color: white;
+            padding-left: 60px;
+            padding-right: 25px;
+            height: 1040px;
+            max-width: 720px;
+
+                 position: relative;
+			overflow: hidden;
+            background-color: white;
+            margin: 0px 200px;
+            padding-left: 60px;
+            padding-right: 25px;
+            height: 1040px;
+            max-width: 720px;
+            margin: auto;
+            padding-top: 34px;
+            padding-bottom: 24px;
+			margin: 0px 0px 0px 0px;
+			padding: 0px;
+			border: none;
+			width: 794px;
+			margin: auto;
+        }
+
+        #commonContainer {
+            font-family: helvatica;
+            margin: auto;
+            padding: 0px 0px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .firstHeading {
+            font-size: 13px;
+            font-weight: 700;
+        }
+
+        .secondHeading {
+            font-size: 11.5px;
+            font-weight: 500;
+        }
+
+        .thirdHeading {
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .fourthHeading {
+            font-size: 9px;
+            font-weight: 400;
+            letter-spacing: -0.3px;
+        }
+
+        .fiveHeading {
+            font-size: 11.5px;
+            font-weight: bolder;
+            color: grey;
+        }
+
+        .sixHeading {
+            font-size: 8px;
+            font-weight: 600;
+            color: black;
+        }
+
+        .subHeading {
+            font-size: 12.2px;
+            letter-spacing: -0.2px;
+            font-weight: 700;
+            color: #006cb5;
+        }
+
+        .subHeading1 {
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            color: white;
+            font-weight: 700;
+            padding: 1.8px;
+        }
+
+        .head-div {
+            background-color: #006cb5;
+            text-align: center;
+        }
+
+
+        .customPTag {
+            font-size: 12px;
+            font-weight: 350;
+            display: inline-block;
+            letter-spacing: -0.5px;
+        }
+
+        .spanBox {
+            font-size: 10px;
+            text-align: center;
+            display: inline-block;
+            border: 0.1px solid black;
+            border-top: none;
+            vertical-align: middle;
+            line-height: 17px;
+            width: 17px;
+            height: 17px;
+            margin-top: 0px;
+            margin-left: -4.15px;
+            overflow: hidden;
+                font-weight: bold;
+        }
+
+        .spanBox1 {
+            font-size: 8px;
+            text-align: center;
+            display: inline-block;
+            border: 1px solid #Cdc9c9;
+            vertical-align: middle;
+            line-height: 9px;
+            width: 12px;
+            height: 12px;
+            margin-top: 0;
+            margin-left: -4.35px;
+        }
+
+        .spanBox2 {
+            font-size: 8px;
+            text-align: center;
+            display: inline-block;
+            border: 1px solid #444;
+            vertical-align: middle;
+            line-height: 10px;
+            width: 6px;
+            height: 6px;
+            margin-top: 0px;
+            margin-left: -4.35px;
+        }
+
+        .spanBox4 {
+            font-size: 8px;
+            text-align: center;
+            display: inline-block;
+            border: 1px solid #444;
+            width: 20px;
+            height: 16px;
+            margin-top: -17px;
+            margin-left: -4.35px;
+        }
+
+        .spanLine {
+            font-size: 10px;
+             font-size: 9px;
+            text-align: center;
+            display: inline-block;
+            border-bottom: 1px solid #444;
+            line-height: 9px;
+            vertical-align: middle;
+            width: 10px;
+            height: 9px;
+            margin-top: 0px;
+            margin-left: -4.35px;
+                font-weight: bold;
+
+        }
+
+        .customTextBox {
+            display: inline-block;
+            border: 1px solid #444;
+            vertical-align: 11px;
+            line-height: 20px;
+            height: 20px;
+            width: 170px;
+            font-size: 12px;
+        }
+
+        .signatureBox {
+            display: inline-block;
+            border: 1px solid #444;
+            height: 20px;
+            width: 170px;
+        }
+
+        .customMargnBottom4 {
+            margin-bottom: -5px;
+        }
+
+        .customMargnBottom8 {
+            margin-bottom: -9px;
+        }
+
+        .customMargnBottom10 {
+            margin-bottom: -5px;
+        }
+
+        .customMargnBottom15 {
+            margin-bottom: -16px;
+        }
+
+        .nameTextHints {
+            font-size: 11px;
+            color: #909090;
+        }
+
+        .claimDocumentSubmittedCheckList {
+            font-size: 8px;
+            font-weight: 600;
+            vertical-align: 30px;
+            margin-left: 495px;
+            margin-top: 6px;
+            /*float: right;*/
+        }
+
+        .unique {
+            margin-top: -5px;
+        }
+
+        .heading {
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+
+        .vl {
+            border-left: 12px solid green;
+            height: 300px;
+        }
+
+        .colorbox {
+            text-align: center;
+            background-color: #c62b27;
+            color: white;
+            padding-top: 2px;
+            padding-bottom: 10px;
+            border: 4px solid #9c9998;
+            font-size: 14px;
+            letter-spacing: 1.3px;
+        }
+
+    </style>
+    <style type="text/css">
+        .tg {
+            border-collapse: collapse;
+            border-spacing: 0;
+
+        }
+
+        .tg td {
+            border-color: black;
+            border-style: solid;
+            border-width: 0.2px;
+            font-family: Arial, sans-serif;
+            font-size: 8px;
+            overflow: hidden;
+            padding: 2px 1px;
+            word-break: normal;
+            border-collapse: collapse;
+            text-align: center;
+
+        }
+
+        .tg th {
+            border-color: black;
+            border-style: solid;
+            border-width: 0.2px;
+            font-family: Arial, sans-serif;
+            font-size: 8px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 1px 1px;
+            word-break: normal;
+            border-collapse: collapse;
+
+
+        }
+
+        .tg .tg-c3ow {
+            border-color: inherit;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .tg .tg-0pky {
+            border-color: inherit;
+            text-align: center;
+            vertical-align: top;
+        }
+
+
+        .float-child {
+            width: 49.7%;
+            float: left;
+            height: 23px;
+        }
+
+        .border {
+            border: 1px solid black;
+        }
+
+    </style>
+    <script>
+        window.onload = function() {
+            console.log("it is executing");
+        };
+
+    </script>
+
+</head>
+
+<body>
+    <button id="download"> Download Form</button>
+
+    <div id="invoice">
+
+        <div class="form-container" style="margin-top: 10px">
+            <img src="/bajaj_allianz/logo.png" style="position: absolute;margin-top: -23px;margin-left: 500px" width="230px" height="135px">
+            <h1 class="firstHeading" style="padding-top: 30px">Bajaj Allianz General Insurance Company Limited.</h1>
+            <h4 class="fourthHeading" style="margin-top: -8px"><b>Regd. & Head Office :</b> Bajaj Allianz House, Airport Road, Yerawada, Pune 411 006</h4>
+            <h4 class="fourthHeading" style="margin-top: -11px">CIN: U66010PN2000PLC015329</h4>
+            <h4 class="fourthHeading" style="margin-top: -2px"><b>Health Administration Team :</b> : *A - Wing 2nd Floor, Bajaj Finserv Building, Behind Weikfield IT Park, Off Nagar Road, Viman Nagar | Pune - 411 014</h4>
+            <h4 class="fourthHeading" style="margin-top: -10px"><b>Phone No.:</b>020-30305858/ 1800-103-2529 Fax: 020-30512224/ 6/ 7 | <b> Email:</b> preauth@bajajallianz.co.in</h4>
+            <div class="head-div" style="margin-top: -8px;margin-left: -59px;margin-right: -44px;width: 112%;">
+                <p class="subHeading1" style="width: 100%;">CASHLESS FORM</p>
+            </div>
+            <h2 class="secondHeading" style="text-align: center;margin-top: -12px">PLEASE FAX/SCAN PAGE 1 AND 2 ONLY</h2>
+            <h2 class="secondHeading" style="text-align: center;margin-top: -10px">REQUEST FOR CASHLESS HOSPITALISATION FOR MEDICAL INSURANCE POLICY</h2>
+            <h4 class="subHeading" style="margin-top: -10px">DETAILS OF THE PROVIDER</h4>
+            <hr style="margin-top: -15.1px">
+            <div style="margin-top: -16px">
+                <p class="customPTag" style="margin-right: 3px">Hospital Name/nursing Home Name:</p>
+                  <span class="spanLine"></span>
+                <span class="spanLine"><%-hospitalDetailsName[0]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[1]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[2]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[3]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[4]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[5]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[6]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[7]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[8]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[9]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[10]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[11]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[12]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[13]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[14]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[15]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[16]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[17]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[18]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[19]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[20]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[21]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[22]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[23]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[24]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[25]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[26]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[27]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[28]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[29]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[30]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[31]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[32]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[33]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[34]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[35]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[36]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[37]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[38]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[39]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[40]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[41]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[42]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[43]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[44]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[45]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[46]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[47]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[48]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[49]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[50]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[51]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[52]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[53]%></span>
+          
+            </div>
+            <div style="margin-top: -14px;margin-left: 5px">
+                  <span class="spanLine"><%-hospitalDetailsName[54]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[55]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[56]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[57]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[58]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[59]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[60]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[61]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[62]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[63]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[64]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[65]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[66]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[67]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[68]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[69]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[70]%></span>
+                <span class="spanLine"><%-hospitalDetailsName[71]%></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+              
+            </div>
+            <div class="unique">
+                <p class="customPTag" style="margin-right: 3px">City Name:</p>
+                <span class="spanLine" style="width: 310px" ><%-hospitalDetailsCurrentAddressCity%></span>
+
+                <p class="customPTag" style="margin-right: 31.1px">Pin Code:</p>
+                
+               
+            
+            </div>
+            <div class="unique" style="margin-top: -15px">
+                <p class="customPTag" style="margin-right: 7px">State Name:</p>
+                <span class="spanLine" style="width: 300px" ><%-hospitalDetailsCurrentAddressState%></span>
+
+                <p class="customPTag" style="margin-right: 35.5px"> Hosp Id:</p>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+            </div>
+            <div class="unique" style="margin-top: -15px">
+                <p class="customPTag" style="margin-right: 6px">Landmark:</p>
+                <span class="spanLine" style="width: 310px" ><%-hospitalDetailsCurrentAddressLandmark%></span>
+
+                <p class="customPTag" style="margin-right: 32px">Rohini ID</p>
+                
+                <span class="spanBox"><%-hospitalDetailsRohiniId[0]%></span>
+                <span class="spanBox"><%-hospitalDetailsRohiniId[1]%></span>
+                <span class="spanBox"><%-hospitalDetailsRohiniId[2]%></span>
+                <span class="spanBox"><%-hospitalDetailsRohiniId[3]%></span>
+                <span class="spanBox"><%-hospitalDetailsRohiniId[4]%></span>
+                <span class="spanBox"><%-hospitalDetailsRohiniId[5]%></span>
+                <span class="spanBox"><%-hospitalDetailsRohiniId[6]%></span>
+                <span class="spanBox"><%-hospitalDetailsRohiniId[7]%></span>
+                <span class="spanBox"><%-hospitalDetailsRohiniId[8]%></span>
+                <span class="spanBox"><%-hospitalDetailsRohiniId[9]%></span>
+                <span class="spanBox"><%-hospitalDetailsRohiniId[10]%></span>
+                <span class="spanBox"><%-hospitalDetailsRohiniId[11]%></span>
+                <span class="spanBox"><%-hospitalDetailsRohiniId[12]%></span>
+                <span class="spanBox"><%-hospitalDetailsRohiniId[13]%></span>
+            </div>
+            <div class="unique" style="margin-top: -15px">
+                <p class="customPTag" style="margin-right: 6px">Hospital Contact No:</p>
+                 <span class="spanLine" style="width: 150px" ></span>
+
+                <p class="customPTag" style="margin-right: 7px">TPA desk No</p>
+                <span class="spanLine" style="width: 120px"></span>
+
+                <p class="customPTag" style="margin-right: 10px">Email id:</p>
+                <span class="spanLine" style="width: 200px"><%-hospitalDetailsEmail%></span>
+
+            </div>
+
+            <h4 class="subHeading" style="margin-top: 0px">TO BE FILLED BY THE INSURED/PATIENT</h4>
+            <hr style="margin-top: -13.5px">
+
+            <div style="margin-top: -16px">
+                <p class="customPTag" style="margin-right: 6.5px">a) Name of the Patient</p>
+                <span class="spanLine" style="width: 606px"><%-patientDetailsName%></span>
+
+
+            </div>
+            <div style="margin-top: -16px">
+
+                <p class="customPTag" style="margin-right: 4px">b) Current Address of lnsured patient:</p>
+                <span class="spanLine" style="width: 520px"><%-patientDetailsCurrentAddressBuildingNumber%>, <%-patientDetailsCurrentAddressArea%>,<%-patientDetailsCurrentAddressLandmark%>,<%-patientDetailsCurrentAddressCity%>,<%-patientDetailsCurrentAddressState%>,<%-patientDetailsCurrentAddressCountry%>,<%-patientDetailsCurrentAddressPinCode%></span>
+            </div>
+            <div style="margin-top: -10px">
+
+                <p class="customPTag" style="margin-right: 1px">c) Gender:</p>
+                <% if(patientDetailsGender.toUpperCase() === 'MALE'){ %>
+                <p class="customPTag" style="margin-right: 4px">Male</p>
+                <span class="spanBox"><img height="9px" src="/tick.png" width="9px"></span>
+                <p class="customPTag" style="margin-right: 4px;margin-left: 2px">Female</p>
+                <span class="spanBox"></span>
+                <%}else if(patientDetailsGender.toUpperCase() === 'FEMALE') {%>
+                <p class="customPTag" style="margin-right: 4px">Male</p>
+                <span class="spanBox"></span>
+                <p class="customPTag" style="margin-right: 4px;margin-left: 2px">Female</p>
+                <span class="spanBox"><img height="9px" src="/tick.png" width="9px"></span>
+                <% }else {%>
+                <p class="customPTag" style="margin-right: 4px">Male</p>
+                <span class="spanBox"><img height="9px" src="/tick.png" width="9px"></span>
+                <p class="customPTag" style="margin-right: 4px;margin-left: 2px">Female</p>
+                <span class="spanBox"></span>
+                <% } %>
+
+                <p class="customPTag" style="margin-right: 0px;margin-left: 8px">d) Age:</p>
+                <p class="customPTag" style="margin-right: 4px;margin-left: 0px">Years</p>
+                <%-patientDetailsAgeYear%>/<%-patientDetailsAgeMonth%>
+                <p class="customPTag" style="margin-right: 10px;margin-left: 24px">e) Date of birth:</p>
+
+               
+                <span class="spanBox"><%-patientDetailsAgeYear[0]%></span>
+                <span class="spanBox"><%-patientDetailsAgeYear[1]%></span>
+                <span class="spanBox" style="margin-left: 2px"><%-patientDetailsAgeYear[3]%></span>
+                <span class="spanBox"><%-patientDetailsAgeYear[4]%></span>
+                <span class="spanBox" style="margin-left: 2px"><%-patientDetailsAgeYear[6]%></span>
+                <span class="spanBox"><%-patientDetailsAgeYear[7]%></span>
+                <span class="spanBox"><%-patientDetailsAgeYear[8]%></span>
+                <span class="spanBox"><%-patientDetailsAgeYear[9]%></span>
+              
+ 
+             
+
+
+            </div>
+            <div style="margin-top: -16px">
+                <p class="customPTag" style="margin-right: 1px">f) Name of the Attendant:</p>
+                <span class="spanLine" style="width: 200px;"></span>
+                <p class="customPTag" style="margin-right: 0px;margin-left: 0px">g) Contact number, if any:</p>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+            </div>
+            <div style="margin-top: -16px">
+                <p class="customPTag" style="margin-right: 1px">h)Contact number:</p>
+                <span class="spanBox"><%-patientDetailsContactNumber[0]%></span>
+                <span class="spanBox"><%-patientDetailsContactNumber[1]%></span>
+                <span class="spanBox"><%-patientDetailsContactNumber[2]%></span>
+                <span class="spanBox"><%-patientDetailsContactNumber[3]%></span>
+                <span class="spanBox"><%-patientDetailsContactNumber[4]%></span>
+                <span class="spanBox"><%-patientDetailsContactNumber[5]%></span>
+                <span class="spanBox"><%-patientDetailsContactNumber[6]%></span>
+                <span class="spanBox"><%-patientDetailsContactNumber[7]%></span>
+                <span class="spanBox"><%-patientDetailsContactNumber[8]%></span>
+                <span class="spanBox"><%-patientDetailsContactNumber[9]%></span>
+                <p class="customPTag" style="margin-right: 5px;margin-left: 10px">i) Health_Id card ID number:</p>
+                <span class="spanBox"><%-patientDetailsHealthId[0]%></span>
+                <span class="spanBox"><%-patientDetailsHealthId[1]%></span>
+                <span class="spanBox"><%-patientDetailsHealthId[2]%></span>
+                <span class="spanBox"><%-patientDetailsHealthId[3]%></span>
+                <span class="spanBox"><%-patientDetailsHealthId[4]%></span>
+                <span class="spanBox"><%-patientDetailsHealthId[5]%></span>
+                <span class="spanBox"><%-patientDetailsHealthId[6]%></span>
+                <span class="spanBox"><%-patientDetailsHealthId[7]%></span>
+                <span class="spanBox"><%-patientDetailsHealthId[8]%></span>
+                <span class="spanBox"><%-patientDetailsHealthId[9]%></span>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+               
+            </div>
+            <div style="margin-top: -16px">
+                <p class="customPTag" style="margin-right: 1px">j) Occupation of Insured patient:</p>
+                <span class="spanLine" style="width: 130px;"><%-patientDetailsOccupation%></span>
+                <p class="customPTag" style="margin-right: 5px;margin-left: 2px">k) Policy number I Name of corporate:</p>
+                <span class="spanLine" style="width: 200px;"><%-patientDetailsAgeYear%></span>
+
+            </div>
+            <div style="margin-top: -16px">
+                <p class="customPTag" style="margin-right: 10px">l) Employee ID:</p>
+                <span class="spanBox"><%-patientDetailsEmployeeId[0]%></span>
+                <span class="spanBox"><%-patientDetailsEmployeeId[1]%></span>
+                <span class="spanBox"><%-patientDetailsEmployeeId[2]%></span>
+                <span class="spanBox"><%-patientDetailsEmployeeId[3]%></span>
+                <span class="spanBox"><%-patientDetailsEmployeeId[4]%></span>
+                <span class="spanBox"><%-patientDetailsEmployeeId[5]%></span>
+                <span class="spanBox"><%-patientDetailsEmployeeId[6]%></span>
+                <span class="spanBox"><%-patientDetailsEmployeeId[7]%></span>
+                <span class="spanBox"><%-patientDetailsEmployeeId[8]%></span>
+                <span class="spanBox"><%-patientDetailsEmployeeId[9]%></span>
+                <span class="spanBox"><%-patientDetailsEmployeeId[10]%></span>
+                <span class="spanBox"><%-patientDetailsEmployeeId[11]%></span>
+                <span class="spanBox"><%-patientDetailsEmployeeId[12]%></span>
+                <span class="spanBox"><%-patientDetailsEmployeeId[13]%></span>
+                <span class="spanBox"><%-patientDetailsEmployeeId[14]%></span>
+                <span class="spanBox"><%-patientDetailsEmployeeId[15]%></span>
+            </div>
+            <div style="margin-top: -16px">
+                <p class="customPTag" style="margin-right: 10px">m) Currently do you have any other Mediclaim / Health insurance:</p>
+                <% if(patientDetailsHealthInsuranceChecked){ %>
+           
+                <span class="spanBox">✔</span>
+                <p class="customPTag" style="margin-right: 10px">Yes</p>
+                <span class="spanBox"></span>
+                <p class="customPTag" style="margin-right: 10px">No</p>
+                <% }else {%>
+                <span class="spanBox"></span>
+                <p class="customPTag" style="margin-right: 10px">Yes</p>
+                <span class="spanBox">✔</span>
+                <p class="customPTag" style="margin-right: 10px">No</p>
+                <% } %>
+            </div>
+            <div style="margin-top: -16px">
+                <p class="customPTag" style="margin-right: 12px;margin-left: 15px">Company Name:</p>
+                <span class="spanLine" style="width:600px;"> <%-patientDetailsHealthInsuranceCompanyName%></span>
+            </div>
+            <div style="margin-top: -16px">
+                <p class="customPTag" style="margin-right: 8px;margin-left: 15px">Give details:</p>
+                <span class="spanLine" style="width:600px;"><%-patientDetailsHealthInsuranceDetails%></span>
+            </div>
+            <div style="margin-top: -16px">
+                <p class="customPTag" style="margin-right: 10px">n) Do you have a family physician:</p>
+                <% if(patientDetailsPhysicianChecked){ %>
+                <span class="spanBox">✔</span>
+                <p class="customPTag" style="margin-right: 10px">Yes</p>
+                <span class="spanBox"></span>
+                <p class="customPTag" style="margin-right: 11px">No</p>
+                <% }else {%>
+                <span class="spanBox"></span>
+                <p class="customPTag" style="margin-right: 10px">Yes</p>
+                <span class="spanBox">✔</span>
+                <p class="customPTag" style="margin-right: 11px">No</p>
+                <% } %>
+                <p class="customPTag" style="margin-right: 10px">o) Name of the family physician:</p>
+                <span class="spanLine" style="width: 200px;"> <%-patientDetailsPhysicianName%></span>
+            </div>
+            <div style="margin-top: -16px">
+                <p class="customPTag" style="margin-right: 10px">p) Contact number, if any:</p>
+                <span class="spanBox"><%-patientDetailsPhysicianContactNumber[0]%></span>
+                <span class="spanBox"><%-patientDetailsPhysicianContactNumber[1]%></span>
+                <span class="spanBox"><%-patientDetailsPhysicianContactNumber[2]%></span>
+                <span class="spanBox"><%-patientDetailsPhysicianContactNumber[3]%></span>
+                <span class="spanBox"><%-patientDetailsPhysicianContactNumber[4]%></span>
+                <span class="spanBox"><%-patientDetailsPhysicianContactNumber[5]%></span>
+                <span class="spanBox"><%-patientDetailsPhysicianContactNumber[6]%></span>
+                <span class="spanBox"><%-patientDetailsPhysicianContactNumber[7]%></span>
+                <span class="spanBox"><%-patientDetailsPhysicianContactNumber[8]%></span>
+                <span class="spanBox"><%-patientDetailsPhysicianContactNumber[9]%></span>
+
+            </div>
+            <div style="margin-top: -16px">
+                <p class="customPTag" style="margin-right: 10px">q) Insured E-mail id</p>
+                <span class="spanLine" style="width: 220px;">{{bunny.patient_details.Email|upper}}</span>
+                <p class="customPTag" style="margin-right: 0px"><b>(PLEASE COMPLETE DECLARATION ON THE REVERSE SIDE OF THIS FORM)</b></p>
+
+            </div>
+
+            <h4 class="subHeading" style="margin-top: -10px">TO BE FILLED BY THE TREATING DOCTOR / HOSPITAL</h4>
+            <hr style="margin-top: -13.5px">
+
+            <div style="margin-top: -16px">
+                <p class="customPTag" style="margin-right: 5px">a) Name of the treating doctor:</p>
+                <span class="spanLine" style="width: 240px;">  <%-hospitalDetailsDoctorDetailsName%></span>
+
+                <p class="customPTag" style="margin-right: 5px"> b) Contact number:</p>
+                <span class="spanLine" style="width: 70px;"> <%-patientDetailsContactNumber%></span>
+            
+            </div>
+            <div style="margin-top: -20px">
+                <p class="customPTag" style="margin-right: 12px">c) Nature of ILLNESS / Disease with presenting complaints</p>
+                <span class="spanLine" style="width: 400px;"> <%-patientDetailsNatureOfIllness%></span>
+            </div>
+            <div style="margin-top: -20px">
+                <p class="customPTag" style="margin-right: 16px">d) Relevant clinical findings:</p>
+                <span class="spanLine" style="width: 550px;"><%-patientDetailsReleventClinicChecked%></span>
+            </div>
+            <div style="margin-top: -20px">
+                <p class="customPTag" style="margin-right: 8px">e) Duration of the present ailment:</p>
+                <span class="spanBox"> <%-patientDetailsDurationOfPresentAilments[0]%></span>
+                <span class="spanBox"> <%-patientDetailsDurationOfPresentAilments[1]%></span>
+                <span class="spanBox"> <%-patientDetailsDurationOfPresentAilments[2]%></span>
+                <p class="customPTag" style="margin-right: 16px">Days</p>
+                <p class="customPTag" style="margin-right: 16px;margin-left: 10px">i. Date of first consultation:</p>
+                <span class="spanBox"><%-patientDetailsDateOfFirstConsultation[8]%></span>
+                <span class="spanBox"><%-patientDetailsDateOfFirstConsultation[9]%></span>
+                <span class="spanBox" style="margin-left: 5px"><%-patientDetailsDateOfFirstConsultation[5]%></span>
+                <span class="spanBox"><%-patientDetailsDateOfFirstConsultation[6]%></span>
+                <span class="spanBox" style="margin-left: 5px"><%-patientDetailsDateOfFirstConsultation[0]%></span>
+                <span class="spanBox"><%-patientDetailsDateOfFirstConsultation[1]%></span>
+                <span class="spanBox"><%-patientDetailsDateOfFirstConsultation[2]%></span>
+                <span class="spanBox"><%-patientDetailsDateOfFirstConsultation[3]%></span>
+            </div>
+            <div style="margin-top: -20px">
+                <p class="customPTag" style="margin-right: 3px;margin-left: 10px">i. Past history of present ailment if any:</p>
+                <span class="spanLine" style="width: 500px;"><%-patientDetailsPastHistoryOfPresentAilments%></span>
+            </div>
+            <div style="margin-top: -20px">
+                <p class="customPTag" style="margin-right: 8px">f) Provisional diagnosis</p>
+                <span class="spanLine" style="width: 300px;"><%-patientDetailsProvisionDiagnosis%></span>
+                <p class="customPTag" style="margin-right: 2px">i. ICD 10 Code:</p>
+                <span class="spanBox"> <%-patientDetailsContactNumberCountryCode[0]%></span>
+                <span class="spanBox"> <%-patientDetailsContactNumberCountryCode[1]%></span>
+                <span class="spanBox"> <%-patientDetailsContactNumberCountryCode[2]%></span>
+                <span class="spanBox"> <%-patientDetailsContactNumberCountryCode[3]%></span>
+                <span class="spanBox"> <%-patientDetailsContactNumberCountryCode[4]%></span>
+                <span class="spanBox"> <%-patientDetailsContactNumberCountryCode[5]%></span>
+                <span class="spanBox"> <%-patientDetailsContactNumberCountryCode[6]%></span>
+                <span class="spanBox"> <%-patientDetailsContactNumberCountryCode[7]%></span>
+                <span class="spanBox"> <%-patientDetailsContactNumberCountryCode[8]%></span>
+                <span class="spanBox"> <%-patientDetailsContactNumberCountryCode[9]%></span>
+            </div>
+           
+            <div style="margin-top: -20px">
+                <p class="customPTag" style="margin-right: 8px">g) Proposed line of treatment:</p>
+                <% if(patientDetailsProposedLineOfTreatment.includes('Medical Management')){ %>
+
+                <span class="spanBox" style="margin-left: 20px;">✔</span>
+                <span class="customPTag">Medical Management</span>
+                <% }else{ %>
+                <span class="spanBox" style="margin-left: 20px;"></span>
+                <span class="customPTag">Medical Management</span>
+                <% } %>
+                <% if(patientDetailsProposedLineOfTreatment.includes('Surgical Management')){ %>
+                <span class="spanBox" style="margin-left: 20px;">✔</span>
+                <span class="customPTag">Surgical Management</span>
+                <% }else{ %>
+                <span class="spanBox" style="margin-left: 20px;"></span>
+                <span class="customPTag">Surgical Management</span>
+                <% } %>
+                <% if(patientDetailsProposedLineOfTreatment.includes('Intensive Care')){ %>
+                <span class="spanBox" style="margin-left: 20px;">✔</span>
+                <span class="customPTag">Intensive care</span>
+                <% }else{ %>
+                <span class="spanBox" style="margin-left: 20px;"></span>
+                <span class="customPTag">Intensive care</span>
+                <% } %>
+                <% if(patientDetailsProposedLineOfTreatment.includes('Investigation')){ %>
+                <span class="spanBox" style="margin-left: 20px;">✔</span>
+                <span class="customPTag">Investigation</span>
+                <% }else{ %>
+                <span class="spanBox" style="margin-left: 20px;"></span>
+                <span class="customPTag">Investigation</span>
+                <% } %>
+                <br>
+                <% if(patientDetailsProposedLineOfTreatment.includes('Non Allopatic Treatment')){ %>
+                <span class="spanBox" style="margin-left: 150px; margin-top: -20px;">✔</span>
+                <span class="customPTag" style="margin-top: -40px !important;"> Non allopathic treatment</span>
+                <% }else{ %>
+                <span class="spanBox" style="margin-left: 150px;margin-top: -20px;"></span>
+                <span class="customPTag" style="margin-top: -20px;"> Non allopathic treatment</span>
+                <% } %>
+                
+            </div>
+            <div style="margin-top: -15px">
+                <p class="customPTag" style="margin-right: 4px">h) If Investigation & I or Medical Management provide details</p>
+                <span class="spanLine" style="width: 400px;">  <%-patientDetailsIfInvestigationOrMedicalManagement%></span>
+
+            </div>
+            <div style="margin-top: -20px">
+                <p class="customPTag" style="margin-right: 7.5px;margin-left: 12px">i) Route of drug administration:</p>
+                <span class="spanLine" style="width: 520px;"><%-patientDetailsRouteOfDrugAdministration%></span>
+
+            </div>
+            <div style="margin-top: -9.5px">
+                <span class="spanLine" style="margin-left: 12px"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                
+            
+
+            </div>
+            <div style="margin-top: -6px">
+                <p class="customPTag" style="margin-right: 7.5px">i) If Surgical, name of surgery</p>
+                <span class="spanLine" style="width: 250px;">    <%-patientDetailsSurgicalNameofSurgery%></span>
+                <p class="customPTag" style="margin-right: 7.5px">i. ICD 10 PCS Code:</p>
+                <span class="spanBox">  <%-patientDetailsIcdCode10Pcs[0]%></span>
+                <span class="spanBox">  <%-patientDetailsIcdCode10Pcs[1]%></span>
+                <span class="spanBox">  <%-patientDetailsIcdCode10Pcs[2]%></span>
+                <span class="spanBox">  <%-patientDetailsIcdCode10Pcs[3]%></span>
+                <span class="spanBox">  <%-patientDetailsIcdCode10Pcs[4]%></span>
+                <span class="spanBox">  <%-patientDetailsIcdCode10Pcs[5]%></span>
+                <span class="spanBox">  <%-patientDetailsIcdCode10Pcs[6]%></span>
+                <span class="spanBox">  <%-patientDetailsIcdCode10Pcs[7]%></span>
+                <span class="spanBox">  <%-patientDetailsIcdCode10Pcs[8]%></span>
+                <span class="spanBox">  <%-patientDetailsIcdCode10Pcs[9]%></span>
+
+            </div>
+            <div style="margin-top: -18px">
+                <p class="customPTag" style="margin-right: 7.5px">j) If other treatments provide details</p>
+                <span class="spanLine" style="width: 520px;"><%-patientDetailsIfOtherTreatment%></span>
+
+            </div>
+            <div style="margin-top: -20px">
+                <p class="customPTag" style="margin-right: 7.5px">k) How did injury occur:</p>
+                <span class="spanLine" style="width: 580px;"><%-patientDetailsReleventClinicInjuryOccur%></span>
+            </div>
+            <div style="margin-top: -20px">
+                <p class="customPTag" style="margin-right: 7.5px">I) In case of accident:</p>
+                <p class="customPTag" style="margin-right: 7.5px">i. Is it RTA:</p>
+                <% if(patientDetailsReleventClinicAccidentInCaseOfAccidentChecked){ %>
+                <span class="spanBox">✔</span>
+                <p class="customPTag" style="margin-right: 7.5px">Yes</p>
+                <span class="spanBox"></span>
+                <p class="customPTag" style="margin-right: 7.5px">No</p>
+             
+                <% }else {%>
+                <span class="spanBox"></span>
+                <p class="customPTag" style="margin-right: 7.5px">Yes</p>
+                <span class="spanBox">✔</span>
+                <p class="customPTag" style="margin-right: 7.5px">No</p>
+                <% } %>
+                <p class="customPTag" style="margin-right: 7.5px;margin-left: 80px">ii. Date of injury:</p>
+                <span class="spanBox">   <%-patientDetailsReleventClinicAccidentInCaseOfAccidentDateOfInjury[8]%></span>
+                <span class="spanBox">   <%-patientDetailsReleventClinicAccidentInCaseOfAccidentDateOfInjury[9]%></span>
+                <span class="spanBox" style="margin-left: 5px">   <%-patientDetailsReleventClinicAccidentInCaseOfAccidentDateOfInjury[5]%></span>
+                <span class="spanBox">   <%-patientDetailsReleventClinicAccidentInCaseOfAccidentDateOfInjury[6]%></span>
+                <span class="spanBox" style="margin-left: 5px">   <%-patientDetailsReleventClinicAccidentInCaseOfAccidentDateOfInjury[0]%></span>
+                <span class="spanBox">   <%-patientDetailsReleventClinicAccidentInCaseOfAccidentDateOfInjury[1]%></span>
+                <span class="spanBox">   <%-patientDetailsReleventClinicAccidentInCaseOfAccidentDateOfInjury[2]%></span>
+                <span class="spanBox">   <%-patientDetailsReleventClinicAccidentInCaseOfAccidentDateOfInjury[3]%></span>
+            </div>
+            <div style="margin-top: -18px">
+                <p class="customPTag" style="margin-right: 12px;margin-left: 12px">iii. Reported to Police:</p>
+                <% if(patientDetailsReleventClinicAccidentInCaseOfAccidentReportedToPoliceChecked){ %>
+                <span class="spanBox"><img height="9px" src="/tick.png" width="9px"></span>
+                <p class="customPTag" style="margin-right: 7.5px">Yes</p>
+                <span class="spanBox"></span>
+                <p class="customPTag" style="margin-right: 7.5px">No</p>
+               
+                <% }else{ %> 
+                <span class="spanBox"></span>
+                <p class="customPTag" style="margin-right: 7.5px">Yes</p>
+                <span class="spanBox"></span>
+                <p class="customPTag" style="margin-right: 7.5px">No</p>
+                <% } %>
+                <p class="customPTag" style="margin-right: 32px;margin-left: 134px">iv. FIR No .</p>
+                <span class="spanBox"><%-patientDetailsReleventClinicAccidentInCaseOfAccidentReportedToPoliceFirNumber[0]%></span>
+                <span class="spanBox"><%-patientDetailsReleventClinicAccidentInCaseOfAccidentReportedToPoliceFirNumber[1]%></span>
+                <span class="spanBox" style="margin-left: 5px"><%-patientDetailsReleventClinicAccidentInCaseOfAccidentReportedToPoliceFirNumber[2]%></span>
+                <span class="spanBox"><%-patientDetailsReleventClinicAccidentInCaseOfAccidentReportedToPoliceFirNumber[3]%></span>
+                <span class="spanBox" style="margin-left: 5px"><%-patientDetailsReleventClinicAccidentInCaseOfAccidentReportedToPoliceFirNumber[4]%></span>
+                <span class="spanBox"><%-patientDetailsReleventClinicAccidentInCaseOfAccidentReportedToPoliceFirNumber[4]%></span>
+                <span class="spanBox"><%-patientDetailsReleventClinicAccidentInCaseOfAccidentReportedToPoliceFirNumber[5]%></span>
+                <span class="spanBox"><%-patientDetailsReleventClinicAccidentInCaseOfAccidentReportedToPoliceFirNumber[6]%></span>
+            </div>
+            <div style="margin-top: -18px">
+                <p class="customPTag" style="margin-right: 10px;margin-left: 12px">v. Injury/Disease caused due to substance abuse/alcohol consumption:</p>
+                <% if(patientDetailsReleventClinicAccidentAlcoholConsumption){ %>   
+                <span class="spanBox"><img height="9px" src="/tick.png" width="9px"></span>
+                <p class="customPTag" style="margin-right: 7.5px">Yes</p>
+                <span class="spanBox"></span>
+                <p class="customPTag" style="margin-right: 7.5px">No</p>
+                <% }else {%>
+                <span class="spanBox"></span>
+                <p class="customPTag" style="margin-right: 7.5px">Yes</p>
+                <span class="spanBox"><img height="9px" src="/tick.png" width="9px"></span>
+                <p class="customPTag" style="margin-right: 7.5px">No</p>
+                <% } %>
+            </div>
+            <div style="margin-top: -18px">
+                <p class="customPTag" style="margin-right: 10px;margin-left: 12px">vi. Test conducted to establish this :</p>
+                <% if(patientDetailsReleventClinicAccidentTestConducted){ %>     
+                <span class="spanBox"><img height="9px" src="/tick.png" width="9px"></span>
+                <p class="customPTag" style="margin-right: 7.5px">Yes</p>
+                <span class="spanBox"></span>
+                <p class="customPTag" style="margin-right: 7.5px">No</p>
+                <% }else {%>
+                <span class="spanBox"></span>
+                <p class="customPTag" style="margin-right: 7.5px">Yes</p>
+                <span class="spanBox"><img height="9px" src="/tick.png" width="9px"></span>
+                <p class="customPTag" style="margin-right: 7.5px">No</p>
+                <% } %>
+                <p class="customPTag" style="margin-right: 10px;margin-left: 12px">(If Yes attach reports)</p>
+            </div>
+            <div style="margin-top: -20px">
+                <p class="customPTag" style="margin-right: 1px">I) In case of Maternity:</p>
+                <% if(patientDetailsReleventClinicMaternityMaternity.includes('G')){ %>
+                <p class="customPTag" style="margin-right: 4px">G</p>
+                <span class="spanBox"><img height="9px" src="/tick.png" width="9px"></span>
+                <%}else{%>
+                <p class="customPTag" style="margin-right: 4px">G</p>
+                <span class="spanBox"></span>
+                <% } %>
+
+               
+                <% if(patientDetailsReleventClinicMaternityMaternity.includes('P')){ %>
+                <span class="spanBox"><img height="9px" src="/tick.png" width="9px"></span>
+                <%}else{%>
+                <p class="customPTag" style="margin-right: 4px">P</p>
+                <span class="spanBox"></span>
+                <% } %>
+
+                <% if(patientDetailsReleventClinicMaternityMaternity.includes('L')){ %>
+                <p class="customPTag" style="margin-right: 4px">L</p>
+                <span class="spanBox"><img height="9px" src="/tick.png" width="9px"></span>
+                <%}else{%>
+                <p class="customPTag" style="margin-right: 4px">L</p>
+                <span class="spanBox"></span>
+                <% } %>
+
+                <% if(patientDetailsReleventClinicMaternityMaternity.includes('A')){ %>
+                <p class="customPTag" style="margin-right: 4px">A</p>
+                <span class="spanBox"><img height="9px" src="/tick.png" width="9px"></span>
+                <%}else{%>
+                <p class="customPTag" style="margin-right: 4px">A</p>
+                <span class="spanBox"></span>
+                <% } %>
+
+
+                <p class="customPTag" style="margin-right: 0px;margin-left: 2px">Expected date of Delivery:</p>
+                <span class="spanBox"> <%-patientDetailsReleventClinicMaternityExpectedDateOfDelivery[8]%></span>
+                <span class="spanBox"> <%-patientDetailsReleventClinicMaternityExpectedDateOfDelivery[9]%></span>
+                <span class="spanBox" style="margin-left: 3px"> <%-patientDetailsReleventClinicMaternityExpectedDateOfDelivery[5]%></span>
+                <span class="spanBox"> <%-patientDetailsReleventClinicMaternityExpectedDateOfDelivery[6]%></span>
+                <span class="spanBox" style="margin-left: 3px"> <%-patientDetailsReleventClinicMaternityExpectedDateOfDelivery[0]%></span>
+                <span class="spanBox"> <%-patientDetailsReleventClinicMaternityExpectedDateOfDelivery[0]%></span>
+                <span class="spanBox"> <%-patientDetailsReleventClinicMaternityExpectedDateOfDelivery[1]%></span>
+                <span class="spanBox"> <%-patientDetailsReleventClinicMaternityExpectedDateOfDelivery[2]%></span>
+                <p class="customPTag" style="margin-right: 0px;margin-left: 2px">LMP:</p>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+                <span class="spanBox" style="margin-left: 3px"></span>
+                <span class="spanBox"></span>
+                <span class="spanBox" style="margin-left: 3px"></span>
+                <span class="spanBox"></span>
+                <span class="spanBox"></span>
+            </div>
+
+        </div>
+     <!---------------------------------End of first page---------------------------> 
+
+        <div class="form-container" style="margin-top: 10px">
+            <div class="float-child" style="padding-top: 20px;width: 60%">
+                <h4 class="subHeading" style="margin-top: 0px">Details of the patient admitted</h4>
+                <div style="margin-top: -6px">
+                    <p class="customPTag" style="margin-right: 5px">a) Date of admission:</p>
+                    <span class="spanBox"><%-hospitalDetailsDateOfAdmission[8]%></span>
+                    <span class="spanBox"><%-hospitalDetailsDateOfAdmission[9]%></span>
+                    <span class="spanBox" style="margin-left: 3px"><%-hospitalDetailsDateOfAdmission[5]%></span>
+                    <span class="spanBox"><%-hospitalDetailsDateOfAdmission[6]%></span>
+                    <span class="spanBox" style="margin-left: 3px"><%-hospitalDetailsDateOfAdmission[0]%></span>
+                    <span class="spanBox"><%-hospitalDetailsDateOfAdmission[0]%></span>
+                    <span class="spanBox"><%-hospitalDetailsDateOfAdmission[1]%></span>
+                    <span class="spanBox"><%-hospitalDetailsDateOfAdmission[2]%></span>
+                    <p class="customPTag" style="margin-right: 5px;margin-left: 20px">b) Time:</p>
+                    <% if(hospitalDetailsTimeOfAdmission == ':'){ %>
+        
+                    <span class="spanBox"></span>
+                    <span class="spanBox"><%-hospitalDetailsTimeOfAdmission[0]%></span>
+                    <span class="spanBox" style="margin-left: 5px"><%-hospitalDetailsTimeOfAdmission[2]%></span>
+                    <span class="spanBox"><%-hospitalDetailsTimeOfAdmission[3]%></span>
+                    <%}else{%>
+                    <span class="spanBox"><%-hospitalDetailsTimeOfAdmission[0]%></span>
+                    <span class="spanBox"><%-hospitalDetailsTimeOfAdmission[1]%></span>
+                    <span class="spanBox" style="margin-left: 5px"><%-hospitalDetailsTimeOfAdmission[3]%></span>
+                    <span class="spanBox"><%-hospitalDetailsTimeOfAdmission[4]%></span>
+
+                    <% } %>
+                </div>
+                <div style="margin-top: -16px">
+                    <p class="customPTag" style="margin-right: 5px">c) Is this an emergency/a planned hospitalization event?:</p>
+                    <% if(hospitalDetailsEmergencyOrPlannedEvent.toUpperCase() === "EMERGENCY"){ %>
+                    <span class="spanBox"><img height="9px" src="/tick.png" width="9px"></span>
+                    <p class="customPTag" style="margin-right: 5px">Emergency</p>
+                    <span class="spanBox"></span>
+                    <p class="customPTag" style="margin-right: 5px">Planned</p>
+                   
+                    <%}else{%>
+                    <span class="spanBox"></span>
+                    <p class="customPTag" style="margin-right: 5px">Emergency</p>
+                    <span class="spanBox">✔</span>
+                    <p class="customPTag" style="margin-right: 5px">Planned</p>
+                    <% } %>
+                </div>
+                <div style="margin-top: -16px">
+                    <p class="customPTag" style="margin-right: 5px">d) Expected no. of days stay in hospital:</p>
+                    <span class="spanBox"><%-hospitalDetailsDaysInHospital[0]%></span>
+                    <span class="spanBox"><%-hospitalDetailsDaysInHospital[1]%></span>
+                    <span class="spanBox"><%-hospitalDetailsDaysInHospital[2]%></span>
+                    <p class="customPTag" style="margin-right: 5px">Days</p>
+                    <p class="customPTag" style="margin-right: 5px;margin-left: 15px">e) Room Type </p>
+                    <br>
+                    <span class="spanBox" style="width: 204px;border-top: 0.1px solid black; margin-left:228px; margin-top:-7px;"><%-hospitalDetailsRoomType%></span>
+                </div>
+                <div style="margin-top: -16px">
+                    <p class="customPTag" style="margin-right: 10px">f) Expected no.of days in ICU</p>
+                    <span class="spanBox">    <%-hospitalDetailsDaysInICU[0]%></span>
+                    <span class="spanBox">    <%-hospitalDetailsDaysInICU[1]%></span>
+                    <span class="spanBox">    <%-hospitalDetailsDaysInICU[2]%></span>
+                    <p class="customPTag" style="margin-right: 5px">Days</p>
+                </div>
+                <div style="margin-top: -16px">
+                    <p class="customPTag" style="margin-right: 10px">g) Per Day Room Rent + Nursing &</p>
+                </div>
+                <div style="margin-top: -16px">
+                    <p class="customPTag" style="margin-right: 115px;margin-left: 12px">Service Charges + Patient's Diet:</p>
+                    <p class="customPTag" style="margin-right: 2px">Rs.</p>
+                    <span class="spanBox" style="width: 90px" ><%-hospitalDetailsChargeListPerDayRoomRent%></span>
+                    
+
+                </div>
+                <div style="margin-top: -16px">
+                    <p class="customPTag" style="margin-right: 50px;margin-left: 0px">h) Expected cost for investigation + diagnostics.:</p>
+                    <p class="customPTag" style="margin-right: 2px">Rs.</p>
+                    <span class="spanBox" style="width: 90px" ><%-hospitalDetailsChargeListCostOfInvestigation%></span>
+                   
+                </div>
+                <div style="margin-top: -16px">
+                    <p class="customPTag" style="margin-right: 208px;margin-left: 0px">i) ICU Charges:</p>
+                    <p class="customPTag" style="margin-right: 2px">Rs.</p>
+                    <span class="spanBox" style="width: 90px" ><%-hospitalDetailsChargeListIcuCharges%></span>
+                    
+
+                </div>
+                <div style="margin-top: -16px">
+                    <p class="customPTag" style="margin-right: 212px;margin-left: 0px">j) OT Charges:</p>
+                    <p class="customPTag" style="margin-right: 2px">Rs.</p>
+                   
+                    <span class="spanBox" style="width: 90px" > <%-hospitalDetailsChargeListOtCharges%></span>
+
+                </div>
+                <div style="margin-top: -16px">
+                    <p class="customPTag" style="margin-right: 43px;margin-left: 0px;vertical-align: -13px">k) Professional fees Surgeon + Anesthetist Fees +<br> consultation Charges </p>
+                    <p class="customPTag" style="margin-right: 2px">Rs.</p>
+                    <span class="spanBox" style="width: 90px" ><%-hospitalDetailsChargeListProfessionalFeesSurgeon%></span>
+
+                </div> 
+                <div style="margin-top: -16px">
+                    <p class="customPTag" style="margin-right: 53px;margin-left: 0px;vertical-align: -13px">l) Medicines + Consumables + Cost of Implants<br> specify) </p>
+                    <p class="customPTag" style="margin-right: 2px">Rs.</p>
+                    <span class="spanBox" style="width: 90px" ><%- hospitalDetailsChargeListConsumables + hospitalDetailsChargeListCostOfImplant %></span>
+                   
+
+                </div>
+                <div style="margin-top: -16px">
+                    <p class="customPTag" style="margin-right: 122px;margin-left: 12px">Other hospital expenses if any:</p>
+                    <p class="customPTag" style="margin-right: 2px">Rs.</p>
+                    <span class="spanBox" style="width: 90px" ><%-hospitalDetailsChargeListOtherHospitalIfAny%></span>
+                    
+                    
+                 
+                </div>
+                <div style="margin-top: -16px">
+                    <p class="customPTag" style="margin-right: 45px;margin-left: 0px">m) All inclusive package charges if any applicable</p>
+                    <p class="customPTag" style="margin-right: 2px">Rs.</p>
+                    <span class="spanBox" style="width: 90px" ><%-hospitalDetailsChargeListAllIncludingPackage%></span>
+                    
+                </div>
+                <div style="margin-top: -16px">
+                    <p class="customPTag" style="margin-right: 65px;margin-left: 0px">n) Sum Total expected cost of hospitalization</p>
+                    <p class="customPTag" style="margin-right: 2px">Rs.</p>
+                    <span class="spanBox" style="width: 90px" ><%-hospitalDetailsTotal%></span>
+           
+
+                </div>
+            </div>
+
+            <div class="float-child" style="padding-top: 20px;width: 40%">
+                <h4 class="subHeading" style="margin-top: 0px;margin-left: 5px">Mandatory: Past History of any <br> chronic illness (If yes, since (month / year)</h4>
+              
+                <div style="margin-top: -16px;margin-left: 10px">
+                    <span class="spanBox"></span>
+
+                    <p class="customPTag" style="margin-right: 120px;margin-left: 0px">Diabetes</p>
+                    <span class="spanBox"> <%-hospitalDetailsAnyPastHistoryDiabetesMonth[0]%></span>
+                    <span class="spanBox"> <%-hospitalDetailsAnyPastHistoryDiabetesMonth[1]%></span>
+                    <span class="spanBox" style="margin-left: 5px"><%-hospitalDetailsAnyPastHistoryDiabetesYear[2]%></span>
+                    <span class="spanBox"><%-hospitalDetailsAnyPastHistoryDiabetesYear[3]%></span>
+                </div>
+
+           
+              
+
+
+
+                   
+                <div style="margin-top: -16px;margin-left: 10px">
+                    
+                    <div style="margin-top: -16px;margin-left: 10px">
+                        <span class="spanBox"></span>
+    
+                        <p class="customPTag" style="margin-right: 95px;margin-left: 0px">Heart Disease</p>
+                        <span class="spanBox"><%-hospitalDetailsAnyPastHistoryHeartDiseaseMonth[0]%></span>
+                        <span class="spanBox"><%-hospitalDetailsAnyPastHistoryHeartDiseaseMonth[1]%></span>
+                        <span class="spanBox" style="margin-left: 5px"><%-hospitalDetailsAnyPastHistoryHeartDiseaseYear[2]%></span>
+                        <span class="spanBox"><%-hospitalDetailsAnyPastHistoryHeartDiseaseYear[3]%></span>
+                    </div>
+                    
+         
+
+                </div>
+
+
+                <div style="margin-top: -16px;margin-left: 10px">  
+                    <div style="margin-top: -16px;margin-left: 10px">
+                        <span class="spanBox"></span>
+                        <p class="customPTag" style="margin-right: 95px;margin-left: 0px">Hypertension</p>
+                        <span class="spanBox"><%-hospitalDetailsAnyPastHistoryHypertensionMonth[0]%></span>
+                        <span class="spanBox"><%-hospitalDetailsAnyPastHistoryHypertensionMonth[1]%></span>
+                        <span class="spanBox" style="margin-left: 5px"><%-hospitalDetailsAnyPastHistoryHypertensionYear[2]%></span>
+                        <span class="spanBox"><%-hospitalDetailsAnyPastHistoryHypertensionYear[3]%></span>
+                    </div>
+                </div>
+
+                <div style="margin-top: -16px;margin-left: 10px">  
+                    <div style="margin-top: -16px;margin-left: 10px">
+                        <span class="spanBox"></span>
+                        <p class="customPTag" style="margin-right: 95px;margin-left: 0px">Hyperlipidemias</p>
+                        <span class="spanBox"><%-hospitalDetailsAnyPastHistoryHyperlipidemiasMonth[0]%></span>
+                        <span class="spanBox"><%-hospitalDetailsAnyPastHistoryHyperlipidemiasMonth[1]%></span>
+                        <span class="spanBox" style="margin-left: -5px"><%-hospitalDetailsAnyPastHistoryHyperlipidemiasYear[2]%></span>
+                        <span class="spanBox"><%-hospitalDetailsAnyPastHistoryHyperlipidemiasYear[3]%></span>
+                    </div>
+                </div>
+
+                <div style="margin-top: -16px;margin-left: 10px">  
+                    <div style="margin-top: -16px;margin-left: 10px">
+                        <span class="spanBox"></span>
+                        <p class="customPTag" style="margin-right: 95px;margin-left: 0px">Osteoarthritis</p>
+                        <span class="spanBox"><%-hospitalDetailsAnyPastHistoryOsteoarthritisMonth[0]%></span>
+                        <span class="spanBox"><%-hospitalDetailsAnyPastHistoryOsteoarthritisMonth[1]%></span>
+                        <span class="spanBox" style="margin-left: 5px"><%-hospitalDetailsAnyPastHistoryOsteoarthritisYear[2]%></span>
+                        <span class="spanBox"><%-hospitalDetailsAnyPastHistoryOsteoarthritisYear[3]%></span>
+                    </div>
+                </div>
+
+
+                <div style="margin-top: -16px;margin-left: -5px">  
+                    <div style="margin-top: -16px;margin-left: 10px">
+                        <span class="spanBox"></span>
+                        <p class="customPTag" style="margin-right: 95px;margin-left: 0px">Asthma/COPD/Bronchitis</p>
+                        <span class="spanBox"><%-hospitalDetailsAnyPastHistoryAsthmaCOPDBronchitisMonth[0]%></span>
+                        <span class="spanBox"><%-hospitalDetailsAnyPastHistoryAsthmaCOPDBronchitisMonth[1]%></span>
+                        <span class="spanBox" style="margin-left:-95px"><%-hospitalDetailsAnyPastHistoryAsthmaCOPDBronchitisYear[2]%></span>
+                        <span class="spanBox"><%-hospitalDetailsAnyPastHistoryAsthmaCOPDBronchitisYear[3]%></span>
+                    </div>
+                </div>
+
+                <div style="margin-top: -16px;margin-left: 10px">  
+                    <div style="margin-top: -16px;margin-left: 10px">
+                        <span class="spanBox"></span>
+                        <p class="customPTag" style="margin-right: 95px;margin-left: 0px">Cancer</p>
+                        <span class="spanBox"><%-hospitalDetailsAnyPastHistoryCancerMonth[0]%></span>
+                        <span class="spanBox"><%-hospitalDetailsAnyPastHistoryCancerMonth[1]%></span>
+                        <span class="spanBox" style="margin-left: 5px"><%-hospitalDetailsAnyPastHistoryCancerYear[2]%></span>
+                        <span class="spanBox"><%-hospitalDetailsAnyPastHistoryCancerYear[3]%></span>
+                    </div>
+                </div>
+
+                <div style="margin-top: -16px;margin-left: -5px">  
+                    <div style="margin-top: -16px;margin-left: 10px">
+                        <span class="spanBox"></span>
+                        <p class="customPTag" style="margin-right: 95px;margin-left: 0px">Alcohol/Drug abuse</p>
+                        <span class="spanBox"><%-hospitalDetailsAnyPastHistoryAlcoholDragAbuseMonth[0]%></span>
+                        <span class="spanBox"><%-hospitalDetailsAnyPastHistoryAlcoholDragAbuseMonth[1]%></span>
+                        <span class="spanBox" style="margin-left: -85px"><%-hospitalDetailsAnyPastHistoryAlcoholDragAbuseYear[2]%></span>
+                        <span class="spanBox"><%-hospitalDetailsAnyPastHistoryAlcoholDragAbuseYear[3]%></span>
+                    </div>
+                </div>
+
+                <div style="margin-top: -16px;margin-left: 10px">  
+                    <div style="margin-top: -16px;margin-left: 10px">
+                        <span class="spanBox"></span>
+                        <p class="customPTag" style="margin-right: 95px;margin-left: 0px"> Any HIV/or STD Related ailment</p>
+                        <span class="spanBox"><%-hospitalDetailsAnyPastHistoryAnyHIVOrAilmentsMonth[0]%></span>
+                        <span class="spanBox"><%-hospitalDetailsAnyPastHistoryAnyHIVOrAilmentsMonth[1]%></span>
+                        <span class="spanBox" style="margin-left: 5px"><%-hospitalDetailsAnyPastHistoryAnyHIVOrAilmentsYear[2]%></span>
+                        <span class="spanBox"><%-hospitalDetailsAnyPastHistoryAnyHIVOrAilmentsYear[3]%></span>
+                    </div>
+                </div>
+
+                
+                  <br>
+
+             
+                <div style="margin-top: -16px;margin-left: 10px">
+                    <p class="customPTag" style="margin-right: 5px;margin-left: 19px"> Any other ailment, give details</p>
+                    <span class="spanLine" style="width: 100%;">   <%-hospitalDetailsAnyPastHistoryAnyOtherAilments%></span>
+                   
+  
+                </div>
+                <div style="margin-top: -16px;margin-left: 10px">
+                    <p class="customPTag" style="margin-right: 5px;margin-left: 100px;margin-top: 90px"><b>(PLEASE READ VERY CAREFULLY)</b></p>
+                </div>
+            </div>
+            <div style="padding-top: 420px">
+                <p class="subHeading" style="color: black">DECLARATION</p>
+                <p class="customPTag" style="margin-right: 5px;margin-left: 0px;margin-top: -10px">We confirm having read understood and agreed to the Declarations on the reverse of this form</p>
+                <div style="margin-top: 5px">
+                    <p class="customPTag" style="margin-right: 5px;margin-left: 0px;margin-top: -10px">a) Name of the treating doctor</p>
+                    <span class="spanLine" style="width: 550px;"> <%-hospitalDetailsDoctorDetailsName%></span>
+                </div>
+                <div style="margin-top: -12px">
+                    <p class="customPTag" style="margin-right: 5px;margin-left: 0px">b) Qualification:</p>
+                    <span class="spanLine" style="width: 200px;"><%-hospitalDetailsDoctorDetailsQualification%></span>
+
+                    <p class="customPTag" style="margin-right: 25px;margin-left: 0px">c) Registration No. with State Code: </p>
+                    <span class="spanBox"><%-hospitalDetailsDoctorDetailsRegistrationNo[0]%></span>
+                    <span class="spanBox"><%-hospitalDetailsDoctorDetailsRegistrationNo[1]%></span>
+                    <span class="spanBox"><%-hospitalDetailsDoctorDetailsRegistrationNo[2]%></span>
+                    <span class="spanBox"><%-hospitalDetailsDoctorDetailsRegistrationNo[3]%></span>
+                    <span class="spanBox"><%-hospitalDetailsDoctorDetailsRegistrationNo[4]%></span>
+                    <span class="spanBox"><%-hospitalDetailsDoctorDetailsRegistrationNo[5]%></span>
+                    <span class="spanBox"><%-hospitalDetailsDoctorDetailsRegistrationNo[6]%></span>
+                    <span class="spanBox"><%-hospitalDetailsDoctorDetailsRegistrationNo[7]%></span>
+                    <span class="spanBox"><%-hospitalDetailsDoctorDetailsRegistrationNo[8]%></span>
+                    <span class="spanBox"><%-hospitalDetailsDoctorDetailsRegistrationNo[9]%></span>
+                    <span class="spanBox"><%-hospitalDetailsDoctorDetailsRegistrationNo[10]%>}</span>
+                    
+                </div>
+            </div>
+
+            <div style="margin-top: 5px">
+                <span class="spanBox2" style="width: 250px;height: 70px;margin-left: 20px"></span>
+                <span class="spanBox2" style="width: 250px;height: 70px;margin-left: 175px"></span>
+            </div>
+            <div style="margin-top: 0px">
+                <p class="customPTag" style="margin-right: 25px;margin-left: 40px">Hospital Seal (Must include Hospital ID)</p>
+                <p class="customPTag" style="margin-right: 25px;margin-left: 240px">Patient Insured Name & Signature</p>
+            </div>
+        </div>
+
+       
+        <div class="form-container" style="margin-top: 10px">
+            <p class="subHeading" style="color: black;text-align: center;padding-top: 30px">PAGE 3: NOT TO BE FAXED/SCANNED</p>
+            <div style="margin-top: 0px">
+                <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: 0px">DECLARATION BY THE PATIENT / REPRESENTATIVE</p>
+                <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: -8px">A. I agree to allow the hospital to submit all original documents pertaining to hospitalization to the Bajaj Allianz General Insurance Company
+                    Limited after the discharge. I agree to sign on the Final Bill & the Discharge Summary, before my discharge.</p>
+                <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: -8px">B. Payment to hospital is governed by the terms and conditions of the policy. In case the Bajaj Allianz General Insurance Company Limited is not
+                    liable to settle the hospital bill, I undertake to settle the bill as per the terms and conditions of the policy.</p>
+                <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: -8px">C. All non-medical expenses and expenses not relevant to current hospitalization and the amounts over & above the limit authorized by
+                    the Bajaj Allianz General Insurance Company Limited not governed by the terms and conditions of the policy will be paid by me </p>
+                <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: -8px">D . I hereby declare to abide by the terms and conditions of the policy and if at any time the facts disclosed by me are found to be false or incorrect
+                    I forfeit my claim and agree to indemnify the Bajaj Allianz General Insurance Company Limited</p>
+                <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: -8px">E . I agree and understand that Bajaj Allianz General Insurance Company Limited is in no way warranting the service of the hospital & that
+                    the Bajaj Allianz General Insurance Company Limited is in no way guaranteeing that the services provided by the hospital will be of a particular
+                    quality or standard.</p>
+                <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: -8px">F . I hereby warrant the truth of the forgoing particulars in every respect and I agree that if I have made or shall make any false or untrue
+                    statement suppression or concealment with respect to the claim, my right to claim reimbursement of the said expenses shall be absolutely
+                    forfeited.</p>
+                <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: -8px">G . I agree to indemnify the hospital against all expenses incurred on my behalf, which are not reimbursed by the Bajaj Allianz General Insurance
+                    Company Limited
+                </p>
+                <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: -8px">I. I/We authorize Insurance Company/TPA to contact me/us through mobile/email for any update on this claim</p>
+            </div>
+            <div style="margin-top: 0px">
+                <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: -8px">a) Patient's /Insured's Name:</p>
+                <span class="spanLine" style="width: 500px;"><%-patientDetailsName%></span>
+            </div>
+            <div style="margin-top: 0px">
+                <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: -8px">b) Contact number:</p>
+                <span class="spanLine" style="width: 200px;"><%-patientDetailsContactNumber%></span>
+                <p class="customPTag" style="margin-right: 25px;margin-left: 150px;margin-top: -8px">c) Patient's / Insured's Signature:</p>
+            </div>
+            <div style="margin-top: 0px">
+                <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: -8px">d) Email ID (optional)</p>
+                <span class="spanLine" style="width: 200px;"></span>
+
+                <span class="spanBox2" style="height:60px;width: 240px;margin-left: 110px;vertical-align: -50px"></span>
+            </div>
+            <div style="margin-top: -14px">
+                <p class="customPTag" style="margin-right: 5px;margin-left: 0px;margin-top: -8px">Date -</p>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+
+                <p class="customPTag" style="margin-right: 5px;margin-left: 0px;margin-top: -8px">Time -</p>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+            </div>
+            <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: 5px">HOSPITAL DECLARATION</p>
+
+            <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: -8px">1. We have no objection to any authorized Bajaj Allianz General Insurance Company Limited official verifying documents pertaining to
+                hospitalization.</p>
+            <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: -8px">2. All valid original documents duty countersigned by the insured I patient as per the checklist below will be sent to Bajaj Allianz General
+                Insurance Company Limited within 7 days of the patient's discharge.</p>
+            <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: -8px">3. WE AGREE THAT BAJAJ ALLIANZ GENERAL INSURANCE COMPANY LIMITED WILL NOT BE LIABLE TO MAKE THE PAYMENT IN THE EVENT OF ANY
+                DISCREPANCY BETWEEN THE FACTS IN THIS FORM AND DISCHARGE SUMMARY or other documents.</p>
+            <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: -8px">4. The patient declaration has been signed by the patient or by his representative in our presence.</p>
+            <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: -8px">5. We agree to provide clarifications for the queries raised regarding this hospitalization and we take the sole responsibility for any delay in
+                offering clarifications.</p>
+            <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: -8px">6. We will abide by the terms and conditions agreed in the MOU.</p>
+            <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: -8px">7. We confirm that no additional amount would be collected liom the insured in excess of Agreed Package Rates except costs towards nonadmissible amounts (including additional charges due to opting higher room rent than eligibility choosing separate line of treatment
+                which is not envisaged/considered in package).</p>
+            <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: -8px">8. We confirm that no recoveries would be made from the deposit amount collected from the insured except for costs towards nonadmissible amounts (including additional charges due to opting higher room rent than eligibility/choosing separate line of treatment
+                which is not envisaged/considered in package).</p>
+            <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: -8px">9. In the event of unauthorized recovery of any additional amount from the Insured in excess of Agreed Package Rates, the authorized TPA /
+                Insurance Company reserves the right to recover the same from us (the Network Provider) and,/or take necessary action, as provided
+                under the MOU or applicable laws</p>
+            <div style="margin-top: 0px">
+                <p class="customPTag" style="margin-right: 25px;margin-left: 125px">Hospital Seal</p>
+                <p class="customPTag" style="margin-right: 25px;margin-left: 310px">Doctor's Signature</p>
+            </div>
+            <div style="margin-top: 5px">
+                <span class="spanBox2" style="width: 250px;height: 70px;margin-left: 20px"></span>
+                <span class="spanBox2" style="width: 250px;height: 70px;margin-left: 175px"></span>
+            </div>
+            <div style="margin-top: 10px">
+                <p class="customPTag" style="margin-right: 5px;margin-left: 450px;margin-top: -8px">Date -</p>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+
+                <p class="customPTag" style="margin-right: 5px;margin-left: 0px;margin-top: -8px">Time -</p>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+                <span class="spanLine"></span>
+            </div>
+
+        </div>
+        <div class="form-container" >
+            <p class="subHeading" style="color: black;padding-top: 30px">DOCUMENTS TO BE PROVIDED BY THE HOSPITAL IN SUPPORT OF THE CLAIM</p>
+            <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: -2px">1. Detailed Discharge Summary and all Bills from the hospital</p>
+            <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: -2px">2. Cash Memos from the Hospitals / Chemists supported by proper prescription</p>
+            <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: -2px">3. Receipts and Pathological Test Reports from Pathologists, supported by note from the attending Medical Practitioner I Surgeon
+                recommending such pathological Tests.</p>
+            <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: -2px">4. Surgeon's Certificate stating nature of operation performed and Surgeon's Bill and Receipt.</p>
+            <p class="customPTag" style="margin-right: 25px;margin-left: 0px;margin-top: -2px">5. Certificates from attending Medical Practitioner / Surgeon that the patient is fully cured</p>
+        </div>
+
+
+
+    </div>
+
+    <script>
+        window.onload = function() {
+            document.getElementById("download")
+                .addEventListener("click", () => {
+                    const invoice = this.document.getElementById("invoice");
+                    console.log(invoice);
+                    console.log(window);
+                    var opt = {
+                        margin: 0,
+                        filename: 'BAJAJ_ALLIANZ.pdf',
+                        image: {
+                            type: 'jpeg',
+                            quality: 0.98
+                        },
+                        html2canvas: {
+                            scale: 4
+                        },
+                        jsPDF: {
+                            unit: 'in',
+                            format: 'letter',
+                            orientation: 'portrait'
+                        }
+                    };
+                    html2pdf().from(invoice).set(opt).save();
+                })
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,21 @@
+.inputDate {
+    width: 100%;
+    max-width: 180px;
+    height: 47px;
+    background: #2c2c2c;
+    border: none;
+    outline: none;
+    color: #919191;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+.inputDate::-webkit-calendar-picker-indicator {
+    filter: invert(0.5);
+    cursor: pointer;
+}
+
+
+/* .inputDate::-webkit-datetime-edit-ampm-field {
+  display: none;
+} */

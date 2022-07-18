@@ -1,0 +1,15 @@
+.inputContained {
+  width: 100%;
+  height: 40px;
+  background: #ffffff17 !important;
+  border: none;
+  outline: none;
+  color: #919191;
+  border-radius: 5px;
+  padding: 8px;
+}
+
+.inputContained::-webkit-inner-spin-button,
+.inputContained::-webkit-outer-spin-button {
+  opacity: 1;
+}

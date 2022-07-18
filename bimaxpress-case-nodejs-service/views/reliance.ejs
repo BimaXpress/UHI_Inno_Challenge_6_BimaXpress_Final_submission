@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script> -->
+      <!-- <script src="	https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script> -->
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+      <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="jspdf.js"></script>
+<script type="text/javascript" src="./libs/FileSaver.js/FileSaver.js"></script>
+<script type="text/javascript" src="./libs/Blob.js/BlobBuilder.js"></script>
+<script type="text/javascript" src="jspdf.plugin.standard_fonts_metrics.js"></script> 
+<script type="text/javascript" src="jspdf.plugin.split_text_to_size.js"></script>               
+<script type="text/javascript" src="jspdf.plugin.from_html.js"></script>
+
+
+    <title>Document</title>
+</head>
+<style>
+    body {
+        font-size: 12px;
+    }
+
+    .container {
+        width: 720px;
+
+
+        height: 1040px;
+        margin: auto;
+
+        border: outset;
+    }
+
+    .spanBox {
+        font-size: 8px;
+        text-align: center;
+        display: inline-block;
+        border: 1px solid #444;
+        vertical-align: middle;
+        line-height: 13px;
+        width: 13px;
+        height: 13px;
+
+    }
+
+
+    .spanLine {
+        font-size: 12px;
+
+        display: inline-block;
+        /* border-bottom: 1px solid black; */
+        border-bottom: 1px solid black;
+        vertical-align: middle;
+        line-height: 2px;
+        width: 10px;
+        height: 9px;
+        margin-top: 4px;
+        margin-left: -4.35px;
+        font-weight: bold;
+        text-align: center;
+
+    }
+
+    .top {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .section {
+        background-color: gainsboro;
+        border: 1px solid;
+        height: 200px;
+
+    }
+
+    .bg {
+        width: 70px;
+        background-color:#606091;
+        height: 200px;
+
+    }
+
+    .bg div {}
+
+    .row {}
+
+    .list {}
+
+    .sublist {}
+
+    .ver{
+    writing-mode:tb-rl;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform: rotate(270deg);
+    white-space:nowrap;
+    display:block;
+    bottom:0;
+    width:20px;
+    height:20px;
+    margin-left:-10px;
+    margin-top: 50px;
+}
+.ver-bill{
+    writing-mode:tb-rl;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform: rotate(270deg);
+    white-space:nowrap;
+    display:block;
+    bottom:0;
+    width:20px;
+    height:20px;
+    margin-left:-10px;
+    margin-top: 50px;
+}
+.ver-cas{
+    writing-mode:tb-rl;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform: rotate(270deg);
+    
+    display:block;
+    
+    width:20px;
+    height:20px;
+    margin-left:-10px;
+    margin-top: 50px;
+}
+.ver-ser{
+    writing-mode:tb-rl;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform: rotate(270deg);
+     white-space:nowrap;
+    display:block;
+    
+    width:20px;
+    height:20px;
+    margin-left:-10px;
+    margin-top: 50px;
+}
+.ver-pat{
+    writing-mode:tb-rl;
+    -webkit-transform:rotate(90deg);
+    -moz-transform:rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform:rotate(90deg);
+    transform: rotate(270deg);
+    
+    display:block;
+    
+    width:20px;
+    height:20px;
+    margin-left:-10px;
+    margin-top: 50px;
+}
+    
+</style>
+
+<body>
+    <button id="download"> Download Form</button>
+    <div  id="invoice">
+    <div class="container">
+        <div class="top">
+            <div class="logo">
+                <img src="./static/img/insuranceCompanyLogo/rel.jpg" alt="" style="width:165px; margin-top:20px">
+            </div>
+            <div>
+                <h3 style="margin: 0px; margin-top: 12px; color: #1279aa;">GENERAL
+                </h3>
+                <H3 style="margin: 0px; color: #1279aa;"> INSURANCE</H3>
+                <p style="margin: 0px; font-size: 12px; color: #1279aa;">A RELIANCE CAPITAL COMPANY</p>
+            </div>
+            <div style="margin-left: 40px;">
+                <h3 style="margin: 0px;
+                        margin-top: 9px; font-size: 20px; margin-right: 20px; color: #1279aa;">reliancegeneral.co.in
+                </h3>
+                <h4 style="margin: 0px; color: #1279aa;">(Toll Free) 1800 3009</h4>
+                <p style="margin: 0px; color: #1279aa;">(022) 4890 3009 (Paid)</p>
+            </div>
+
+        </div>
+
+        <div class="heading" style="color: #de0e0e; margin-left: 220px;margin-top:-15px;">
+            <h4>PRE-AUTHORIZATION REQUEST FORM</h4>
+        </div>
+        <div class="heading" style="color: #de0e0e ; margin-top: -17px; font-size: 13px;">
+            <p>Please use Reliance Portal Provider to Communicate With Us -https://provider.reliancegeneral.co.in/</p>
+        </div>
+
+
+        <div class="section" style="height: 150px;">
+            <div class="bg">
+                <div style="writing-mode: vertical-rl; position: absolute; margin-top: 67px;"></div>
+                <div style="writing-mode: vertical-rl; margin-left: 3px; height: 300px; color: white;"> <div class="ver-cas">  Insured <span style=" height:300px;margin-top: 5px; "> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;details </span> </span> </div></div>
+            </div>
+            <div>
+                <div class="row" style="margin-top: -193px ; margin-left:72px;">Insured Name <span class="spanLine"
+                        style="width: 300px;"> {{bunny.patient_details.Name|upper}}</span>
+
+                    <span>claim no.<span class="spanLine" style="width: 190px;"></span></span><br>
+                    <span>Mobile no.<span class="spanLine" style="width: 170px;">{{bunny.patient_details.Phone|upper}}</span></span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>policy no.<span class="spanLine" style="width: 300px;">{{bunny.patient_details.Policy_Id|upper}}</span></span><br>
+                    <span>Email :<span class="spanLine" style="width: 200px;">{{bunny.patient_details.Email}}</span></span><br>
+                    <span>if group policy,Company Name:<span class="spanLine" style="width: 200px;">{{bunny.patient_details.Other_Insurance_Details}}</span></span>
+                    <span>Employ id:<span class="spanLine" style="width: 160px;">{{bunny.patient_details.EmployeeId|upper}}</span></span><br>
+                    <span>PAN number:<span class="spanLine" style="width: 300px;"></span></span><br>
+                    <span style="line-height: 1.3;">Source of funds <span class="spanBox"></span> &nbsp;Bussiness</span> &nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp; <span class="spanBox"></span> &nbsp;Profession</span> &nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;&nbsp<span class="spanBox"></span> &nbsp;Salary</span> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp
+                    <span class="spanBox"></span> &nbsp;Ag-income</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;<span class="spanBox"></span>&nbsp;
+                    &nbsp;Savings</span>&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp <span class="spanBox"></span> Others</span>
+                    <br>
+                    
+
+                    <span style="line-height: 1.9;">Month income &nbsp;&nbsp;<span class="spanBox"></span> &nbsp;upto ₹20,000</span>
+                    &nbsp;&nbsp;<span class="spanBox"></span>&nbsp;&nbsp;₹20,001 to ₹50,000</span>
+                    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <span class="spanBox"></span>&nbsp;&nbsp;₹50,001 to
+                    ₹1,00,000</span> &nbsp;&nbsp; <span class="spanBox"></span>&nbsp;&nbsp;₹1,00,001 & above</span> <br>
+                    <span>Agent/Subajent name:<span class="spanLine" style="width: 300px;"></span></span><br>
+                    <span>Agent mobile no.<span class="spanLine" style="width: 300px;"></span></span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <span>Agent Email:<span class="spanLine" style="width: 150px;"></span></span>
+
+
+
+                </div>
+                
+            </div>
+
+
+
+        </div>
+
+
+        <div class="section" style="height: 138px;">
+            <div class="bg">
+                <div style="writing-mode: vertical-rl; position: absolute; margin-top: 67px;"></div>
+                <div style="writing-mode: vertical-rl; margin-left: 3px; height: 300px; color: white;"> <div class="ver-cas">  Patient<span style=" height:300px;margin-top: 5px; "> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;details</span> </span> </div></div>
+            </div>
+            <div>
+                <div class="row" style="margin-top: -193px ; margin-left:72px;">Patient Name:<span class="spanLine"
+                        style="width: 300px;">{{bunny.patient_details.Name|upper}}</span><br>
+
+
+                    <span>Patient UHID:<span class="spanLine" style="width: 170px;">{{bunny.patient_details.Health_Id|upper}}</span></span>
+
+                    <span>Age:<span class="spanLine" style="width: 50px;">{{bunny.patient_details.AgeYear|upper}}</span></span>
+                    <span>DOB:<span class="spanLine" style="width: 90px;">
+                        <span class="data"> {{bunny.patient_details.Date_Of_First_Consultation.8|upper}}</span>
+                        <span class="data"> {{bunny.patient_details.Date_Of_First_Consultation.9|upper}}</span>
+                        <span class="data"> {{bunny.patient_details.Date_Of_First_Consultation.7|upper}}</span>
+                        <span class="data"> {{bunny.patient_details.Date_Of_First_Consultation.5|upper}}</span>
+                        <span class="data"> {{bunny.patient_details.Date_Of_First_Consultation.6|upper}}</span>
+                        <span class="data"> {{bunny.patient_details.Date_Of_First_Consultation.4|upper}}</span>
+                        <span class="data"> {{bunny.patient_details.Date_Of_First_Consultation.0|upper}}</span>
+                        <span class="data"> {{bunny.patient_details.Date_Of_First_Consultation.1|upper}}</span>
+                        <span class="data"> {{bunny.patient_details.Date_Of_First_Consultation.2|upper}}</span>
+                        <span class="data"> {{bunny.patient_details.Date_Of_First_Consultation.3|upper}}</span>
+                    
+                    
+                    
+                    
+                    
+                    
+                    </span></span>
+
+                    <span>Gender: 
+                        {% if bunny.patient_details.Gender == 'male' %}
+
+                        <span class="spanBox"><img src="/static/dist/tick.png"style="width:13px; height: 11px ;   padding-top: 1px;"></span>&nbsp;&nbsp;Male</span>
+                         <span class="spanBox"></span>&nbsp;&nbsp;Female</span><br>
+
+                         {% elif bunny.patient_details.Gender == 'female' %}
+                         <span class="spanBox"></span>&nbsp;&nbsp;Male</span>
+                         <span class="spanBox"><img src="/static/dist/tick.png"style="width:13px; height: 11px ;   padding-top: 1px;"></span>&nbsp;&nbsp;Female</span><br>
+                         
+                         {% endif %}
+
+                    <span>Patient MOB:<span class="spanLine" style="width: 200px;">{{bunny.patient_details.Phone|upper}}</span></span>
+                    <span>Patient Email:<span class="spanLine" style="width: 200px;">{{bunny.patient_details.Email}}</span></span><br>
+
+
+
+
+
+
+
+                    <span style="line-height: 1.7;">Reletion with insured <span class="spanBox"></span> &nbsp;self</span> &nbsp;<span
+                        class="spanBox"></span> &nbsp;Spouse</span> &nbsp;<span class="spanBox"></span>
+                    &nbsp;Mother</span> &nbsp; <span class="spanBox"></span> &nbsp;Father</span>
+                    &nbsp;<span class="spanBox"></span> &nbsp;Son</span> &nbsp; <span class="spanBox"></span>
+                    daughter</span> &nbsp;others</span> &nbsp;<span class="spanBox"></span><br>
+                    <span>Address:<span class="spanLine" style="width: 590px;">{{bunny.patient_details.Address|upper}}</span></span><br>
+                    <span>City:<span class="spanLine" style="width: 300px;">{{bunny.patient_details.city|upper}}</span></span>
+                    <span>Pincode:<span class="spanLine" style="width: 220px;"></span></span><br>
+                    <span>Attendent Name:<span class="spanLine" style="width: 500px;"></span></span><br>
+                    <span>Attendent MOB:<span class="spanLine" style="width: 200px;">{{bunny.patient_details.Attending_Relative_Number|upper}}</span> <span>Attendent Email:<span
+                                class="spanLine" style="width: 200px;"></span>
+
+
+                </div>
+
+            </div>
+
+
+
+        </div>
+        <div class="section" style="overflow:hidden;height: 153px;">
+            <div class="section">
+                <div class="bg" >
+                    <div style="writing-mode: vertical-rl; position: absolute; margin-top: 67px;"></div>
+                    <div style="writing-mode: vertical-rl; margin-left: 3px; height: 300px; color: white;"> <div class="ver-cas">  Service <span style=" height:300px;margin-top: 5px; "> &nbsp;&nbsp;&nbsp;&nbsp;provider </span> </span> </div></div>
+            </div>
+            </div>
+
+            <div style="margin-top: -197px; margin-left:75px ;">
+                <span>Hospital Name:<span class="spanLine" style="width: 200px;">{{hospitaldata.name|upper}}</span></span>
+                <span>Hospital code:<span class="spanLine" style="width: 200px;"></span></span><br>
+                <span>Hospital Address:<span class="spanLine" style="width: 480px;">{{hospitaldata.address|upper}}</span></span><br>
+                <span>City:<span class="spanLine" style="width: 200px;"></span></span>
+                <span>Pin Code:<span class="spanLine" style="width: 300px;"></span></span><br>
+
+            </div>
+            <div style="background-color: #606091; height: 25px; color: white; padding-left: 104px; font-size: 19px;">
+                Contact details
+                <span style="background-color: #606091; height: 25px; color: white; padding-left: 204px; font-size: 19px;">
+                    Treating doctor details</span>
+            </div>
+
+        </div>
+        <div style="margin-top: -81px; margin-left:75px ;">
+            <span> Name: <span class="spanLine" style="width: 200px;">{{bunny.patient_details.Name|upper}}</span></span>
+            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+            <span>Name dr:<span class="spanLine" style="width: 240px;">{{bunny.hospital_details.Treating_Doctor_Name|upper}}</span></span><br>
+
+            <span>mobile:<span class="spanLine" style="width: 200px;">{{bunny.patient_details.Phone|upper}}</span></span>
+            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+            <span>Qualification:<span class="spanLine" style="width: 200px;">{{doctor_details.qualification|upper}}</span></span><br>
+            <span>Fax no:<span class="spanLine" style="width: 200px;"></span></span>
+            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+            <span>Registration no:<span class="spanLine" style="width: 200px;">{{doctor_details.doctorRegistrationNo}}</span></span><br>
+            <span>Email:<span class="spanLine" style="width: 200px;"></span></span>
+            &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+            <span>Mobile no:<span class="spanLine" style="width: 250px;">{{bunny.patient_details.PhysicianYesPhysicianContactNum|upper}}</span></span><br>
+
+
+
+
+
+
+        </div>
+        <div class="section" style="height: 336px;">
+            <div class="bg" style="height: 336px;">
+                <div style="writing-mode: vertical-rl; position: absolute; margin-top: 67px;"></div>
+                <div style="writing-mode: vertical-rl; position: absolute; margin-top: 42px; margin-left: 10px; height: 100px; color: white;"> <div class="ver-cas">Case information</div></div>
+        </div>
+        <div >
+            <div class="row"  style="margin-top: -332px ; margin-left:72px; ">Presenting complaint<span class="spanLine" style="width: 500px;">{{bunny.patient_details.Nature_Of_Illness|upper}}</span><br>
+            
+            <span>Duration<span class="spanLine" style="width: 200px;">{{bunny.patient_details.Duration_Of_Present_Ailments|upper}}</span></span>
+            
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <span>Date of first Consult<span class="spanLine" style="width: 250px;">
+                <span class="data"> {{bunny.patient_details.Date_Of_First_Consultation.8|upper}}</span>
+                        <span class="data"> {{bunny.patient_details.Date_Of_First_Consultation.9|upper}}</span>
+                        <span class="data"> {{bunny.patient_details.Date_Of_First_Consultation.7|upper}}</span>
+                        <span class="data"> {{bunny.patient_details.Date_Of_First_Consultation.5|upper}}</span>
+                        <span class="data"> {{bunny.patient_details.Date_Of_First_Consultation.6|upper}}</span>
+                        <span class="data"> {{bunny.patient_details.Date_Of_First_Consultation.4|upper}}</span>
+                        <span class="data"> {{bunny.patient_details.Date_Of_First_Consultation.0|upper}}</span>
+                        <span class="data"> {{bunny.patient_details.Date_Of_First_Consultation.1|upper}}</span>
+                        <span class="data"> {{bunny.patient_details.Date_Of_First_Consultation.2|upper}}</span>
+                        <span class="data"> {{bunny.patient_details.Date_Of_First_Consultation.3|upper}}</span>
+            
+            
+            
+            
+            </span></span><br>
+            <span>H/O of past illness releted to present complaint<span class="spanLine" style="width: 400px;"> {{bunny.patient_details.Nature_Of_Illness|upper}}</span></span><br>
+            <span>Relevant clinical findings<span class="spanLine" style="width: 500px;">{{bunny.patient_details.Relevant_Critical_Findings|upper}}</span></span><br>
+            <span>Investigation findings<span class="spanLine" style="width:500px;"> {{bunny.patient_details.If_Investigation_Or_Medical_Management_Provide_Details|upper}}</span></span><br>
+            <span>Provisional Diagnosis<span class="spanLine" style="width: 200px;">{{bunny.patient_details.Provision_Diagnosis|upper}}</span></span><br><br>
+            <span>Treatment plan : &nbsp;&nbsp;&nbsp;</span> Medical
+            {% if bunny.patient_details.doctor_proposedLineOfTreatment_Medical_Managment == "yes" %}
+            <span style="  margin-left: 10px;">( <img height="10px"
+                    src="/static/dist/tick.png" width="13px " > )</span>
+            {% else %}
+            <span  style="  margin-left:10px;">( &emsp; )</span>
+            {% endif %}
+        </span> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;Surgical
+        {% if bunny.patient_details.doctor_proposedLineOfTreatment_Surgical_Managment == 'yes'%}
+        <span  style="  margin-left: 10px;">( <img height="10px"
+                src="/static/dist/tick.png" width="13px"> )</span>
+        {% else %}
+        <span  style="  margin-left: 10px;">( &emsp; )</span>
+        {% endif %}
+            
+    </span> <br>
+            <span class="spanLine" style="width: 300px;"></span><br>
+            &nbsp;&nbsp;  
+
+            <div class="list">In case of Maternity
+                <span>Obestric History</span>
+                <span class="my-42"></span>
+                <span class="my-42"></span>
+                <span class="my-10"></span>
+                {% if bunny.patient_details.G == 'yes' %}
+                <span class="spanBox"><img src="/static/dist/tick.png"
+                        style="width:13px; height: 10px ;   padding-top: 2px;"></span>
+                <span class="sublist">G</span>
+                {% else %}
+                <span class="spanBox"></span>
+                <span class="sublist">G</span>
+                {% endif %}
+
+                <span class="my-10"></span>
+                <span class="my-10"></span>
+
+                {% if bunny.patient_details.P == 'yes' %}
+                <span class="spanBox"><img src="/static/dist/tick.png"
+                        style="width:13px; height: 10px ;   padding-top: 2px;"></span>
+                <span class="sublist">P</span>
+                {% else %}
+                <span class="spanBox"></span>
+                <span class="sublist">P</span>
+                {% endif %}
+
+                <span class="my-10"></span>
+                <span class="my-10"></span>
+
+                {% if bunny.patient_details.L == 'yes' %}
+                <span class="spanBox"><img src="/static/dist/tick.png"
+                        style="width:13px; height: 10px ;   padding-top: 2px;"></span>
+                <span class="sublist">L</span>
+                {% else %}
+                <span class="spanBox"></span>
+                <span class="sublist">L</span>
+                {% endif %}
+
+                <span class="my-10"></span>
+                <span class="my-10"></span>
+
+                {% if bunny.patient_details.A == 'yes' %}
+                <span class="spanBox"><img src="/static/dist/tick.png"
+                        style="width:13px; height: 10px ;   padding-top: 2px;"></span>
+                <span class="sublist">A</span>
+                {% else %}
+                <span class="spanBox"></span>
+                <span class="sublist">A</span>
+                {% endif %} <br>
+                <span>LMP<span class="spanLine" style="width: 100px;"></span></span>
+                <span>EDD<span class="spanLine" style="width: 100px;">{{bunny.hospital_details.ExpectedDateOfDelivery|upper}}</span></span>
+                 <br>
+                 In case injury/RTA/Self injury <br>
+                 Under influence of Alcohol/Drug abuse:
+                 {% if bunny.patient_details.Injury_Disease_Caused_Due_To_Substance_Abuse_Alcohol_Consumption_ == 'yes' %}
+                 
+                 
+                 YES<span class="spanBox">
+                 <img height="9px" src="/static/dist/tick.png"
+                    width="9px"></span>  
+                 NO<span class="spanBox"></span><br><br>
+                 
+                 {% else %}
+
+                 YES<span class="spanBox">
+                    </span>  
+                    NO<span class="spanBox"><img height="9px" src="/static/dist/tick.png"
+                        width="9px"></span><br><br>
+                        {% endif %}
+                 
+                 Attahed copy of 
+                 {% if bunny.patient_details.Reported_To_Police == "yes" %}
+                 <span class="spanBox"></span> MLC  <span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span> FIR  <span class="spanBox"></span> PI <br><br>
+                 <span>MLC/FIR<span class="spanLine" style="width: 100px;">{{bunny.patient_details.Date_Of_Injury|upper}}</span></span>
+                 <span>PLACE<span class="spanLine" style="width: 100px;"></span></span>
+                 {% else %}
+                 <span class="spanBox"></span> MLC  <span class="spanBox"></span> FIR  <span class="spanBox"></span> PI <br><br>
+                 <span>MLC/FIR<span class="spanLine" style="width: 100px;"></span></span>
+                 <span>PLACE<span class="spanLine" style="width: 100px;"></span></span>
+                 {% endif %}
+    
+    
+                           
+            </div>
+         
+    
+        </div>
+    
+            <div style="position: absolute;
+            margin-top: -185px;
+    
+            margin-left: 383px;
+    
+            width: 330px;
+    
+        
+            height: 247px;
+    
+            border: 1px solid;
+            line-height: 1.6;"
+         
+        >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Past Medical History &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Duration Details <br>
+        {% if bunny.patient_details.HypertensionMonth == "" or bunny.patient_details.HypertensionMonth == None %}
+        
+        &nbsp;&nbsp;&nbsp;<div>HTN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanBox"></span>&nbsp;&nbsp;Y &nbsp;&nbsp;
+            
+            <span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>&nbsp;&nbsp;N   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.patient_details.HypertensionMonth|upper}} /  {{bunny.patient_details.HypertensionYear|upper}}</span><br>
+
+        {% else %}
+        
+        &nbsp;&nbsp;&nbsp;<div>HTN &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>&nbsp;&nbsp;Y &nbsp;&nbsp;
+            
+        <span class="spanBox"></span>&nbsp;&nbsp;N   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.patient_details.HypertensionMonth|upper}} /  {{bunny.patient_details.HypertensionYear|upper}}</span><br>
+
+        {% endif %}
+    
+
+        </div>
+
+        {% if bunny.patient_details.HypertensionMonth == "" or bunny.patient_details.HypertensionMonth == None %}
+        IHD/CAD &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanBox"></span>&nbsp;&nbsp;Y &nbsp;&nbsp;<span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>&nbsp;&nbsp;N   &nbsp;&nbsp;&nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.patient_details.MandatoryPastHistoryMonth|upper}} /  {{bunny.patient_details.MandatoryPastHistoryYear|upper}}</span><br>
+        {% else %}
+        IHD/CAD &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>&nbsp;&nbsp;Y &nbsp;&nbsp;<span class="spanBox"></span>&nbsp;&nbsp;N   &nbsp;&nbsp;&nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.patient_details.MandatoryPastHistoryMonth|upper}} /  {{bunny.patient_details.MandatoryPastHistoryYear|upper}}</span><br>
+        {% endif %}
+        {% if bunny.patient_details.HypertensionMonth == "" or bunny.patient_details.HypertensionMonth == None %}
+        Diabetes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanBox"></span>&nbsp;&nbsp;Y &nbsp;&nbsp;<span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>&nbsp;&nbsp;N   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.patient_details.MandatoryPastHistoryMonth|upper}} /  {{bunny.patient_details.MandatoryPastHistoryYear|upper}}</span><br>
+        {% else %}
+        Diabetes &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>&nbsp;&nbsp;Y &nbsp;&nbsp;<span class="spanBox"></span>&nbsp;&nbsp;N   &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.patient_details.MandatoryPastHistoryMonth|upper}} /  {{bunny.patient_details.MandatoryPastHistoryYear|upper}}</span><br>
+        {% endif %}
+        {% if bunny.patient_details.HypertensionMonth == "" or bunny.patient_details.HypertensionMonth == None %}
+        Asthama/TB &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanBox"></span>&nbsp;&nbsp;Y &nbsp;&nbsp;<span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>&nbsp;&nbsp;N   &nbsp;&nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.patient_details.AsthmaOrCOPDOrBronchitisMonth|upper}} /  {{bunny.patient_details.AsthmaOrCOPDOrBronchitisYear|upper}}</span><br>
+        {% else %}
+        Asthama/TB &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>&nbsp;&nbsp;Y &nbsp;&nbsp;<span class="spanBox"></span>&nbsp;&nbsp;N   &nbsp;&nbsp;&nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.patient_details.AsthmaOrCOPDOrBronchitisMonth|upper}} /  {{bunny.patient_details.AsthmaOrCOPDOrBronchitisYear|upper}}</span><br>
+        {% endif %}
+        {% if bunny.patient_details.HypertensionMonth == "" or bunny.patient_details.HypertensionMonth == None %}
+        Paralysis &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanBox"></span>&nbsp;&nbsp;Y &nbsp;&nbsp;<span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>&nbsp;&nbsp;N   &nbsp;&nbsp;&nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.patient_details.AsthmaOrCOPDOrBronchitisMonth|upper}} /  {{bunny.patient_details.AsthmaOrCOPDOrBronchitisYear|upper}}</span><br>
+        {% else %}
+        Paralysis &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>&nbsp;&nbsp;Y &nbsp;&nbsp;<span class="spanBox"></span>&nbsp;&nbsp;N   &nbsp;&nbsp;&nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.patient_details.AsthmaOrCOPDOrBronchitisMonth|upper}} /  {{bunny.patient_details.AsthmaOrCOPDOrBronchitisYear|upper}}</span><br>
+        {% endif %}
+        {% if bunny.patient_details.HypertensionMonth == "" or bunny.patient_details.HypertensionMonth == None %}
+        Arthritis &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanBox"></span>&nbsp;&nbsp;Y &nbsp;&nbsp;<span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>&nbsp;&nbsp;N   &nbsp;&nbsp;&nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.patient_details.OsteoarthritisMonth|upper}} /  {{bunny.patient_details.OsteoarthritisYear|upper}}</span><br>
+        {% else %}
+        Arthritis &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>&nbsp;&nbsp;Y &nbsp;&nbsp;<span class="spanBox"></span>&nbsp;&nbsp;N   &nbsp;&nbsp;&nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.patient_details.OsteoarthritisMonth|upper}} /  {{bunny.patient_details.OsteoarthritisYear|upper}}</span><br>
+        {% endif %}
+        {% if bunny.patient_details.HypertensionMonth == "" or bunny.patient_details.HypertensionMonth == None %}
+        Cancer/tumor &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanBox"></span>&nbsp;&nbsp;Y &nbsp;&nbsp;<span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>&nbsp;&nbsp;N   &nbsp;&nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.patient_details.CancerMonth|upper}} /  {{bunny.patient_details.CancerYear|upper}}</span><br>
+        {% else %}
+        Cancer/tumor &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>&nbsp;&nbsp;Y &nbsp;&nbsp;<span class="spanBox"></span>&nbsp;&nbsp;N   &nbsp;&nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.patient_details.CancerMonth|upper}} /  {{bunny.patient_details.CancerYear|upper}}</span><br>
+        {% endif %}
+        {% if bunny.patient_details.HypertensionMonth == "" or bunny.patient_details.HypertensionMonth == None %}
+        STD/HIV &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanBox"></span>&nbsp;&nbsp;Y &nbsp;&nbsp;<span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>&nbsp;&nbsp;N   &nbsp;&nbsp;&nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.patient_details.anyHIVOrSTDOrRelatedAlimentsMonth|upper}} /  {{bunny.patient_details.anyHIVOrSTDOrRelatedAlimentsYear|upper}}</span><br>
+        {% else %}
+        STD/HIV &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>&nbsp;&nbsp;Y &nbsp;&nbsp;<span class="spanBox"></span>&nbsp;&nbsp;N   &nbsp;&nbsp;&nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.patient_details.anyHIVOrSTDOrRelatedAlimentsMonth|upper}} /  {{bunny.patient_details.anyHIVOrSTDOrRelatedAlimentsYear|upper}}</span><br>
+        {% endif %}
+        {% if bunny.patient_details.HypertensionMonth == "" or bunny.patient_details.HypertensionMonth == None %}
+        Alcohol/drug &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanBox"></span>&nbsp;&nbsp;Y &nbsp;&nbsp;<span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>&nbsp;&nbsp;N   &nbsp;&nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.patient_details.AlcoholOrDrugAbuseMonth|upper}} /  {{bunny.patient_details.AlcoholOrDrugAbuseYear|upper}}</span><br>
+        {% else %}
+        Alcohol/drug &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>&nbsp;&nbsp;Y &nbsp;&nbsp;<span class="spanBox"></span>&nbsp;&nbsp;N   &nbsp;&nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.patient_details.AlcoholOrDrugAbuseMonth|upper}} /  {{bunny.patient_details.AlcoholOrDrugAbuseYear|upper}}</span><br>
+        {% endif %}
+        {% if bunny.patient_details.HypertensionMonth == "" or bunny.patient_details.HypertensionMonth == None %}
+        psychiatric &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanBox"></span>&nbsp;&nbsp;Y &nbsp;&nbsp;<span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>&nbsp;&nbsp;N   &nbsp;&nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.patient_details.AsthmaOrCOPDOrBronchitisMonth|upper}} /  {{bunny.patient_details.AsthmaOrCOPDOrBronchitisYear|upper}}</span><br>
+        {% else %}
+        psychiatric &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>&nbsp;&nbsp;Y &nbsp;&nbsp;<span class="spanBox"></span>&nbsp;&nbsp;N   &nbsp;&nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.patient_details.AsthmaOrCOPDOrBronchitisMonth|upper}} /  {{bunny.patient_details.AsthmaOrCOPDOrBronchitisYear|upper}}</span><br>
+        {% endif %}
+        {% if bunny.patient_details.HypertensionMonth == "" or bunny.patient_details.HypertensionMonth == None %}
+        others &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanBox"></span>&nbsp;&nbsp;Y &nbsp;&nbsp;<span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>&nbsp;&nbsp;N   &nbsp;&nbsp;&nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.patient_details.AsthmaOrCOPDOrBronchitisMonth|upper}} /  {{bunny.patient_details.AsthmaOrCOPDOrBronchitisYear|upper}}</span><br>
+        {% else %}
+        others &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span>&nbsp;&nbsp;Y &nbsp;&nbsp;<span class="spanBox"></span>&nbsp;&nbsp;N   &nbsp;&nbsp;&nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.patient_details.AsthmaOrCOPDOrBronchitisMonth|upper}} /  {{bunny.patient_details.AsthmaOrCOPDOrBronchitisYear|upper}}</span><br>
+        {% endif %}
+        
+    
+    
+    
+    </div>
+        
+            </div>
+
+    </div>
+    <div style="margin-top: 12px; margin-left: 10px; color: #2395af;">
+        
+        RCare Health: Reliance General Insurance, No.1-89/3/B/40 to 42/ks/301  3rd floor, Krishe Block, 
+        Krishe Sapphire, Madhapur, Hyderabad 500081.
+        IRDAI Registration No. 103. Reliance General Insurance Company Limited. Registered & Corporate 
+        Office: Reliance Centre, South Wing, 4th Floor, Santacruz (East), Off. Western Express Highway,  
+        Mumbai 400055.. Corporate Identity Number U66603MH2000PLC128300. Trade Logo displayed above belongs 
+        to Anil Dhirubhai   Ambani   Ventures   Private   Limited   and   used   by   Reliance   General   
+        Insurance   Company   Limited   under   License. RGI/MCOM/CO/MI-14/PRE-AUTHORIZATIONREQUEST FORM 
+    </div>
+   
+
+    </div>
+    <div class="container" style="margin-top: 20px;">
+        <div class="section" style="height: 209px; margin-top: 10px; overflow: hidden;">
+            <div class="bg" style="height: 235px;">
+                <div style="writing-mode: vertical-rl; position: absolute; margin-top: 67px;"></div>
+                <div style="writing-mode: vertical-rl; position: absolute; margin-top: 72px; margin-left: 10px; color: white; ">
+                   <div class="ver-bill"> Billing details</div></div>
+            </div>
+            <div>
+                
+                <div class="row" style="margin-top: -230px ; margin-left:72px; line-height: 1.5;">
+
+                        <span>Room type: </span> 
+                        <span class="spanLine" style="width: 190px;"><span class="cls_002">&nbsp;&nbsp;{{bunny.hospital_details.Room_Type|upper}}</span></span>
+                        <br>
+                    <span>Hospital Room Name:<span class="spanLine" style="width: 200px;">{{bunny.hospital_details.Room_Type|upper}}</span></span>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <br>
+                    <span>Type of Admission: 
+
+                        {% if bunny.patient_details.Type == "emergency" %}
+        
+                         <span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span> Emergency</span><br>
+                         {% else %}
+                         <span class="spanBox"></span><span class="cls_014">Emergency</span>
+
+                         {% endif %}
+
+                        {% if bunny.patient_details.Type == "planned" %}
+                         <span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span> &nbsp;Planned</span>
+
+                         {% else %}
+                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="spanBox"></span><span class="cls_014">Planned</span>
+
+                         {% endif %}
+                         <br>
+                        
+                       
+                    <span>Expected DOA:<span class="spanLine" style="width: 90px;">{{bunny.hospital_details.Date_of_Admission|upper}}</span></span>
+                    
+                    <span>&nbsp;&nbsp;&nbsp;Length of stay:<span class="spanLine" style="width: 50px;"> {{bunny.hospital_details.Days_In_Hospital|upper}}</span>days</span><br>
+                    <span>Package rate: &nbsp;&nbsp;
+                        
+                    {% if bunny.patient_details.A == 'yes' %}
+                         
+                        <span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span> &nbsp;Yes</span>&nbsp;
+                        <span class="spanBox"> </span> &nbsp; No</span><br>
+               
+    
+           
+                    {% else %}
+                    <span class="spanBox"></span> &nbsp;Yes</span>&nbsp;
+                    <span class="spanBox"><img height="9px" src="/static/dist/tick.png" width="9px"></span> &nbsp; No</span><br>
+                    {% endif %}
+                        
+                
+
+                    If,yes Package charges<span class="spanLine" style="width: 120px;">{{bunny.hospital_details.All_Including_Package|upper}}</span><br>
+                     Implant charges<span class="spanLine" style="width: 160px;"></span><br>
+                        Remark (if Any)<span class="spanLine" style="width: 170px;"></span><br>
+                        &nbsp;&nbsp;<span class="spanLine" style="width: 270px;"></span>
+                      
+
+                        <div style="position: absolute;
+                        margin-top: -185px;
+                
+                        margin-left: 345px;
+                
+                        width: 298px;
+                
+                    
+                        height: 208px;
+                
+                        border: 1px solid;
+                        line-height: 1.6;"
+                        
+                     
+                    > <br>&nbsp;&nbsp;&nbsp;if package not applicable,<br>
+                    &nbsp;&nbsp;Room rent + Nursing charge  &nbsp;&nbsp; &nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.hospital_details.Per_Day_Room_Rent|upper}}</span><br>
+                    &nbsp;&nbsp;Surgeon charges  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.hospital_details.ProfessionalFeesSurgeon|upper}} </span><br>
+                    &nbsp;&nbsp;Anesthesia charges &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.hospital_details.Anesthetist|upper}}</span><br>
+                    &nbsp;&nbsp;operetion threter charge &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.hospital_details.OT_Charges|upper}}</span><br>
+                    &nbsp;&nbsp;Doctor visit charges&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.hospital_details.consultation_fees|upper}}</span><br>
+                    &nbsp;&nbsp;Investigation charges  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;  &nbsp;&nbsp; &nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.hospital_details.Cost_Of_Investigation|upper}}</span><br>
+                    &nbsp;&nbsp;pharmacy charges  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.hospital_details.Consumables|upper}}</span><br>
+                    &nbsp;&nbsp;Implant cost  &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.hospital_details.cost_of_implant|upper}}</span><br>
+                    &nbsp;&nbsp;Total cost of Hospitalization &nbsp;&nbsp; &nbsp;&nbsp; <span class="spanLine" style="width: 130px;">{{bunny.hospital_details.total|upper}}</span><br>
+                     
+
+
+                   
+                
+                
+                </div>
+
+                
+                    
+
+                   
+
+
+
+                </div>
+                
+
+
+
+                
+            </div>
+
+
+
+        </div>
+        <div style="padding:14px; color:#1b9197">
+           <strong>Please note:</strong>  In case the Health Gain Policy under which the cashless claim is being lodged has been 
+            taken on installment basis then in the event of cashless claim being admissible , the company will 
+            deduct the balance installments due if any, from the claim approved amount and pay the balance due 
+            to the Policyholder. In the event of the claim assessed amount being lower than      Balance 
+            installment due then Policyholder is liable to pay the balance premium         ments due 
+            immediately by cheque or DD, failing which the said Claim would be treated as inadmissible and the 
+            Policy shall stand cancelled immediately and no liability shall be admissible under the Policy for 
+            any Claims liability in future or in period elapsed.<br>
+            Consent by the Patient/Insured/Beneficiary: I/We understand that Cashless facility is not 
+            automatically guaranteed by RGICL.  I/We have no objection to RGICL RCare Health Officials visiting 
+            the Hospital/Nursing Home to check  the details of treatment and are authorized to collect 
+            documents pertaining to my treatment from the Hospital/Nursing Home.<br>
+            I/We have provided  the necessary information accurately to the best  of my /our knowledge. I/We 
+            agree to pay the cost of the hospitalization, if authorization given by RGICL RCare Health becomes 
+            null and void, due to wrong and incorrect information.
+         </div>
+
+
+          <div style="margin-left: 50px; color: red;">
+              PATIENT SIGNATURE<span class="spanLine" style="width: 130px;"></span> 
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+              Treating doctor Signaure<span class="spanLine" style="width: 130px;"></span> <br><br>
+          </div>
+          <div style="margin-left: 50px; color: red;">
+            DATE & PLACE<span class="spanLine" style="width: 130px;">{{bunny.date|upper}}</span> 
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;STAMP OF HOSPITAL<span class="spanLine" style="width: 130px;"></span> 
+        </div>
+
+            
+
+        <div>
+            <div class="section" style="height: 197px; margin-top: 12px; line-height: 1.29;">
+                <div class="bg" ><div style="writing-mode: vertical-rl; position: absolute; margin-top: 50px; margin-left: 7px; color: white; ">
+                   <div class="ver">Declaration</div> </div>
+                    <div style="writing-mode: vertical-rl !important; position: absolute; margin-top: 67px;"></div>
+
+                </div>
+                <div>
+                    <div class="row" style="margin-top: -193px ; margin-left:72px;">
+                            I hereby agree, affirm and declare that, the statements/information given/stated by me/us in this 
+claim form is true, correct and                No material information which is relevant to the 
+processing of the claim or which in any manner has a bearing on the claim has been with held or not 
+disclosed. If I have given/made any false or fraudulent                                    or 
+suppressed or concealed or in any manner failed to disclose material information, the          
+shall be void & that I shall not be entitled to all/any rights to recover there under in            
+of any or all claims, past, present or future. The receipt of this claim form/other 
+supporting/related documents does not constitute  or be deemed  to constitute an agreement by the 
+Company of the claim and the Company reserves the right to process or reject or require 
+further/additional information in respect of the claim.<br>
+I  hereby  provide  my  consent  and  authorize  Reliance  General  Insurance  Company  Ltd  to  
+seek  any  medical  information  from  any hospital/Medical Practitioner who has at any time 
+attended on the insured person.<br>
+    
+                        <div style="line-height: 1.7; margin-top: 10px;">
+                            Place
+                            <span class="spanLine" style="width: 130px;"></span>
+                            <span class="spanLine" style="width: 130px; margin-left: 241px;"></span>
+                            <span class="" style="width: 130px; margin-left: -115px; position: absolute; margin-top: 19px; color: #d02727;">Signaure of claimant</span> <br>
+                           
+                            Date<span class="spanLine" style="width: 130px;"></span>
+                        </div>
+    
+    
+
+                        <div>
+                            <div style="margin-top:10px; margin-left:135px; font-size:larger; color:#ee0000;">IMPORTANT INFORMATION  FOR HOSPITALS</div>
+                        <div style="text-align: initial; margin-left: -70px; color:#1b9197">1.     The   Pre-authorisation   Request   Form   should   be   filled   with   due   care   
+including   the   unique   number   received   by   the Insured/member/beneficiary. All columns are 
+required to be filled in block letters.<br>
+2.     Completed    Pre-authorization   Request   Form   should   be   faxed   to   RCare-Health    
+on   1800   3010   3001,   or   emailed   at rgicl.rcareheaIth@reIianceada.com by the provider  
+hospital. It should reach us at least 4 days prior to likely date of admission.   In case of 
+emergency  admission Pre-Authorisation Request Form should be sent within 4 hours of admission.<br>
+3.     Authorisation may be denied if complete information is not provided or queries are not 
+replied to.<br>
+4.     Discrepancy  in the information  provided by the hospital records found at the time of claim 
+may render the authorisation  given null and void and the amount claimed by the hospital would have 
+to be settled by the Insured to the hospital.<br>
+5      Any changes in Diagnosis/Treatment plan should be intimated before discharge of the patient.<br>
+
+6      All queries raised by us need to be replied at the earliest & maximum within 24hrs.<br>
+
+7      Request for authorisation/enhancement will not be entertained after discharges of the 
+patient.<br>
+
+8      We shall share the  authorization denial letter to the concerned hospital within 24 hours of 
+complete and correct information being provided.<br>
+
+9      If clinical details provided are insufficient, there may be a delay in the authorisation or 
+denial for cashless.<br>
+
+10   As per IRDAI any claimed amount above 1lac, copy of PAN card/form 60  of the insured/Policy 
+holder/Proposer is mandatory and for  below 1lac, Photo identity proof ( For eg- Aadhar card, 
+Driving license, Election card, Passport etc) is mandatory.<br>
+<br>
+<strong style="color: black;">Email: rgicl.rcareheaIth@reIianceada.com, Help line: 1800 3009 (Toll free) (022) 4890 3009 (Paid) 
+    022    39898282 (Charges Apply) Fax No.: 180030103001  (Toll free)
+    IRDAI Registration No. 103. UIN of Reliance HealthGain Policy: UIN: RELHLIP13001V011213 UIN of 
+    Reliance HealthWise Policy : UIN: RELHLIP06001V010506
+     UIN of Group Mediclaim: UIN: RELHLGP02001V010102</strong>
+</div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+    
+    
+    
+            </div>
+        </div>
+
+           </div>
+    </div>
+    <script>
+
+        window.onload = function() {
+                  document.getElementById("download")
+                      .addEventListener("click", () => {
+                          const invoice = this.document.getElementById("invoice");
+                          console.log(invoice);
+                          console.log(window);
+                          var opt = {
+                              margin: 0,
+                              filename: 'Reliance.pdf',
+                              image: {
+                                  type: 'jpeg',
+                                  quality: 0.98
+                              },
+                              html2canvas: {
+                                  scale: 4
+                              },
+                              jsPDF: {
+                                  unit: 'in',
+                                  format: 'letter',
+                                  orientation: 'portrait'
+                              }
+                          };
+                          html2pdf().from(invoice).set(opt).save();
+                      })
+              }
+      </script>
+  
+
+
+ 
+</body>
+
+</html>

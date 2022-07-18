@@ -1,0 +1,47 @@
+/* .approveModalContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  max-width: 700px;
+  height: auto;
+  background: transparent linear-gradient(312deg, #090909 0%, #5a5a5a 100%) 0%
+    0% no-repeat padding-box;
+  border-radius: 10px;
+  outline: none;
+  margin: 0 16px;
+}
+
+.overlayContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+} */
+
+.modalContainer {
+  transform: translate(-50%, -50%);
+  width: 100%;
+  /* margin: 0 px; */
+}
+
+.overlayContainer {
+  background-color: rgba(0, 0, 0, 0.847);
+}
+
+.inputMainDiv {
+  width: 60%;
+  background-color: rgba(245, 255, 255, 0.1);
+  height: 28px;
+  display: inline-block;
+  border: 1px solid white;
+  border-radius: 5px;
+  padding-left: 10px;
+  white-space: pre;
+}

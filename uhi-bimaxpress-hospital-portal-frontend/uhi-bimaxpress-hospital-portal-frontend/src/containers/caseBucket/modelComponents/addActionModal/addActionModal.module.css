@@ -1,0 +1,18 @@
+.modalContainer {
+    transform: translate(-50%, -50%);
+    width: 100%;
+    /* margin: 0 px; */
+}
+
+.overlayContainer {
+    background-color: rgba(0, 0, 0, 0.847);
+}
+.tableHeader:last-child {
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+  }
+  .tableHeader:first-child {
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+  }
+  

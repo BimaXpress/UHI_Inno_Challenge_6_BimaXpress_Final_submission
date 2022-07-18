@@ -1,0 +1,1755 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.8.0/html2pdf.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <title>Raksha_health_insurance</title>
+
+    <style>
+        body {
+            background-color: #00000080;
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .imgdiv {}
+
+        .bgimg {}
+
+        .container {
+            background-color: white;
+            margin: 0px 200px;
+            padding-left: 60px;
+            padding-right: 25px;
+            /* height: 1040px; */
+            max-width: 720px;
+            margin: auto;
+            padding-top: 34px;
+            padding-bottom: 24px;
+            position: relative;
+            overflow: hidden;
+            background-color: white;
+            margin: 0px 200px;
+            padding-left: 60px;
+            padding-right: 25px;
+            height: 1040px;
+            max-width: 720px;
+            margin: auto;
+            padding-top: 34px;
+            padding-bottom: 24px;
+            margin: 0px 0px 0px 0px;
+            padding: 0px;
+            border: none;
+            width: 794px;
+            margin: auto;
+        }
+
+        .border {
+            background-color: white;
+            border: 2px solid black;
+            margin: 8px;
+            height: 940px;
+        }
+
+        .logo {
+            padding-top: 18px;
+            text-align: end;
+            margin-right: 61px;
+        }
+
+        .logoimg {
+            /* position: absolute;
+            left: 443px;
+            top: 63px; */
+            width: 74px;
+        }
+
+        .content {
+            /* background-color: rgb(230, 184, 184); */
+            background-color: white;
+            opacity: 1;
+            /* z-index: 4; */
+            /* padding: 36px; */
+            /* padding: 0 36px 36px 36px; */
+        }
+
+        .heading {
+            /* font-size: 20px; */
+            font-weight: bold;
+            text-decoration: underline;
+            margin-top: 5px;
+            text-align: center;
+        }
+
+        .note {
+            margin-left: 350px;
+            margin-top: 5px;
+            text-align: end;
+            font-weight: normal;
+        }
+
+        .list {
+            margin: 11px;
+        }
+
+        .sublist {
+            margin: 8px;
+        }
+
+        .note2 {
+            text-align: end;
+            font-weight: normal;
+        }
+
+        .spanBox {
+            font-size: 8px;
+            text-align: center;
+            display: inline-block;
+            border: 2px solid #444;
+            vertical-align: middle;
+            line-height: 13px;
+            width: 38px;
+            height: 19px;
+            /* margin-top: -19px; */
+            /* margin-left: -1px; */
+            /* margin-top: 2px; */
+            margin-top: -4px;
+            border-radius: 6px;
+        }
+
+        .spanBoxBig {
+            text-align: center;
+            display: inline-block;
+            border: 2px solid #444;
+            vertical-align: middle;
+            line-height: 13px;
+            width: 240px;
+            height: 90px;
+            margin-top: -19px;
+            margin-left: 0px;
+            margin-top: 2px;
+        }
+
+        .spanLine {
+            font-size: 10.5px;
+            display: inline-block;
+            border-bottom: 1px solid black;
+            vertical-align: middle;
+            line-height: 2px;
+            width: 10px;
+            height: 9px;
+            margin-top: 4px;
+            margin-left: -4.35px;
+        }
+
+        .dot {
+            letter-spacing: 1px;
+            font-size: 13px;
+        }
+
+        .my-5 {
+            margin: 5px;
+        }
+
+        .my-42 {
+            margin-left: 42px;
+        }
+
+        .my-10 {
+            margin-left: 10px;
+        }
+
+        .my-140 {
+            margin-left: 140px;
+        }
+
+        .hrline {
+            width: 555px;
+            height: 55px;
+            background-color: #444;
+        }
+
+        .row {
+            margin: 8px;
+        }
+
+        table,
+        th,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+
+        .trow {}
+
+        .head1 {
+            width: 260px;
+        }
+
+        .head2 {
+            width: 305px;
+        }
+
+        .head3 {
+            width: 110px;
+        }
+
+        .tdata {}
+
+        tr {
+            height: 21px;
+        }
+
+        td {
+            line-height: 1.7;
+        }
+    </style>
+</head>
+
+<body>
+    <button id="download"> Download Form</button>
+    <div id="invoice">
+        <!-- page 1 -->
+        <div class="container">
+            <div class="border">
+                <div class="logo">
+                    <img class="logoimg" src="./static/img/insuranceCompanyLogo/raksha.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="heading">
+                        REQUEST FOR CASHLESS HOSPITALISATION FOR HEALTH INSURANCE
+                    </div>
+                    <div class="heading" style="text-align: center">
+                        POLICY PART — C (Revised)
+                    </div>
+
+                    <div class="note">(TO BE FILLED IN BLOCK LETTERS)</div>
+                    <div class="heading">
+                        DETAILS OF THE THIRD PARTY ADMINISTRATOR/ INSURER/ HOSPITAL:
+
+                    </div>
+
+                    <ol type="a">
+                        <div style="margin-top:20px"></div>
+                        <li class="list">Name of TPA/Insurance company:
+                            <div style="position:absolute; margin: -13px 0 0px 200px; ">
+                                <span class="data"> Raksha Health Insurance TPA Pvt.Ltd.</span>
+                            </div>
+                            <span style="margin-left: 10px;"></span>
+                            <span class="spanLine" style="width:409px ;"> </span>
+
+
+                        </li>
+                        <li class="list">Toll Free Phone number :
+                            <div style="position:absolute; margin: -13px 0 0px 153px; ">
+                                <span class="data">
+                                    <%-hospitalDetailsDoctorDetailsContactNumberCountryCode%>
+                                        <%-hospitalDetailsDoctorDetailsContactNumber%>
+                                </span>
+                            </div>
+                            <span style="margin-left: 10px;"></span>
+                            <span class="spanLine" style="width:455px ;"> </span>
+                        </li>
+                        <li class="list">Toll Free Fax :
+                            <div style="position:absolute; margin: -13px 0 0px 153px; ">
+                                <span class="data"></span>
+                            </div>
+                            <span style="margin-left: 69px;"></span>
+                            <span class="spanLine" style="width:455px ;"> </span>
+
+                        </li>
+                        <li class="list">
+                            Name of Hospital:
+                            <div style="position:absolute; margin: -13px 0 0px 153px; ">
+                                <span class="data">
+                                    <%-hospitalDetailsName%>
+                                </span>
+                            </div>
+                            <span style="margin-left: 50px;"></span>
+                            <span class="spanLine" style="width:455px ;"> </span>
+                            <ol type="i">
+                                <li class="sublist">
+                                    Address
+                                    <div style="position:absolute; margin: -13px 0 0px 105px; ">
+                                        <span class="data">
+                                            <%-hospitalFullAddress%>
+                                        </span>
+                                    </div>
+                                    <span style="margin-left: 55px;"></span>
+                                    <span class="spanLine" style="width:455px ;"> </span>
+                                </li>
+                                <li class="sublist">
+                                    Rohini ID
+                                    <div style="position:absolute; margin: -13px 0 0px 105px; ">
+                                        <span class="data">
+                                            <%-hospitalDetailsRohiniId%>
+                                        </span>
+                                    </div>
+                                    <span style="margin-left: 47px;"></span>
+                                    <span class="spanLine" style="width:455px ;"> </span>
+                                </li>
+                                <li class="sublist">
+                                    E-mail ID
+                                    <div style="position:absolute; margin: -13px 0 0px 105px; ">
+                                        <span class="data">
+                                            <%-hospitalDetailsEmail%>
+                                        </span>
+                                    </div>
+                                    <span style="margin-left: 47px;"></span>
+                                    <span class="spanLine" style="width:455px ;"> </span>
+                                </li>
+                            </ol>
+                        </li>
+                    </ol>
+
+                    <div class="heading">TO BE FILLED BY INSURED/PATIENT</div>
+
+                    <ol type="A">
+                        <li class="list">Name of the Patient:
+                            <div style="position:absolute; margin: -13px 0 0px 153px; ">
+                                <span class="data">
+                                    <%-patientDetailsName%>
+                                </span>
+                            </div>
+                            <span style="margin-left: 37px;"></span>
+                            <span class="spanLine" style="width:455px ;"> </span>
+                        </li>
+                        <li class="list">Gender: <% if(patientDetailsGender.toUpperCase()==='MALE' ){ %>
+                                <span class="my-42"></span>
+                                <span class="spanBox"><img src="/tick.png"
+                                        style="width:20px; height: 13px ;   padding-top: 2px;"></span>
+
+                                <span class="sublist">Male</span>
+                                <span class="my-42"></span>
+                                <span class="spanBox"></span>
+                                <span class="sublist">Female</span>
+                                <span class="my-42"></span>
+                                <span class="spanBox"></span>
+                                <span class="sublist">Third Gender</span>
+                                <%}else if(patientDetailsGender.toUpperCase()==='FEMALE' ) {%>
+                                    %}
+                                    <span class="my-42"></span>
+                                    <span class="spanBox"></span>
+                                    <span class="sublist">Male</span>
+                                    <span class="my-42"></span>
+                                    <span class="spanBox"><img src="/tick.png"
+                                            style="width:20px; height: 13px ;   padding-top: 2px;"></span>
+                                    <span class="sublist">Female</span>
+                                    <span class="my-42"></span>
+                                    <span class="spanBox"></span>
+                                    <span class="sublist">Third Gender</span>
+                                    <% }else {%>
+                                        <span class="my-42"></span>
+                                        <span class="spanBox"></span>
+                                        <span class="sublist">Male</span>
+                                        <span class="my-42"></span>
+                                        <span class="spanBox"></span>
+                                        <span class="sublist">Female</span>
+                                        <span class="my-42"></span>
+                                        <span class="spanBox"><img src="/tick.png"
+                                                style="width:20px; height: 13px ;   padding-top: 2px;"></span>
+                                        <!-- height: 11px;    width: 20px;  padding-top: 3px; -->
+                                        <span class="sublist">Third Gender</span>
+                                        <% } %>
+
+                        </li>
+
+                        <li class="list">Age:
+                            <span style="margin-left: 182px;"></span>
+                            <div style="position:absolute; margin: -13px 0 0px 106px; ">
+                                <span class="data">
+                                    <%-patientDetailsAgeYear%>/<%-patientDetailsAgeMonth%>
+                                </span>
+                            </div>
+                            <span class="sublist">(Years) / (Month) </span>
+
+                        </li>
+
+                        <li class="list">Date of Birth:
+                            <div style="position:absolute; margin: -13px 0 0px 106px; ">
+                                <span class="data">
+                                    <%-patientDetailsDateOfBirth[8]%>
+                                </span>
+                                <span class="data">
+                                    <%-patientDetailsDateOfBirth[9]%>
+                                </span>
+                                <span class="data">
+                                    <%-patientDetailsDateOfBirth[7]%>
+                                </span>
+                                <span class="data">
+                                    <%-patientDetailsDateOfBirth[5]%>
+                                </span>
+                                <span class="data">
+                                    <%-patientDetailsDateOfBirth[6]%>
+                                </span>
+                                <span class="data">
+                                    <%-patientDetailsDateOfBirth[4]%>
+                                </span>
+                                <span class="data">
+                                    <%-patientDetailsDateOfBirth[0]%>
+                                </span>
+                                <span class="data">
+                                    <%-patientDetailsDateOfBirth[1]%>
+                                </span>
+                                <span class="data">
+                                    <%-patientDetailsDateOfBirth[2]%>
+                                </span>
+                                <span class="data">
+                                    <%-patientDetailsDateOfBirth[3]%>
+                                </span>
+                            </div>
+                            <span style="margin-left: 135px;"></span>
+                            <span class="sublist">(DD/MM/YYYY) </span>
+
+                        </li>
+                        <li class="list">Contact number:
+                            <div style="position:absolute; margin: -13px 0 0px 237px; ">
+                                <span class="data">
+                                    <%-patientDetailsIpdPatientNumber%>
+                                </span>
+                            </div>
+                            <span style="margin-left: 134px;"></span>
+                            <span class="spanLine" style="width: 380px;  "> </span>
+                        </li>
+
+                        <li class="list">Contact number of attending Relative
+                            <div style="position:absolute; margin: -13px 0 0px 237px; ">
+                                <span class="data">
+                                    <%-patientDetailsContactNumberRelativeContactNumber%>
+                                </span>
+                            </div>
+                            <span style="margin-left: 28px;"></span>
+                            <span class="spanLine" style="width: 380px;  "> </span>
+                        </li>
+
+                        <li class="list">Insured Card ID number:
+                            <div style="position:absolute; margin: -13px 0 0px 237px; ">
+                                <span class="data">
+                                    <%-patientDetailsHealthId%>
+                                </span>
+                            </div>
+                            <span style="margin-left: 89px;"></span>
+                            <span class="spanLine" style="width: 380px;  "> </span>
+                        </li>
+
+                        <li class="list">Policy number/Name of Corporate:
+                            <div style="position:absolute; margin: -13px 0 0px 237px; ">
+                                <span class="data">
+                                    <%-patientDetailsPolicyNumber%>
+                                </span>
+                            </div>
+                            <span style="margin-left: 41px;"></span>
+                            <span class="spanLine" style="width: 380px;  "> </span>
+                        </li>
+
+                        <li class="list">Employee ID:
+                            <div style="position:absolute; margin: -13px 0 0px 237px; ">
+                                <span class="data">
+                                    <%-patientDetailsEmployeeId%>
+                                </span>
+                            </div>
+                            <span style="margin-left: 152px;"></span>
+                            <span class="spanLine" style="width: 380px;  "> </span>
+                        </li>
+
+                        <li class="list">Currently do you have any other mediclaim /health insurance: <%
+                                if(patientDetailsHealthInsuranceChecked){ %>
+                                <span class="my-10"></span>
+                                <span class="spanBox"><img src="/tick.png"
+                                        style="width:20px; height: 13px ;   padding-top: 2px;"></span>
+                                <span class="sublist">Yes</span>
+                                <span class="my-42"></span>
+
+                                <span class="spanBox"></span>
+                                <span class="sublist">No</span>
+                                <% }else {%>
+                                    <span class="my-10"></span>
+                                    <span class="spanBox"></span>
+                                    <span class="sublist">Yes</span>
+                                    <span class="my-42"></span>
+
+                                    <span class="spanBox"><img src="/tick.png"
+                                            style="width:20px; height: 13px ;   padding-top: 2px;"></span>
+                                    <span class="sublist">No</span>
+                                    <% } %>
+
+
+                                        <ol type="i">
+                                            <li class="sublist">
+                                                Company Name :
+                                                <div style="position:absolute; margin: -13px 0 0px 190px; ">
+                                                    <span class="data">
+                                                        <%-patientDetailsHealthInsuranceCompanyName%>
+                                                    </span>
+                                                </div>
+                                                <span style="margin-left: 84px;"></span>
+                                                <span class="spanLine" style="width: 380px;  "> </span>
+                                            </li>
+                                            <li class="sublist">
+                                                Given Details
+                                                <div style="position:absolute; margin: -13px 0 0px 190px; ">
+                                                    <span class="data">
+                                                        <%-patientDetailsHealthInsuranceDetails%>
+                                                    </span>
+                                                </div>
+                                                <span style="margin-left: 105px;"></span>
+                                                <span class="spanLine" style="width: 380px;  "> </span>
+                                            </li>
+
+                                        </ol>
+
+                        </li>
+                        <li class="list">Do you have a family Physician: <% if(patientDetailsPhysicianChecked){ %>
+                                <span style="margin-left: 166px;"></span>
+                                <span class="spanBox"><img src="/tick.png"
+                                        style="width:20px; height: 13px ;   padding-top: 2px;"></span>
+                                <span class="my-5"></span>
+                                <span class="sublist">Yes</span>
+                                <span class="my-42"></span>
+                                <span class="spanBox"></span>
+                                <span class="my-5"></span>
+                                <span class="sublist">No</span>
+                                <% }else {%>
+                                    <span style="margin-left: 166px;"></span>
+                                    <span class="spanBox"></span>
+                                    <span class="my-5"></span>
+                                    <span class="sublist">Yes</span>
+                                    <span class="my-42"></span>
+                                    <span class="spanBox"><img src="/tick.png"
+                                            style="width:20px; height: 13px ;   padding-top: 2px;"></span>
+                                    <span class="my-5"></span>
+                                    <span class="sublist">No</span>
+                                    <% } %>
+
+
+
+                        </li>
+                        <li class="list">Name of the Family Physician:
+                            <div style="position:absolute; margin: -13px 0 0px 237px; ">
+                                <span class="data">
+                                    <%-patientDetailsPhysicianName%>
+                                </span>
+                            </div>
+                            <span style="margin-left: 66px;"></span>
+                            <span class="spanLine" style="width: 380px;"> </span>
+                        </li>
+                        <li class="list"> Contact number, if any:
+                            <div style="position:absolute; margin: -13px 0 0px 237px; ">
+                                <span class="data">
+                                    <%-patientDetailsPhysicianContactNumber%>
+                                </span>
+                            </div>
+                            <span style="margin-left: 98px;"></span>
+                            <span class="spanLine" style="width: 380px;"> </span>
+
+                        </li>
+                        <li class="list">Current Address of Insured Patient
+                            <div style="position:absolute; margin: -13px 0 0px 237px; ">
+                                <span class="data">
+                                    <%-patientDetailsCurrentAddressBuildingNumber%>,
+                                        <%-patientDetailsCurrentAddressArea%>,<%-patientDetailsCurrentAddressLandmark%>,
+                                                <%-patientDetailsCurrentAddressCity%>,
+                                                    <%-patientDetailsCurrentAddressState%>,
+                                                        <%-patientDetailsCurrentAddressCountry%>,
+                                                            <%-patientDetailsCurrentAddressPinCode%>
+                                </span>
+                            </div>
+                            <span style="margin-left: 40px;"></span>
+                            <span class="spanLine" style="width: 380px;"> </span>
+                        </li>
+                        <li class="list">Occupation of Insured Patient:
+                            <div style="position:absolute; margin: -13px 0 0px 237px; ">
+                                <span class="data">
+                                    <%-patientDetailsOccupation%>
+                                </span>
+                            </div>
+                            <span style="margin-left: 62px;"></span>
+                            <span class="spanLine" style="width: 380px;"> </span>
+                        </li>
+
+                    </ol>
+
+                    <div class="note2" style=" padding-left: 56px;">(PLEASE COMPLETE DECLARATION OF THIS FORM)</div>
+
+                </div>
+            </div>
+            <!-- <hr> -->
+            <div><span style="margin-left: 20px;"></span> 1 | <span class="note2"> p a g e</span></div>
+        </div>
+
+        <div style="width: 100%;     height: 22px;  "></div>
+
+        <!-- page 2 -->
+        <div class="container">
+            <div class="border">
+                <div class="logo">
+                    <img class="logoimg" src="./static/img/insuranceCompanyLogo/raksha.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="heading">
+
+                    </div>
+
+                    <span class="my-5"></span>
+                    <div class="heading">
+                        TO BE FILLED BY TREATING DOCTOR / HOSPITAL
+                    </div>
+
+                    <ol type="A">
+                        <li class="list">Name of the treating doctor:
+                            <div style="position:absolute; margin: -13px 0 0px 310px; ">
+                                <span class="data">
+                                    <%-hospitalDetailsDoctorDetailsName%>
+                                </span>
+                            </div>
+                            <span class="spanLine" style="width: 325px; margin-left: 136px;"> </span>
+                        </li>
+                        <li class="list">Contact number:
+                            <div style="position:absolute; margin: -13px 0 0px 310px; ">
+                                <span class="data">
+                                    <%-patientDetailsContactNumber%>
+                                </span>
+                            </div>
+                            <span class="spanLine" style="width: 325px; margin-left: 193px;"> </span>
+                        </li>
+                        <li class="list">Nature of illness/Disease with presenting complaint:
+                            <div style="position:absolute; margin: -13px 0 0px 310px; ">
+                                <span class="data">
+                                    <%-patientDetailsNatureOfIllness%>
+                                </span>
+                            </div>
+                            <span class="spanLine" style="width: 325px; margin-left: 17px;"> </span>
+                        </li>
+                        <li class="list"> Relevant Critical Findings:
+                            <div style="position:absolute; margin: -13px 0 0px 310px; ">
+                                <span class="data">
+                                    <%-patientDetailsReleventClinicChecked%>
+                                </span>
+                            </div>
+                            <span class="spanLine" style="width: 325px; margin-left: 143px;"> </span>
+
+                        </li>
+
+                        <li class="list">
+                            Duration of the present ailment:
+                            <div style="position:absolute; margin: -13px 0 0px 310px; ">
+                                <span class="data">
+                                    <%-patientDetailsDurationOfPresentAilments%>
+                                </span>
+                            </div>
+                            <span class="spanLine" style="width: 297px; margin-left: 117px;"> </span>
+                            <!-- <span style="margin-left: 47px;"></span> -->
+                            Days
+
+                            <ol type="i">
+                                <li class="sublist">
+                                    Date of First consultation:
+                                    <div style="position:absolute; margin: -13px 0 0px 263px; ">
+                                        <span class="data">
+                                            <%-patientDetailsDateOfFirstConsultation[8]%>
+                                        </span>
+                                        <span class="data">
+                                            <%-patientDetailsDateOfFirstConsultation[9]%>
+                                        </span>
+                                        <span class="data">
+                                            <%-patientDetailsDateOfFirstConsultation[7]%>
+                                        </span>
+                                        <span class="data">
+                                            <%-patientDetailsDateOfFirstConsultation[5]%>
+                                        </span>
+                                        <span class="data">
+                                            <%-patientDetailsDateOfFirstConsultation[6]%>
+                                        </span>
+                                        <span class="data">
+                                            <%-patientDetailsDateOfFirstConsultation[4]%>
+                                        </span>
+                                        <span class="data">
+                                            <%-patientDetailsDateOfFirstConsultation[0]%>
+                                        </span>
+                                        <span class="data">
+                                            <%-patientDetailsDateOfFirstConsultation[1]%>
+                                        </span>
+                                        <span class="data">
+                                            <%-patientDetailsDateOfFirstConsultation[2]%>
+                                        </span>
+                                        <span class="data">
+                                            <%-patientDetailsDateOfFirstConsultation[3]%>
+                                        </span>
+                                    </div>
+                                    <span class="spanLine" style="width: 325px; margin-left: 100px;"> </span>
+                                </li>
+                                <li class="sublist">
+                                    Past history of present ailment, if any:
+                                    <div style="position:absolute; margin: -13px 0 0px 263px; ">
+                                        <span class="data">
+                                            <%-patientDetailsPastHistoryOfPresentAilments%>
+                                        </span>
+                                    </div>
+                                    <span class="spanLine" style="width: 325px; margin-left: 38px;"> </span>
+                                </li>
+
+                            </ol>
+                        </li>
+
+                        <li class="list">
+                            Provisional diagnosis:
+                            <div style="position:absolute; margin: -13px 0 0px 310px; ">
+                                <span class="data">
+                                    <%-patientDetailsProvisionDiagnosis%>
+                                </span>
+                            </div>
+                            <span class="spanLine" style="width: 325px; margin-left: 171px;"> </span>
+                            <ol type="i">
+                                <li class="sublist">
+                                    ICD 10 code:
+                                    <div style="position:absolute; margin: -13px 0 0px 263px; ">
+                                        <span class="data">
+                                            <%-patientDetailsContactNumberCountryCode%>
+                                        </span>
+                                    </div>
+                                    <span class="spanLine" style="width: 325px; margin-left: 168px;"> </span>
+                                </li>
+                            </ol>
+                        </li>
+
+                        <li class="list">
+                            Proposed line of treatment:
+
+                            <ol type="i">
+                                <li class="sublist">
+                                    Medical Management<% if(patientDetailsProposedLineOfTreatment.includes('Medical
+                                        Management')){ %>
+                                        <span class="brack" style="  margin-left: 130px;">( <img height="9px"
+                                                src="/tick.png" width="9px"> )</span>
+                                        <% }else {%>
+                                            <span class="brack" style="  margin-left: 130px;">( &emsp; )</span>
+                                            <% } %>
+                                </li>
+                                <li class="sublist">
+                                    Surgical Management <% if(patientDetailsProposedLineOfTreatment.includes('Surgical
+                                        Management')){ %>
+                                        <span class="brack" style="  margin-left: 129px;">( <img height="9px"
+                                                src="/tick.png" width="9px"> )</span>
+                                        <% }else {%>
+                                            <span class="brack" style="  margin-left: 129px;">( &emsp; )</span>
+                                            <% } %>
+                                </li>
+
+                                <li class="sublist">
+                                    Intensive care <% if(patientDetailsProposedLineOfTreatment.includes('Intensive
+                                        Care')){ %>
+                                        <span class="brack" style="  margin-left: 170px;">( <img height="9px"
+                                                src="/tick.png" width="9px"> )</span>
+                                        <% }else {%>
+                                            <span class="brack" style="  margin-left: 170px;">( &emsp; )</span>
+                                            <% } %>
+                                </li>
+
+                                <li class="sublist">
+                                    Investigation <%
+                                        if(patientDetailsProposedLineOfTreatment.includes('Investigation')){ %>
+                                        <span class="brack" style="  margin-left: 176px;">( <img height="9px"
+                                                src="/tick.png" width="9px"> )</span>
+                                        <% }else {%>
+                                            <span class="brack" style="  margin-left: 176px;">( &emsp; )</span>
+                                            <% } %>
+                                </li>
+                                <li class="sublist">
+                                    Non-allopathic treatment<% if(patientDetailsProposedLineOfTreatment.includes('Non
+                                        Allopatic Treatment')){ %>
+                                        <span class="brack" style="  margin-left: 113px;">( <img height="9px"
+                                                src="/tick.png" width="9px"> )</span>
+                                        <% }else {%>
+                                            <span class="brack" style="  margin-left: 113px;">( &emsp; )</span>
+                                            <% } %>
+                                </li>
+                            </ol>
+                        </li>
+
+                        <li class="list">
+                            If investigation and/or Medical Management, provide details
+                            <div style="position:absolute; margin: -13px 0 0px 335px; ">
+                                <span class="data">
+                                    <%-patientDetailsIfInvestigationOrMedicalManagement%>
+                                </span>
+                            </div>
+                            <span class="spanLine" style="width: 290px; margin-left: 10px;"> </span>
+                            <ol type="i">
+                                <li class="sublist">
+                                    Route of Drug Administration
+                                    <div style="position:absolute; margin: -13px 0 0px 263px; ">
+                                        <span class="data">
+                                            <%-patientDetailsRouteOfDrugAdministration%>
+                                        </span>
+                                    </div>
+                                    <span class="spanLine" style="width: 325px; margin-left: 83px;"> </span>
+                                </li>
+                            </ol>
+                        </li>
+                        <li class="list">
+                            lf surgical, name of surgery:
+                            <div style="position:absolute; margin: -13px 0 0px 310px; ">
+                                <span class="data">
+                                    <%-patientDetailsSurgicalNameofSurgery%>
+                                </span>
+                            </div>
+                            <span class="spanLine" style="width: 325px;  margin-left: 141px;"> </span>
+                            <ol type="i">
+                                <li class="sublist">
+                                    ICD 10 PCS code
+                                    <div style="position:absolute; margin: -13px 0 0px 263px; ">
+                                        <span class="data">
+                                            <%-patientDetailsIcdCode10Pcs%>
+                                        </span>
+                                    </div>
+                                    <span class="spanLine" style="width: 325px;  margin-left: 148px;"> </span>
+                                </li>
+                            </ol>
+                        </li>
+
+                        <li class="list">If other treatment, provide details:
+                            <div style="position:absolute; margin: -13px 0 0px 310px; ">
+                                <span class="data">
+                                    <%-patientDetailsIfOtherTreatment%>
+                                </span>
+                            </div>
+                            <span class="spanLine" style="width: 325px;  margin-left: 109px;"> </span>
+                        </li>
+                        <li class="list">How did injury occur
+                            <div style="position:absolute; margin: -13px 0 0px 310px; ">
+                                <span class="data">
+                                    <%-patientDetailsReleventClinicInjuryOccur%>
+                                </span>
+                            </div>
+                            <span class="spanLine" style="width: 325px;  margin-left: 176px;"> </span>
+                        </li>
+
+                        <li class="list">
+                            In case of accident
+                            <ol type="i">
+                                <li class="sublist">
+                                    Is it RTA <% if(patientDetailsReleventClinicAccidentInCaseOfAccidentChecked){ %>
+                                        <span style="  margin-left: 325px;">
+                                            <span class="spanBox"><img src="/tick.png"
+                                                    style="width:20px; height: 13px ;   padding-top: 2px;"></span>
+                                            <span class="sublist">Yes</span>
+                                            <span class="my-10"></span>
+                                            <span class="my-10"></span>
+                                            <span class="spanBox"></span>
+                                            <span class="sublist">No</span>
+                                        </span>
+                                        <% }else {%>
+                                            <span style="  margin-left: 325px;">
+                                                <span class="spanBox"></span>
+                                                <span class="sublist">Yes</span>
+                                                <span class="my-10"></span>
+                                                <span class="my-10"></span>
+                                                <span class="spanBox"><img src="/tick.png"
+                                                        style="width:20px; height: 13px ;   padding-top: 2px;"></span>
+                                                <span class="sublist">No</span>
+                                            </span>
+                                            <% } %>
+                                </li>
+                                <li class="sublist">
+                                    Date of injury
+                                    <div style="position:absolute; margin: -13px 0 0px 145px; ">
+                                        <span class="data">
+                                            <%-patientDetailsReleventClinicAccidentInCaseOfAccidentDateOfInjury[8]%>
+                                        </span>
+                                        <span class="data">
+                                            <%-patientDetailsReleventClinicAccidentInCaseOfAccidentDateOfInjury[9]%>
+                                        </span>
+                                        <span class="data">
+                                            <%-patientDetailsReleventClinicAccidentInCaseOfAccidentDateOfInjury[7]%>
+                                        </span>
+                                        <span class="data">
+                                            <%-patientDetailsReleventClinicAccidentInCaseOfAccidentDateOfInjury[5]%>
+                                        </span>
+                                        <span class="data">
+                                            <%-patientDetailsReleventClinicAccidentInCaseOfAccidentDateOfInjury[6]%>
+                                        </span>
+                                        <span class="data">
+                                            <%-patientDetailsReleventClinicAccidentInCaseOfAccidentDateOfInjury[4]%>
+                                        </span>
+                                        <span class="data">
+                                            <%-patientDetailsReleventClinicAccidentInCaseOfAccidentDateOfInjury[0]%>
+                                        </span>
+                                        <span class="data">
+                                            <%-patientDetailsReleventClinicAccidentInCaseOfAccidentDateOfInjury[1]%>
+                                        </span>
+                                        <span class="data">
+                                            <%-patientDetailsReleventClinicAccidentInCaseOfAccidentDateOfInjury[2]%>
+                                        </span>
+                                        <span class="data">
+                                            <%-patientDetailsReleventClinicAccidentInCaseOfAccidentDateOfInjury[3]%>
+                                        </span>
+                                    </div>
+                                    <span style="  margin-left: 166px;">
+                                        (DD/MM/YYYY)
+                                    </span>
+                                </li>
+
+                                <li class="sublist">
+                                    Report to Police <%
+                                        if(patientDetailsReleventClinicAccidentInCaseOfAccidentReportedToPoliceChecked){
+                                        %>
+                                        <span style=" margin-left: 289px;">
+                                            <span class="spanBox"><img src="/tick.png"
+                                                    style="width:20px; height: 13px ;   padding-top: 2px;"></span>
+                                            <span class="sublist">Yes</span>
+                                            <span class="my-10"></span>
+                                            <span class="my-10"></span>
+                                            <span class="spanBox"></span>
+                                            <span class="sublist">No</span>
+                                        </span>
+                                        <% }else {%>
+                                            <span style=" margin-left: 289px;">
+                                                <span class="spanBox"></span>
+                                                <span class="sublist">Yes</span>
+                                                <span class="my-10"></span>
+                                                <span class="my-10"></span>
+                                                <span class="spanBox"><img src="/tick.png"
+                                                        style="width:20px; height: 13px ;   padding-top: 2px;"></span>
+                                                <span class="sublist">No</span>
+                                            </span>
+                                            <% } %>
+                                </li>
+
+                                <li class="sublist">
+                                    FIR No.:
+                                    <div style="position:absolute; margin: -13px 0 0px 262px; ">
+                                        <span class="data">
+                                            <%-patientDetailsReleventClinicAccidentInCaseOfAccidentReportedToPoliceFirNumber%>
+                                        </span>
+                                    </div>
+                                    <span class="spanLine" style="width: 150px;  margin-left: 193px;"> </span>
+                                    <!-- MLC No
+                                <span class="dot"> .............................. </span> -->
+                                </li>
+
+                                <li class="sublist">
+                                    Injury /Disease caused due to substance abuse/alcohol consumption <%
+                                        if(patientDetailsReleventClinicAccidentAlcoholConsumption){ %>
+                                        <span style="  margin-left: 31px;">
+                                            <span class="spanBox"><img src="/tick.png"
+                                                    style="width:20px; height: 13px ;   padding-top: 2px;"></span>
+                                            <span class="sublist">Yes</span>
+                                            <span class="my-10"></span>
+                                            <span class="my-10"></span>
+                                            <span class="spanBox"></span>
+                                            <span class="sublist">No</span>
+                                        </span>
+                                        <% }else {%>
+                                            <span style="  margin-left: 31px;">
+                                                <span class="spanBox"></span>
+                                                <span class="sublist">Yes</span>
+                                                <span class="my-10"></span>
+                                                <span class="my-10"></span>
+                                                <span class="spanBox"><img src="/tick.png"
+                                                        style="width:20px; height: 13px ;   padding-top: 2px;"></span>
+                                                <span class="sublist">No</span>
+                                            </span>
+                                            <% } %>
+                                </li>
+
+                                <li class="sublist">
+                                    Test conducted to establish this (if yes, attach report) <%
+                                        if(patientDetailsReleventClinicAccidentTestConducted){ %>
+                                        <span style="  margin-left: 106px;">
+                                            <span class="spanBox"><img src="/tick.png"
+                                                    style="width:20px; height: 13px ;   padding-top: 2px;"></span>
+                                            <span class="sublist">Yes</span>
+                                            <span class="my-10"></span>
+                                            <span class="my-10"></span>
+                                            <span class="spanBox"></span>
+                                            <span class="sublist">No</span>
+                                        </span>
+                                        <% }else {%>
+                                            <span style="  margin-left: 106px;">
+                                                <span class="spanBox"></span>
+                                                <span class="sublist">Yes</span>
+                                                <span class="my-10"></span>
+                                                <span class="my-10"></span>
+                                                <span class="spanBox"><img src="/tick.png"
+                                                        style="width:20px; height: 13px ;   padding-top: 2px;"></span>
+                                                <span class="sublist">No</span>
+                                            </span>
+                                            <% } %>
+                                </li>
+
+                            </ol>
+                        </li>
+
+                        <li class="list">In case of Maternity
+
+                            <span class="my-42"></span>
+                            <span class="my-42"></span>
+                            <span class="my-10"></span>
+                            <% if(patientDetailsReleventClinicMaternityMaternity.includes('G')){ %>
+                                <span class="spanBox"><img src="/tick.png"
+                                        style="width:20px; height: 13px ;   padding-top: 2px;"></span>
+                                <span class="sublist">G</span>
+                                <% }else {%>
+                                    <span class="spanBox"></span>
+                                    <span class="sublist">G</span>
+                                    <% } %>
+
+                                        <span class="my-10"></span>
+                                        <span class="my-10"></span>
+                                        <% if(patientDetailsReleventClinicMaternityMaternity.includes('P')){ %>
+                                            <span class="spanBox"><img src="/tick.png"
+                                                    style="width:20px; height: 13px ;   padding-top: 2px;"></span>
+                                            <span class="sublist">P</span>
+                                            <% }else {%>
+                                                <span class="spanBox"></span>
+                                                <span class="sublist">P</span>
+                                                <% } %>
+
+                                                    <span class="my-10"></span>
+                                                    <span class="my-10"></span>
+                                                    <% if(patientDetailsReleventClinicMaternityMaternity.includes('L')){
+                                                        %>
+                                                        <span class="spanBox"><img src="/tick.png"
+                                                                style="width:20px; height: 13px ;   padding-top: 2px;"></span>
+                                                        <span class="sublist">L</span>
+                                                        <% }else {%>
+                                                            <span class="spanBox"></span>
+                                                            <span class="sublist">L</span>
+                                                            <% } %>
+
+                                                                <span class="my-10"></span>
+                                                                <span class="my-10"></span>
+                                                                <% if(patientDetailsReleventClinicMaternityMaternity.includes('A')){
+                                                                    %>
+                                                                    <span class="spanBox"><img src="/tick.png"
+                                                                            style="width:20px; height: 13px ;   padding-top: 2px;"></span>
+                                                                    <span class="sublist">A</span>
+                                                                    <% }else {%>
+                                                                        <span class="spanBox"></span>
+                                                                        <span class="sublist">A</span>
+                                                                        <% } %>
+
+                                                                            <ol type="i">
+
+                                                                                <li class="sublist">
+                                                                                    Expected date of delivery
+                                                                                    <div
+                                                                                        style="position:absolute; margin: -13px 0 0px 145px; ">
+                                                                                        <span class="data">
+                                                                                            <%-patientDetailsReleventClinicMaternityExpectedDateOfDelivery[8]%>
+                                                                                        </span>
+                                                                                        <span class="data">
+                                                                                            <%-patientDetailsReleventClinicMaternityExpectedDateOfDelivery[9]%>
+                                                                                        </span>
+                                                                                        <span class="data">
+                                                                                            <%-patientDetailsReleventClinicMaternityExpectedDateOfDelivery[7]%>
+                                                                                        </span>
+                                                                                        <span class="data">
+                                                                                            <%-patientDetailsReleventClinicMaternityExpectedDateOfDelivery[5]%>
+                                                                                        </span>
+                                                                                        <span class="data">
+                                                                                            <%-patientDetailsReleventClinicMaternityExpectedDateOfDelivery[6]%>
+                                                                                        </span>
+                                                                                        <span class="data">
+                                                                                            <%-patientDetailsReleventClinicMaternityExpectedDateOfDelivery[4]%>
+                                                                                        </span>
+                                                                                        <span class="data">
+                                                                                            <%-patientDetailsReleventClinicMaternityExpectedDateOfDelivery[0]%>
+                                                                                        </span>
+                                                                                        <span class="data">
+                                                                                            <%-patientDetailsReleventClinicMaternityExpectedDateOfDelivery[1]%>
+                                                                                        </span>
+                                                                                        <span class="data">
+                                                                                            <%-patientDetailsReleventClinicMaternityExpectedDateOfDelivery[2]%>
+                                                                                        </span>
+                                                                                        <span class="data">
+                                                                                            <%-patientDetailsReleventClinicMaternityExpectedDateOfDelivery[3]%>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <span style="  margin-left: 166px;">
+                                                                                        (DD/MM/YYYY)
+                                                                                    </span>
+                                                                                </li>
+                                                                            </ol>
+                        </li>
+
+
+                    </ol>
+
+                </div>
+            </div>
+            <div><span style="margin-left: 20px;"></span> 2 | <span class="note2"> p a g e</span></div>
+        </div>
+
+
+        <div style="width: 100%;     height: 22px;  "></div>
+
+        <!-- page 3 -->
+
+        <div class="container">
+            <div class="border">
+                <div class="logo">
+                    <img class="logoimg" src="./static/img/insuranceCompanyLogo/raksha.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="heading">
+
+                    </div>
+
+                    <div class="note">
+                        <span class="my-5"></span>
+                    </div>
+                    <span class="my-5"></span>
+                    <div class="heading">
+                        DETAILS OF PATIENT ADMITTED
+                    </div>
+
+                    <ol type="A">
+                        <li class="list"> Date of admission:
+                            <div style="position:absolute; margin: -13px 0 0px 145px; ">
+                                <span class="data">
+                                    <%-hospitalDetailsDateOfAdmission[8]%>
+                                </span>
+                                <span class="data">
+                                    <%-hospitalDetailsDateOfAdmission[9]%>
+                                </span>
+                                <span class="data">
+                                    <%-hospitalDetailsDateOfAdmission[7]%>
+                                </span>
+                                <span class="data">
+                                    <%-hospitalDetailsDateOfAdmission[5]%>
+                                </span>
+                                <span class="data">
+                                    <%-hospitalDetailsDateOfAdmission[6]%>
+                                </span>
+                                <span class="data">
+                                    <%-hospitalDetailsDateOfAdmission[4]%>
+                                </span>
+                                <span class="data">
+                                    <%-hospitalDetailsDateOfAdmission[0]%>
+                                </span>
+                                <span class="data">
+                                    <%-hospitalDetailsDateOfAdmission[1]%>
+                                </span>
+                                <span class="data">
+                                    <%-hospitalDetailsDateOfAdmission[2]%>
+                                </span>
+                                <span class="data">
+                                    <%-hospitalDetailsDateOfAdmission[3]%>
+                                </span>
+                            </div>
+                            <span style="  margin-left: 224px;">
+                                (DD/MM/YYYY)
+                            </span>
+                        </li>
+
+                        <li class="list"> Time of admission:
+                            <div style="position:absolute; margin: -13px 0 0px 145px; ">
+
+
+
+
+                                <span class="data">
+                                    <%-hospitalDetailsTimeOfAdmission[3]%>
+                                </span>
+                                <span class="data">
+                                    <%-hospitalDetailsTimeOfAdmission[0]%>
+                                </span>
+                                <span class="data">
+                                    <%-hospitalDetailsTimeOfAdmission[1]%>
+                                </span>
+                                <span class="data"> :</span>
+
+                                <span class="data">
+                                    <%-hospitalDetailsTimeOfAdmission[3]%>
+                                </span>
+                                <span class="data">
+                                    <%-hospitalDetailsTimeOfAdmission[4]%>
+                                </span>
+                            </div>
+                            <span style="  margin-left:218px;">
+                                ( HH : MM )
+                            </span>
+                        </li>
+
+                        <li class="list">Is this an emergency/planned hospitalization event: <%
+                                if(hospitalDetailsEmergencyOrPlannedEvent.toUpperCase()==="EMERGENCY" ){ %>
+                                <span style="  margin-left: 55px;">
+                                    <span class="spanBox"><img src="/tick.png"
+                                            style="width:20px; height: 13px ;   padding-top: 2px;"></span>
+                                    <span class="sublist">Emergency</span>
+                                    <span class="my-10"></span>
+                                    <span class="my-10"></span>
+                                    <span class="spanBox"></span>
+                                    <span class="sublist">Planned</span>
+                                </span>
+                                <% }else {%>
+                                    <span style="  margin-left: 55px;">
+                                        <span class="spanBox"></span>
+                                        <span class="sublist">Emergency</span>
+                                        <span class="my-10"></span>
+                                        <span class="my-10"></span>
+                                        <span class="spanBox"><img src="/tick.png"
+                                                style="width:20px; height: 13px ;   padding-top: 2px;"></span>
+                                        <span class="sublist">Planned</span>
+                                    </span>
+                                    <% } %>
+                        </li>
+
+                        <li class="list">
+                            Mandatory Past History of any chronic illness
+                            <span style="  margin-left: 75px;">
+                                <span class="sublist">If Yes ( Since Month /Year )</span></span>
+
+
+                            <ol type="i">
+                                <li class="sublist">
+                                    Diabetes
+                                    <div style="position:absolute; margin: -13px 0 0px 310px; ">
+                                        <span class="data">
+                                            <%-hospitalDetailsAnyPastHistoryDiabetesMonth%>/
+                                                <%-hospitalDetailsAnyPastHistoryDiabetesYear%>
+                                        </span>
+                                    </div>
+                                    <span class="spanLine" style="width: 280px;  margin-left:230px;"> </span>
+
+                                </li>
+
+                                <li class="sublist">
+                                    Heart disease
+                                    <div style="position:absolute; margin: -13px 0 0px 310px; ">
+                                        <span class="data">
+                                            <%-hospitalDetailsAnyPastHistoryHeartDiseaseMonth%>/
+                                                <%-hospitalDetailsAnyPastHistoryHeartDiseaseYear%>
+                                        </span>
+                                    </div>
+                                    <span class="spanLine" style="width: 280px;  margin-left: 206px;"> </span>
+
+                                </li>
+                                <li class="sublist">
+                                    Hypertension
+                                    <div style="position:absolute; margin: -13px 0 0px 310px; ">
+                                        <span class="data">
+                                            <%-hospitalDetailsAnyPastHistoryHypertensionMonth%>/
+                                                <%-hospitalDetailsAnyPastHistoryHypertensionYear%>
+                                        </span>
+                                    </div>
+                                    <span class="spanLine" style="width: 280px;  margin-left: 207px;"> </span>
+                                </li>
+                                <li class="sublist">
+                                    Hyperlipidemias
+                                    <div style="position:absolute; margin: -13px 0 0px 310px; ">
+                                        <span class="data">
+                                            <%-hospitalDetailsAnyPastHistoryHyperlipidemiasMonth%>/
+                                                <%-hospitalDetailsAnyPastHistoryHyperlipidemiasYear%>
+                                        </span>
+                                    </div>
+                                    <span class="spanLine" style="width: 280px;  margin-left: 189px;"> </span>
+                                </li>
+                                <li class="sublist">
+                                    Osteoarthritis
+                                    <div style="position:absolute; margin: -13px 0 0px 310px; ">
+                                        <span class="data">
+                                            <%-hospitalDetailsAnyPastHistoryOsteoarthritisMonth%>/
+                                                <%-hospitalDetailsAnyPastHistoryOsteoarthritisYear%>
+                                        </span>
+                                    </div>
+                                    <span class="spanLine" style="width: 280px;  margin-left: 201px;"> </span>
+
+                                </li>
+                                <li class="sublist">
+                                    Asthma/COPD/Bronchitis
+                                    <div style="position:absolute; margin: -13px 0 0px 310px; ">
+                                        <span class="data">
+                                            <%-hospitalDetailsAnyPastHistoryAsthmaCOPDBronchitisMonth%>/
+                                                <%-hospitalDetailsAnyPastHistoryAsthmaCOPDBronchitisYear%>
+                                        </span>
+                                    </div>
+                                    <span class="spanLine" style="width: 280px;  margin-left: 142px;"> </span>
+                                </li>
+                                <li class="sublist">
+                                    Cancer
+                                    <div style="position:absolute; margin: -13px 0 0px 310px; ">
+                                        <span class="data">
+                                            <%-hospitalDetailsAnyPastHistoryCancerMonth%>/
+                                                <%-hospitalDetailsAnyPastHistoryCancerYear%>
+                                        </span>
+                                    </div>
+                                    <span class="spanLine" style="width: 280px;  margin-left: 239px;"> </span>
+                                </li>
+                                <li class="sublist">
+                                    Alcohol/Drug abuse
+                                    <div style="position:absolute; margin: -13px 0 0px 310px; ">
+                                        <span class="data">
+                                            <%-hospitalDetailsAnyPastHistoryAlcoholDragAbuseMonth%>/
+                                                <%-hospitalDetailsAnyPastHistoryAlcoholDragAbuseYear%>
+                                        </span>
+                                    </div>
+                                    <span class="spanLine" style="width: 280px;  margin-left:174px;"> </span>
+                                </li>
+                                <li class="sublist">
+                                    Any HIV/ or STD Related ailment
+                                    <div style="position:absolute; margin: -13px 0 0px 310px; ">
+                                        <span class="data">
+                                            <%-hospitalDetailsAnyPastHistoryAnyHIVOrAilmentsMonth%>/
+                                                <%-hospitalDetailsAnyPastHistoryAnyHIVOrAilmentsYear%>
+                                        </span>
+                                    </div>
+                                    <span class="spanLine" style="width: 280px;  margin-left: 101px;"> </span>
+                                </li>
+                                <li class="sublist">
+                                    Any other ailment, give details
+                                    <div style="position:absolute; margin: -13px 0 0px 310px; ">
+                                        <span class="data">
+                                            <%-hospitalDetailsAnyPastHistoryAnyOtherAilments%>
+                                        </span>
+                                    </div>
+                                    <span class="spanLine" style="width: 280px;  margin-left: 120px;"> </span>
+                                </li>
+
+                            </ol>
+                        </li>
+
+
+                        <li class="list">Expected number of Days/stay in hospital :
+                            <div style="position:absolute; margin: -13px 0 0px 361px; ">
+                                <span class="data">
+                                    <%-hospitalDetailsDaysInHospital%>
+                                </span>
+                            </div>
+                            <span class="spanLine" style="width: 252px;  margin-left:106px;"> </span> Days
+                        </li>
+
+                        <li class="list">Days in ICU :
+                            <div style="position:absolute; margin: -13px 0 0px 361px; ">
+                                <span class="data">
+                                    <%-hospitalDetailsDaysInICU%>
+                                </span>
+                            </div>
+                            <span class="spanLine" style="width: 252px;  margin-left: 257px;"> </span> Days
+                        </li>
+
+                        <li class="list">Room Type :
+                            <div style="position:absolute; margin: -13px 0 0px 361px; ">
+                                <span class="data">
+                                    <%-hospitalDetailsRoomType%>
+                                </span>
+                            </div>
+                            <span class="spanLine" style="width: 280px;  margin-left: 263px;"> </span>
+                        </li>
+
+                        <li class="list">Per day room rent+nursing and service charges+patients diet :
+                            <div style="position:absolute; margin: -13px 0 0px 361px; ">
+                                <span class="data">
+                                    <%-hospitalDetailsChargeListPerDayRoomRent%>
+                                </span>
+                            </div>
+                            <span class="spanLine" style="width: 280px;  margin-left: 10px;"> </span>
+                        </li>
+                        <li class="list"> Expected cost of investigation + diagnostic :
+                            <div style="position:absolute; margin: -13px 0 0px 361px; ">
+                                <span class="data">
+                                    <%-hospitalDetailsChargeListCostOfInvestigation%>
+                                </span>
+                            </div>
+                            <span class="spanLine" style="width: 280px;  margin-left: 108px;"> </span>
+                        </li>
+
+                        <li class="list"> ICU charges :
+                            <div style="position:absolute; margin: -13px 0 0px 361px; ">
+                                <span class="data">
+                                    <%-hospitalDetailsChargeListIcuCharges%>
+                                </span>
+                            </div>
+                            <span class="spanLine" style="width: 280px;  margin-left: 260px;"> </span>
+                        </li>
+
+                        <li class="list"> OT Charges :
+                            <div style="position:absolute; margin: -13px 0 0px 361px; ">
+                                <span class="data">
+                                    <%-hospitalDetailsChargeListOtCharges%>
+                                </span>
+                            </div>
+                            <span class="spanLine" style="width: 280px;  margin-left: 261px;"> </span>
+                        </li>
+
+                        <li class="list">Professional fees Surgeon+Anesthetist Fees+consultation Charges:
+                            <div style="position:absolute; margin: -13px 0 0px 400px; ">
+                                <span class="data">
+                                    <%-hospitalDetailsChargeListProfessionalFeesSurgeon%>
+                                </span>
+                            </div>
+                            <span class="spanLine" style="width: 235px;  margin-left: 38px;"> </span>
+                        </li>
+                        <li class="list"> Medicines+Consumables+Cost of Implants (if applicable please specify):
+                            <div style="position:absolute; margin: -13px 0 0px 400px; ">
+                                <span class="data">
+                                    <%- hospitalDetailsChargeListConsumables + hospitalDetailsChargeListCostOfImplant %>
+                                </span>
+                            </div>
+                            <span class="spanLine" style="width: 235px;  margin-left: 8px;"> </span>
+
+                        </li>
+
+                        <li class="list">Other hospital expenses if any:
+                            <div style="position:absolute; margin: -13px 0 0px 400px; ">
+                                <span class="data">
+                                    <%-hospitalDetailsChargeListOtherHospitalIfAny%>
+                                </span>
+                            </div>
+                            <span class="spanLine" style="width: 235px;  margin-left:222px;"> </span>
+                        </li>
+                        <li class="list">All-inclusive package charges if any applicable:
+                            <div style="position:absolute; margin: -13px 0 0px 400px; ">
+                                <span class="data">
+                                    <%-hospitalDetailsChargeListAllIncludingPackage%>
+                                </span>
+                            </div>
+                            <span class="spanLine" style="width: 235px;  margin-left: 137px;"> </span>
+                        </li>
+                        <li class="list">Sum total expected cost of hospitalization :
+                            <div style="position:absolute; margin: -13px 0 0px 361px; ">
+                                <span class="data">{<%-hospitalDetailsTotal%> </span>
+                            </div>
+                            <span class="spanLine" style="width: 280px;  margin-left: 118px;"> </span>
+                        </li>
+
+                    </ol>
+
+                </div>
+                <div style="margin-top: 100px;"></div>
+            </div>
+            <div><span style="margin-left: 20px;"></span> 3 | <span class="note2"> p a g e</span></div>
+        </div>
+
+
+        <div style="width: 100%;     height: 22px;  "></div>
+
+        <!-- page 4 -->
+
+        <div class="container">
+            <div class="border">
+                <div class="logo">
+                    <img class="logoimg" src="./static/img/insuranceCompanyLogo/raksha.png" alt="">
+                </div>
+
+                <div class="content">
+                    <div class="heading">
+
+                    </div>
+
+                    <div class="note">
+                        <span class="my-5"></span>
+                    </div>
+                    <span class="my-5"></span>
+                    <div class="heading" style="font-size:18px">
+                        DECLARATION
+                        <div style="    display: inline;    margin-left: 5px;">(Mandatory)
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 15px;"></div>
+
+                    <div class="heading">(Please read very carefully)</div>
+                    <div style="margin-top: 25px;"></div>
+                    <div class="heading" style="text-decoration: none; font-size: 13px;">We confirm having read
+                        understood and agreed to the Declarations of this form</div>
+                    <div style="margin-top: 25px;"></div>
+
+
+                    <ol type="a">
+                        <li class="list">Name of the treating doctor :
+                            <div style="position:absolute; margin: -13px 0 0px 230px; ">
+                                <span class="data">
+                                    <%-hospitalDetailsDoctorDetailsName%>
+                                </span>
+                            </div>
+                            <span class="spanLine" style="width: 410px; margin-left: 48px;"> </span>
+                        </li>
+                        <li class="list">Qualification:
+                            <div style="position:absolute; margin: -13px 0 0px 230px; ">
+                                <span class="data">
+                                    <%-hospitalDetailsDoctorDetailsQualification%>
+                                </span>
+                            </div>
+                            <span class="spanLine" style="width: 410px; margin-left: 125px;"> </span>
+                        </li>
+                        <li class="list">Registration number with State code:
+                            <div style="position:absolute; margin: -13px 0 0px 230px; ">
+                                <span class="data">
+                                    <%-hospitalDetailsDoctorDetailsRegistrationNo%>
+                                </span>
+                            </div>
+                            <span class="spanLine" style="width: 410px; margin-left: 9px;"> </span>
+                        </li>
+
+                        <div style="margin-top: 45px;"></div>
+                        <span class="spanBoxBig"></span>
+                        <span class="my-42"></span>
+                        <span class="spanBoxBig"></span>
+                    </ol>
+
+                    <span class="heading"
+                        style="      text-decoration: none;          font-size: 13px;          text-align: start;          margin-left: 47px;">Hospital
+                        Seal (must include Hospital ID)</span>
+
+                    <span class="heading"
+                        style="      text-decoration: none;          font-size: 13px;          text-align: start;          margin-left: 81px;">Patient
+                        / Insured Name and Sign</span>
+
+
+                    <div style="margin-top: 400px;"></div>
+
+                </div>
+            </div>
+            <div><span style="margin-left: 20px;"></span> 4 | <span class="note2"> p a g e</span></div>
+        </div>
+
+        <div style="width: 100%;     height: 22px;  "></div>
+
+        <!-- page 5 -->
+
+        <div class="container">
+            <div class="border" style="height:978px">
+                <div class="logo">
+                    <img class="logoimg" src="./static/img/insuranceCompanyLogo/raksha.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="heading">
+                    </div>
+
+                    <div class="note">
+                        <span class="my-5"></span>
+                    </div>
+                    <span class="my-5"></span>
+                    <div class="heading" style="text-align: start;">
+                        DECLARATION BY THE PATIENT / REPRESENTATIVE
+                    </div>
+
+                    <ol type="a" style="margin: 19px; line-height:2.2">
+                        <li class="list"> I agree to allow the hospital to submit all original documents pertaining to
+                            hospitalization to the Insurer/TPA after the discharge. i agree to sign on the Final Bill &
+                            the Discharge Summary, before my discharge.
+                        </li>
+                        <li class="list"> Payment to hospital is governed by the terms and conditions of the policy. In
+                            case the insurer / TPA is not liable to settle the hospital bill, I undertake to settle the
+                            bill as per the terms and conditions of the policy.
+                        </li>
+                        <li class="list">All non-medical expenses and expenses not relevant to current hospitalization
+                            and the amounts over & above the limit authorized by the Insurer/TPA not governed by the
+                            terms and conditions of the policy will be paid by me.
+                        </li>
+                        <li class="list">I hereby declare to abide by the terms and conditions of the policy and if at
+                            any time the facts disclosed by me are found to be false or incorrect I forfeit my claim and
+                            agree to indemnify the insurer / TPA.
+                        </li>
+
+                        <li class="list">I agree and understand that TPA is in no way warranting the service of the
+                            hospital & that the Insurer / TPA is in no way guaranteeing that the services provided by
+                            the hospital will be of a particular quality or standard.
+                        </li>
+                        <li class="list">I hereby warrant the truth of the forgoing particulars in every respect and I
+                            agree that if I have made or shall make any false or untrue statement, suppression or
+                            concealment with respect to the claim, my right to claim reimbursement
+                            of the said expenses shall be absolutely forfeited
+                        </li>
+                        <li class="list">I agree to indemnify the hospital against all expenses incurred on my behalf,
+                            which are not reimbursed by the Insurer / TPA.
+                        </li>
+
+                        <li class="list">
+                            “I/We authorize Insurance Company/TPA to contact me/us through mobile/email for any update
+                            on this claim"
+
+                            <ul style="    list-style: none;
+                        line-height: normal;
+                        margin-left: -40px; ">
+                                <li class="sublist">
+                                    <span class="my-5"> a) </span> Patient's / Insured's Name:
+                                    <div style="position:absolute; margin: -13px 0 0px 200px; ">
+                                        <span class="data">
+                                            <%-patientDetailsName%>
+                                        </span>
+                                    </div>
+                                    <span class="spanLine" style="width: 367px;  left: 804px;"> </span>
+
+                                </li>
+                                <li class="sublist">
+                                    <span class="my-5"> b) </span> Contact number:
+                                    <div style="position:absolute; margin: -13px 0 0px 147px; ">
+                                        <span class="data">
+                                            <%-patientDetailsContactNumber%>
+                                        </span>
+                                    </div>
+                                    <span class="spanLine" style="width: 157px;"> </span>
+
+
+                                    <span class="sublist">
+                                        <span class="my-5"> c) </span> E-mail ID(optional):
+                                        <span class="spanLine" style="width: 157px;"> </span>
+                                    </span>
+                                </li>
+
+                                <li class="sublist">
+                                    <span class="my-5"> d) </span> Patient's / Insured's Signature:
+                                    <span class="spanLine" style="width: 383px;"> </span>
+                                    <div class="my-5"></div>
+                                    <div class="dot">Date:
+                                        <span class="spanLine" style="width: 157px;"> </span> Time:
+                                        <span class="spanLine" style="width: 157px;"> </span>
+                                        </span>
+                                    </div>
+
+                                </li>
+
+                    </ol>
+                    </li>
+
+                    <div class="heading">
+                        HOSPITAL DECLARATION
+                    </div>
+                    <div class="my-5"></div>
+
+                    <ol type="a">
+                        <li class="list"> We have no objection to any authorized TPA / Insurance Company official
+                            verifying documents pertaining to hospitalization.
+                        </li>
+                        <li class="list">All valid original documents duly countersigned by the insured / patient as per
+                            the checklist below will be sent to TPA/insurance Company within 7 days of the patient’s
+                            discharge.
+                        </li>
+                        <li class="list">we agree that TPA / Insurance Company will not be liable to make the payment in
+                            the event of any discrepancy between the facts in this form and discharge summary or other
+                            documents.
+                        </li>
+                        <li class="list">The patient declaration been signed by the patient or by his representative in
+                            our presence.
+                        </li>
+
+                        <li class="list">We agree to provide clarifications for the queries raised regarding this
+                            hospitalization and we take the sole responsibility for any delay in offering
+                            clarifications.
+                        </li>
+                        <li class="list">We will abide by the terms and conditions agreed in the MOU.
+                        </li>
+
+
+
+
+
+                    </ol>
+
+                </div>
+                <!-- <div style="margin-bottom:200px ;"></div> -->
+            </div>
+            <div><span style="margin-left: 20px;"></span> 5 | <span class="note2"> p a g e</span></div>
+        </div>
+        <div style="width: 100%;     height: 22px;  "></div>
+        <!-- page 6 -->
+
+        <div class="container" style="height:975px">
+            <div class="border">
+                <div class="logo">
+                    <img class="logoimg" src="./static/img/insuranceCompanyLogo/raksha.png" alt="">
+                </div>
+                <div class="content">
+                    <div class="heading">
+                    </div>
+
+                    <div class="note">
+                        <span class="my-5"></span>
+                    </div>
+                    <span class="my-5"></span>
+
+
+
+
+                    <div class="my-5"></div>
+
+                    <ol type="a" style="margin: 19px; line-height:2.2">
+                        <li style="visibility:hidden"></li>
+                        <li style="visibility:hidden"></li>
+                        <li style="visibility:hidden"></li>
+                        <li style="visibility:hidden"></li>
+                        <li style="visibility:hidden"></li>
+                        <li style="visibility:hidden"></li>
+
+                        <div style="margin-top:-170px;"></div>
+
+                        <li class="list">We confirm that no additional amount would be collected from the insured in
+                            excess of Agreed Package Rates except costs towards non-admissible amounts (including
+                            additional charges due to opting higher room rent than eligibility
+                            choosing separate line of treatment which is not envisaged/considered in package.)
+                        </li>
+                        <li class="list">We confirm that no recoveries would be made from the deposit amount collected
+                            from the insured except for costs towards non-admissible amounts (including additional
+                            charges due to opting higher room rent than eligibility/ choosing
+                            separate line of treatment which is not envisaged/considered in package.)
+                        </li>
+                        <li class="list">In the event of unauthorized recovery of any additional amount from the Insured
+                            in excess of Agreed Package Rates, the authorized TPA / Insurance Company reserves the right
+                            to recover the same from us (the Network Provider) and
+                            /or take necessary action, as provided under the MOU or applicable laws.
+                        </li>
+
+                        </li>
+
+                        <div style="    margin-top: 390px;">
+                            <span style="    font-weight: bolder;
+              font-size: 15px;"> Hospital Seal</span>
+                            <span style="    font-weight: bolder; margin-left: 300px;
+              font-size: 15px;"> Doctor's Signature</span>
+                        </div>
+
+                        <div style="margin-top:2px ;">
+                            <span style="font-size: 14px;"> Date & Time:</span>
+                        </div>
+                    </ol>
+
+                </div>
+            </div>
+            <div><span style="margin-left: 20px;"></span> 6 | <span class="note2"> p a g e</span></div>
+        </div>
+
+        <div style="width: 100%;     height: 22px;  "></div>
+        <!-- page 7 -->
+
+
+    </div>
+
+    <script>
+        window.onload = function () {
+            document.getElementById("download")
+                .addEventListener("click", () => {
+                    const invoice = this.document.getElementById("invoice");
+                    console.log(invoice);
+                    console.log(window);
+                    var opt = {
+                        margin: 0,
+                        filename: 'Raksha_health_insurance.pdf',
+                        image: {
+                            type: 'jpeg',
+                            quality: 0.98
+                        },
+                        html2canvas: {
+                            scale: 4
+                        },
+                        jsPDF: {
+                            unit: 'in',
+                            format: 'letter',
+                            orientation: 'portrait'
+                        }
+                    };
+                    html2pdf().from(invoice).set(opt).save();
+                })
+        }
+    </script>
+
+</body>
+
+</html>

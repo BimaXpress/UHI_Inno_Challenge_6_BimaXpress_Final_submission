@@ -1,0 +1,60 @@
+{
+
+    "_id": {
+        "$oid": "6243fe69865f51286c038683"
+    },
+    "contactNumber": {
+        "countryCode": "+91",
+        "number": 8349326329
+    },
+    "doctorsIds": ["6244007e865f51286c03868c", "23ty4gedhsbndvshasdnbswwdc"],
+    "claimAnalystIds": [],
+    "subscriptionPlan": [""],
+    "dataEntryFcmToken": ["2yegwdbsadhvfwbejiefiscsbequhdhd"],
+    "hospitalFcmToken": ["weygduhvbeguwydswuedfgev376ty78362"],
+    "email": "kaveritesting@gmail.com",
+    "name": "kaveri hospital indore",
+    "password": "$2b$10$XMIn6GOntBdQnBK8VJUFI.fbb4Anw7wfcYk8noZUXcpk1T5NJxws2",
+    "currentAddress": {
+        "buildingNumber": "410",
+        "area": "Rajiv Square",
+        "landmark": "Behind PNB",
+        "city": "Indore",
+        "state": "Madhya Pradesh",
+        "country": "India",
+        "pinCode": 452001
+    },
+    "hospitalRegistrationNumber": 8976451897658796000,
+    "gstNumber": "18AABCU9603R1ZM",
+    "rohiniCode": "9856874256987",
+    "panNumber": "ABCTY1234D",
+    "discountCode": "FB2000",
+    "referralCode": "REFER1020",
+    "emailer": {
+        "email": "kaveritesting@gmail.com",
+        "imap": "imap.gmail.com",
+        "password": "pleaseUpdateTHIS",
+        "smtp": "smtp.gmail.com"
+    },
+    "empanelledCompanies": [{
+        "_id": {
+            "$oid": "6243fe69865f51286c038684"
+        },
+        "name": "ICICI Lombard ",
+        "discount": 50,
+        "ratelist": "100",
+        "exclusion": 854,
+        "username": "kavari_icici@gmail.com",
+        "password": "123456",
+        "companyId": "avytqsc9ef8fe65fe412568956"
+    }],
+    "createdAt": {
+        "$date": "2022-03-30T06:53:29.900Z"
+    },
+    "updatedAt": {
+        "$date": "2022-03-30T07:05:34.671Z"
+    },
+    "orignalPassword": "123456",
+    "__v": 0
+
+}

@@ -1,0 +1,1293 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Magma_HDI_Health_Insurance</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=STIX+Two+Text:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            background-color: #7a7977;
+            font-family: 'STIX Two Text', serif;
+        }
+
+        html {
+            margin: 20px 320px 20px 340px;
+        }
+
+        .invoice {
+            width: 760px
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 30px;
+            padding-top: 0px;
+            height: 1040px;
+            max-width: 720px;
+            position: relative;
+            overflow: hidden;
+            background-color: white;
+            margin: 0px 200px;
+            padding-left: 60px;
+            padding-right: 25px;
+            height: 1050px;
+            max-width: 720px;
+            margin: auto;
+            padding-top: 34px;
+            padding-bottom: 24px;
+            margin: 0px 0px 0px 0px;
+            padding: 0px;
+            border: none;
+            width: 794px;
+            margin: auto;
+        }
+
+        .border-container {
+            border: 3px solid black;
+            height: 990px;
+        }
+
+        #commonContainer {
+            font-family: helvatica;
+            margin: auto;
+            padding: 0px 0px;
+            box-sizing: border-box;
+            position: relative;
+        }
+
+        .firstHeading {
+            font-size: 14px;
+            font-weight: 900;
+        }
+
+        .secondHeading {
+            font-size: 11.5px;
+            font-weight: 500;
+        }
+
+        .thirdHeading {
+            font-size: 12px;
+            font-weight: 600;
+        }
+
+        .fourthHeading {
+            font-size: 9px;
+            font-weight: 400;
+            letter-spacing: -0.3px;
+        }
+
+        .fiveHeading {
+            font-size: 11.5px;
+            font-weight: bolder;
+            color: grey;
+        }
+
+        .sixHeading {
+            font-size: 9px;
+            font-weight: 600;
+            color: black;
+        }
+
+        .subHeading {
+            font-size: 9px;
+            letter-spacing: -0.2px;
+            font-weight: 500;
+            margin-left: 5px;
+        }
+
+        .subHeading1 {
+            font-size: 14px;
+            letter-spacing: 0.5px;
+            color: white;
+            font-weight: 700;
+            padding: 1.8px;
+        }
+
+        .head-div {
+            background-color: #006cb5;
+            text-align: center;
+        }
+
+        .customPTag {
+            font-size: 13px;
+            font-weight: 500;
+            display: inline-block;
+            letter-spacing: 0.2px;
+            margin-left: 25px;
+        }
+
+        .spanBox {
+            font-size: 10px;
+            text-align: center;
+            display: inline-block;
+            border: 0.1px solid black;
+            vertical-align: middle;
+            line-height: 17px;
+            width: 45px;
+            height: 20px;
+            margin-top: 0px;
+            margin-left: -3px;
+            overflow: hidden;
+        }
+
+        .spanBox1 {
+            font-size: 8px;
+            text-align: center;
+            display: inline-block;
+            border: 1px solid Black;
+            vertical-align: middle;
+            line-height: 9px;
+            width: 50px;
+            height: 17px;
+            margin-top: 0;
+            margin-left: -4.35px;
+        }
+
+        .spanBox2 {
+            font-size: 8px;
+            text-align: center;
+            display: inline-block;
+            border: 1px solid #444;
+            vertical-align: middle;
+            line-height: 10px;
+            width: 6px;
+            height: 6px;
+            margin-top: 0px;
+            margin-left: -4.35px;
+        }
+
+        .spanBox4 {
+            font-size: 8px;
+            text-align: center;
+            display: inline-block;
+            border: 1px solid #444;
+            width: 20px;
+            height: 16px;
+            margin-top: -17px;
+            margin-left: -4.35px;
+        }
+
+        .spanLine {
+            font-size: 10.5px;
+            display: inline-block;
+            border-bottom: 1px solid #444;
+            vertical-align: middle;
+            line-height: 0px;
+            width: 10px;
+            height: 9px;
+            margin-top: 0px;
+            margin-left: -4.35px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .customTextBox {
+            display: inline-block;
+            border: 1px solid #444;
+            vertical-align: 11px;
+            line-height: 20px;
+            height: 20px;
+            width: 170px;
+            font-size: 12px;
+        }
+
+        .signatureBox {
+            display: inline-block;
+            border: 1px solid #444;
+            height: 20px;
+            width: 170px;
+        }
+
+        .customMargnBottom4 {
+            margin-bottom: -5px;
+        }
+
+        .customMargnBottom8 {
+            margin-bottom: -9px;
+        }
+
+        .customMargnBottom10 {
+            margin-bottom: -5px;
+        }
+
+        .customMargnBottom15 {
+            margin-bottom: -16px;
+        }
+
+        .nameTextHints {
+            font-size: 11px;
+            color: #909090;
+        }
+
+        .claimDocumentSubmittedCheckList {
+            font-size: 8px;
+            font-weight: 600;
+            vertical-align: 30px;
+            margin-left: 495px;
+            margin-top: 6px;
+            /*float: right;*/
+        }
+
+        .unique {
+            margin-top: -5px;
+        }
+
+        .heading {
+            margin-top: 0px;
+            padding-top: 0px;
+        }
+
+        .vl {
+            border-left: 12px solid green;
+            height: 300px;
+        }
+
+        .colorbox {
+            text-align: center;
+            background-color: #c62b27;
+            color: white;
+            padding-top: 2px;
+            padding-bottom: 10px;
+            border: 4px solid #9c9998;
+            font-size: 14px;
+            letter-spacing: 1.3px;
+        }
+    </style>
+    <style type="text/css">
+        .tg {
+            border-collapse: collapse;
+            border-spacing: 0;
+        }
+
+        .tg td {
+            border-color: black;
+            border-style: solid;
+            border-width: 0.2px;
+            font-family: Arial, sans-serif;
+            font-size: 8px;
+            overflow: hidden;
+            padding: 2px 1px;
+            word-break: normal;
+            border-collapse: collapse;
+            text-align: center;
+        }
+
+        .tg th {
+            border-color: black;
+            border-style: solid;
+            border-width: 0.2px;
+            font-family: Arial, sans-serif;
+            font-size: 8px;
+            font-weight: normal;
+            overflow: hidden;
+            padding: 1px 1px;
+            word-break: normal;
+            border-collapse: collapse;
+        }
+
+        .tg .tg-c3ow {
+            border-color: inherit;
+            text-align: center;
+            vertical-align: middle;
+        }
+
+        .tg .tg-0pky {
+            border-color: inherit;
+            text-align: center;
+            vertical-align: top;
+        }
+
+        .float-child {
+            width: 49.7%;
+            height: 23px;
+            float: left;
+        }
+
+        .border {
+            border: 1px solid black;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            console.log("it is executing");
+        };
+    </script>
+
+</head>
+
+<body>
+    <button id="download"> Download Form</button>
+
+    <div id="invoice">
+
+        <div class="form-container" style="margin-top: 10px;padding-top: 10px">
+            <div class="border" style="padding-top: 20px">
+                <!-- <img height="50px" src="../static/dist/img/Magma_HDI_Health_Insurance.png" style="margin-top:20px;margin-left: 40px" width="100px"> -->
+                <h4 class="firstHeading" style="text-align: center"><u>REQUEST FOR CASHLESS HOSPITALISATION FOR HEALTH
+                        INSURANCE</u></h4>
+                <img height="50px" src="../templates/Magma_HDI_Health_Insurance.png"
+                    style="margin-top:0px;margin-left: 40px" width="140px">
+
+                <h4 class="firstHeading" style="text-align: center;margin-top: -18px"><u>POLICY PART — C</u></h4>
+                <h4 class="firstHeading" style="text-align: center;font-weight: 500;margin-top: -18px"><u>(TO BE FILLED
+                        IN
+                        BLOCK LETTERS)</u></h4>
+                <h4 class="firstHeading" style="text-align: center;margin-top: -18px"><u>DETAILS OF THE THIRD PARTY
+                        ADMINISTRATOR/INSURER/HOSPITAL</u></h4>
+
+
+                <div style="margin-top: 0px">
+                    <p class="customPTag" style="margin-right: 100px">a. &nbsp;&nbsp; Name of TPA/insurance Company:
+                    </p>
+                    <span class="spanLine" style="width: 300px">Magma HDI General Insurance Company Ltd.</span>
+                </div>
+
+                <div style="margin-top: -18px">
+                    <p class="customPTag" style="margin-right: 162px">b. &nbsp;&nbsp; Toll free phone number: </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-hospitalDetailsDoctorDetailsContactNumberCountryCode%>
+                            <%-hospitalDetailsDoctorDetailsContactNumber%>
+                    </span>
+                </div>
+                <div style="margin-top: -18px">
+                    <p class="customPTag" style="margin-right: 231px">c. &nbsp;&nbsp; Toll free fax: </p>
+                    <span class="spanLine" style="width: 250px"></span>
+                </div>
+                <div style="margin-top: -18px">
+                    <p class="customPTag" style="margin-right: 196px">d. &nbsp;&nbsp; Name of Hospital: </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-hospitalDetailsName%>
+                    </span>
+                </div>
+                <div style="margin-top: -18px">
+                    <p class="customPTag" style="margin-right: 240px;margin-left: 50px">i. &nbsp;Address </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-hospitalFullAddress%>
+                    </span>
+                </div>
+                <div style="margin-top: -18px">
+                    <p class="customPTag" style="margin-right: 229px;margin-left: 50px">ii. Rohini ID </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-hospitalDetailsRohiniId%>
+                    </span>
+                </div>
+                <div style="margin-top: -18px">
+                    <p class="customPTag" style="margin-right: 234px;margin-left: 50px">iii.e-mail id </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-hospitalDetailsEmail%>
+                    </span>
+                </div>
+
+                <h4 class="firstHeading" style="text-align: center"><u>TO BE FILLED BY INSURED/PATIENT</u></h4>
+                <div style="margin-top: -18px">
+                    <p class="customPTag" style="margin-right: 180px">A. &nbsp;&nbsp; Name of the Patient: </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-patientDetailsName%>
+                    </span>
+                </div>
+                <div style="margin-top: -18px">
+                    <p class="customPTag" style="margin-right: 180px">B. &nbsp;&nbsp; Gender: </p>
+                    <% if(patientDetailsGender.toUpperCase()==='MALE' ){ %>
+                        <span class="spanBox"><img src="/tick.png"
+                                style="height:15px; width:15px ; padding-top:3px; "></span>
+                        <p class="customPTag" style="margin-right: 12px;margin-left: 10px">Male</p>
+                        <span class="spanBox"></span>
+                        <p class="customPTag" style="margin-right: 12px;margin-left: 10px">Female</p>
+                        <span class="spanBox"></span>
+                        <p class="customPTag" style="margin-right: 12px;margin-left: 10px">Third Gender</p>
+                        <%}else if(patientDetailsGender.toUpperCase()==='FEMALE' ) {%>
+                            <span class="spanBox"></span>
+                            <p class="customPTag" style="margin-right: 12px;margin-left: 10px">Male</p>
+                            <span class="spanBox"><img src="/tick.png"
+                                    style="height:15px; width:15px ; padding-top:1px; "></span>
+                            <p class="customPTag" style="margin-right: 12px;margin-left: 10px">Female</p>
+                            <span class="spanBox"></span>
+                            <p class="customPTag" style="margin-right: 12px;margin-left: 10px">Third Gender</p>
+                            <% }else {%>
+                                <span class="spanBox"></span>
+                                <p class="customPTag" style="margin-right: 12px;margin-left: 10px">Male</p>
+                                <span class="spanBox"></span>
+                                <p class="customPTag" style="margin-right: 12px;margin-left: 10px">Female</p>
+                                <span class="spanBox"><img src="/tick.png"
+                                        style="height:15px; width:15px ; padding-top:1px; "></span>
+                                <p class="customPTag" style="margin-right: 12px;margin-left: 10px">Third Gender</p>
+                                <% } %>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 200px">C. &nbsp;&nbsp; Age: </p>
+                    <span class="spanLine" style="width: 150px;">
+                        <%-patientDetailsAgeYear%>/<%-patientDetailsAgeMonth%>
+                                (Year) / (Month)
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 146px">D. &nbsp;&nbsp; Date of Birth: </p>
+                    <span class="spanLine" style="width: 150px;">
+                        <%-patientDetailsDateOfBirth%>
+                            (DD/MM/YYYY)
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 128px">E. &nbsp;&nbsp; Contact number: </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-patientDetailsIpdPatientNumber%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 5px">F. &nbsp;&nbsp; Contact number of attending
+                        Relative: </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-patientDetailsContactNumberRelativeContactNumber%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 80px">G. &nbsp;&nbsp; Insured Card ID number: </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-patientDetailsHealthId%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 24px">H. &nbsp;&nbsp; Policy number/Name of Corporate
+                    </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-patientDetailsPolicyNumber%>}
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 152px">I. &nbsp;&nbsp; Employee ID: </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-patientDetailsEmployeeId%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 60px">J. &nbsp;&nbsp; Currently do you have any other med
+                        claim /health insurance: </p>
+                    <% if(patientDetailsHealthInsuranceChecked){ %>
+                        <span class="spanBox"> <img src="/tick.png"
+                                style="height:15px; width:15px ; padding-top:1px; ">Yes </span>
+                        <p class="customPTag" style="margin-right: 12px;margin-left: 10px">No</p>
+                        <% }else {%>
+                            <span class="spanBox"></span>
+                            <% } %>
+
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 120px;margin-left: 50px">i. Company Name: </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-patientDetailsHealthInsuranceCompanyName%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 137px;margin-left: 50px">ii. Give Details: </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-patientDetailsHealthInsuranceDetails%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 235px">K. &nbsp;&nbsp; Do you have a family Physician:
+                    </p>
+                    <% if(patientDetailsPhysicianChecked){ %>
+                        <span class="spanBox"><img src="/tick.png"
+                                style="height:15px; width:15px ; padding-top:1px; "></span>
+                        <p class="customPTag" style="margin-right: 10px">Yes</p>
+                        <span class="spanBox"></span>
+                        <p class="customPTag" style="margin-right: 10px">No</p>
+                        <% }else {%>
+                            <span class="spanBox"></span>
+                            <p class="customPTag" style="margin-right: 10px">Yes</p>
+                            <span class="spanBox"><img src="/tick.png"
+                                    style="height:15px; width:15px ; padding-top:1px; "></span>
+                            <p class="customPTag" style="margin-right: 10px">No</p>
+                            <% } %>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 48px">L. &nbsp;&nbsp; Name of the Family Physician: </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-patientDetailsPhysicianName%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 85px">M. &nbsp;&nbsp; Contact number, if any: </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-patientDetailsPhysicianContactNumber%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 17px">N. &nbsp;&nbsp; Current Address of Insured Patient:
+                    </p>
+                    <span class="spanLine" style="width: 400px">
+                        <span style="height: 30px;  width: 400px;">
+                            <%-patientDetailsCurrentAddressBuildingNumber%>, <%-patientDetailsCurrentAddressArea%>,
+                                    <%-patientDetailsCurrentAddressLandmark%>,<%-patientDetailsCurrentAddressCity%>,
+                                            <%-patientDetailsCurrentAddressState%>,
+                                                <%-patientDetailsCurrentAddressCountry%>,
+                                                    <%-patientDetailsCurrentAddressPinCode%>
+                        </span>
+                    </span>
+
+
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 47px">O. &nbsp;&nbsp; Occupation of Insured Patient: </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-patientDetailsOccupation%>
+                    </span>
+                </div>
+
+                <h4 class="firstHeading" style="text-align: center;     margin-top: -6px;">(PLEASE COMPLETE DECLARATION
+                    OF THIS FORM)</h4>
+                <h4 class="firstHeading" style="text-align: center;    margin-top: -11px; "><u>TO BE FILLED BY TREATING
+                        DOCTOR/HOSPITAL</u></h4>
+
+                <div style="margin-top: -18px">
+                    <p class="customPTag" style="margin-right: 60px">A. &nbsp;&nbsp; Name of the treating Doctor: </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-hospitalDetailsDoctorDetailsName%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 130px">B. &nbsp;&nbsp; Contact number: </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-patientDetailsContactNumber%>
+                    </span>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="form-container" style="margin-top: 10px;padding-top: 0px">
+            <div class="border" style="padding-top: 0px">
+                <!-- <img height="50px" src="../static/dist/img/irda2.png" style="margin-top:10px;margin-left: 565px" width="100px"> -->
+
+
+                <div style="margin-top: -4px">
+                    <p class="customPTag" style="margin-right: 2px">C. &nbsp;&nbsp; Nature of Illness/Disease with
+                        presenting complaint: </p>
+                    <span class="spanLine" style="width: 230px">
+                        <%-patientDetailsNatureOfIllness%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 72px">D. &nbsp;&nbsp; Relevant Critical Findings: </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-patientDetailsReleventClinicChecked%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 44px">E. &nbsp;&nbsp; Duration of the present ailment
+                    </p>
+                    <span class="spanLine" style="width: 150px">
+                        <%-patientDetailsDurationOfPresentAilments%>
+                    </span>
+                    <p class="customPTag" style="margin-right: 0px">Days</p>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 58px;margin-left: 50px">i. &nbsp;&nbsp; Date of First
+                        consultation: </p>
+                    <span class="spanLine" style="width: 150px;">
+                        <%-patientDetailsDateOfFirstConsultation%>
+                            (DD/MM/YYYY)
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 0px;margin-left: 50px">ii.&nbsp;&nbsp;Past history of
+                        present ailment, if any </p>
+                    <span class="spanLine" style="width: 250px"> &nbsp;
+                        <%-patientDetailsPastHistoryOfPresentAilments%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 110px">F. &nbsp;&nbsp; Provisional diagnosis: </p>
+                    <span class="spanLine" style="width: 365px">
+                        <%-patientDetailsProvisionDiagnosis%>}
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 149px;margin-left: 50px">i.&nbsp;&nbsp; ICD 10 code </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-patientDetailsContactNumberCountryCode%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 75px">G. &nbsp;&nbsp; Proposed line of treatment: </p>
+                    <span class="spanLine" style="width: 250px">
+                        <!-- {{bunny.patient_details.doctor_proposedLineOfTreatment_Medical_Managment}} -->
+                    </span>
+                </div>
+                <div style="margin-top: -10px">
+                    <p class="customPTag" style="margin-right: 90px;margin-left: 50px">i. Medical Management</p>
+                    <% if(patientDetailsProposedLineOfTreatment.includes('Medical Management')){ %>
+                        <span>
+                            ( <img src="/tick.png" style="height:15px; width:15px ; padding-top:1px; "> )
+                        </span>
+                        <% }else {%>
+                            <span>
+                                <span>( &nbsp;&nbsp;&nbsp;)</span>
+                            </span>
+                            <% } %>
+                </div>
+                <div style="margin-top: -10px">
+                    <p class="customPTag" style="margin-right: 87px;margin-left: 50px">ii. Surgical Management</p>
+                    <% if(patientDetailsProposedLineOfTreatment.includes('Surgical Management')){ %>
+                        <span>
+                            ( <img src="/tick.png" style="height:15px; width:15px ; padding-top:1px; "> )
+                        </span>
+                        <% }else {%>
+                            <span>
+                                <span>( &nbsp;&nbsp;&nbsp;)</span>
+                            </span>
+                            <% } %>
+                </div>
+                <div style="margin-top: -10px">
+                    <p class="customPTag" style="margin-right: 130px;margin-left: 50px">iii. Intensive care</p>
+                    <% if(patientDetailsProposedLineOfTreatment.includes('Intensive Care')){ %>
+                        <span>
+                            ( <img src="/tick.png" style="height:15px; width:15px ; padding-top:1px; "> )
+                        </span>
+                        <% }else {%>
+                            <span>
+                                <span>( &nbsp;&nbsp;&nbsp;)</span>
+                            </span>
+                            <% } %>
+                </div>
+                <div style="margin-top: -10px">
+                    <p class="customPTag" style="margin-right: 139px;margin-left: 50px">iv. Investigation</p>
+                    <% if(patientDetailsProposedLineOfTreatment.includes('Investigation')){ %>
+                        <span>
+                            ( <img src="/tick.png" style="height:15px; width:15px ; padding-top:1px; "> )
+                        </span>
+                        <% }else {%>
+                            <span>
+                                <span>( &nbsp;&nbsp;&nbsp;)</span>
+                            </span>
+                            <% } %>
+                </div>
+                <div style="margin-top: -10px">
+                    <p class="customPTag" style="margin-right: 70px;margin-left: 50px">v. Non-allopathic treatment</p>
+                    <% if(patientDetailsProposedLineOfTreatment.includes('Non Allopatic Treatment')){ %>
+                        <span>
+                            ( <img src="/tick.png" style="height:15px; width:15px ; padding-top:1px; "> )
+                        </span>
+                        <% }else {%>
+                            <span>
+                                <span>( &nbsp;&nbsp;&nbsp;)</span>
+                            </span>
+                            <% } %>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 0px">H. &nbsp;&nbsp; If investigation and/or Medical
+                        Management provide details </p>
+                    <span class="spanLine" style="width: 250px"> &nbsp;
+                        <%-patientDetailsIfInvestigationOrMedicalManagement%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 45px;margin-left: 50px">i.&nbsp;&nbsp;Route of Drug
+                        Administration </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-patientDetailsRouteOfDrugAdministration%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 78px">I. &nbsp;&nbsp; If surgical, name of surgery </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-patientDetailsSurgicalNameofSurgery%>
+
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 122px;margin-left: 50px">i.&nbsp;&nbsp; ICD 10 PCS code
+                    </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-patientDetailsIcdCode10Pcs%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 41px">J. &nbsp;&nbsp; If other treatment, provide details
+                    </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-patientDetailsIfOtherTreatment%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 110px">K. &nbsp;&nbsp; How did injury occur </p>
+                    <span class="spanLine" style="width: 300px">
+                        <%-patientDetailsReleventClinicInjuryOccur%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 130px">L. &nbsp;&nbsp; In case of accident </p>
+
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 150px;margin-left: 50px">i.&nbsp;&nbsp; Is it RTA: </p>
+                    <% if(patientDetailsReleventClinicAccidentInCaseOfAccidentChecked){ %>
+                        <span class="spanBox"> <img src="/tick.png" style="height:15px; width:15px ; padding-top:1px; ">
+                        </span>
+                        <p class="customPTag" style="margin-right: 12px;margin-left: 20px">Yes</p>
+                        <span class="spanBox"></span>
+                        <p class="customPTag" style="margin-right: 12px;margin-left: 20px">No</p>
+                        <% } %>
+                            <% if!(patientDetailsReleventClinicAccidentInCaseOfAccidentChecked){ %>
+                                <span class="spanBox"></span>
+                                <p class="customPTag" style="margin-right: 12px;margin-left: 20px">Yes</p>
+                                <span class="spanBox"> <img src="/tick.png"
+                                        style="height:15px; width:15px ; padding-top:1px; "> </span>
+                                <p class="customPTag" style="margin-right: 12px;margin-left: 20px">No</p>
+                                <% } %>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 112px;margin-left: 50px">ii. &nbsp;&nbsp; Date of Injury:
+                    </p>
+
+
+                    <%-patientDetailsReleventClinicAccidentInCaseOfAccidentDateOfInjury%>
+                        <span class="spanBox"> </span>
+                        <p class="customPTag" style="margin-right: 12px;margin-left: 20px">Yes</p>
+                        <span class="spanBox"> <img src="/tick.png" style="height:15px; width:15px ; padding-top:1px; ">
+                        </span>
+                        <p class="customPTag" style="margin-right: 12px;margin-left: 20px">No</p>
+
+
+
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 101px;margin-left: 50px">iii.&nbsp;&nbsp; Report to
+                        Police: </p>
+                    <% if(patientDetailsReleventClinicAccidentInCaseOfAccidentReportedToPoliceChecked){ %>
+                        <span class="spanBox"> <img src="/tick.png" style="height:15px; width:15px ; padding-top:1px; ">
+                        </span>
+                        <p class="customPTag" style="margin-right: 12px;margin-left: 20px">Yes</p>
+                        <span class="spanBox"> </span>
+                        <p class="customPTag" style="margin-right: 12px;margin-left: 20px">No</p>
+
+                        <% }else{ %>
+                            <span class="spanBox"> </span>
+                            <p class="customPTag" style="margin-right: 12px;margin-left: 20px">Yes</p>
+                            <span class="spanBox"> <img src="/tick.png"
+                                    style="height:15px; width:15px ; padding-top:1px; "> </span>
+                            <p class="customPTag" style="margin-right: 12px;margin-left: 20px">No</p>
+
+                            <% } %>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 150px;margin-left: 50px">iv.&nbsp;&nbsp; FIR NO </p>
+
+                    <p class="customPTag" style="margin-right: 150px;margin-left: 60px">
+                        <%-patientDetailsReleventClinicAccidentInCaseOfAccidentReportedToPoliceFirNumber%>
+                    </p>
+
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 16px;margin-left: 50px">v.&nbsp;&nbsp; Injury /Disease
+                        caused due to substance abuse/alcohol consumption: </p>
+                    <% if(patientDetailsReleventClinicAccidentAlcoholConsumption){ %>
+                        <span class="spanBox"><img src="/tick.png"
+                                style="height:15px; width:15px ; padding-top:1px; "></span>
+                        <p class="customPTag" style="margin-right: 12px;margin-left: 20px">Yes</p>
+                        <span class="spanBox"></span>
+                        <p class="customPTag" style="margin-right: 12px;margin-left: 20px">No</p>
+                        <% }else {%>
+                            <span class="spanBox"></span>
+                            <p class="customPTag" style="margin-right: 12px;margin-left: 20px">Yes</p>
+                            <span class="spanBox"><img src="/tick.png"
+                                    style="height:15px; width:15px ; padding-top:1px; "></span>
+                            <p class="customPTag" style="margin-right: 12px;margin-left: 20px">No</p>
+                            <% } %>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 101px;margin-left: 50px">vi.&nbsp;&nbsp; Test conducted
+                        to establish this (if yes, attach report): </p>
+                    <% if(patientDetailsReleventClinicAccidentTestConducted){ %>
+                        <span class="spanBox"> <img src="/tick.png" style="height:15px; width:15px ; padding-top:1px; ">
+                        </span>
+                        <p class="customPTag" style="margin-right: 12px;margin-left: 20px">Yes</p>
+                        <span class="spanBox"></span>
+                        <p class="customPTag" style="margin-right: 12px;margin-left: 20px">No</p>
+                        <% }else {%>
+                            <span class="spanBox"></span>
+                            <p class="customPTag" style="margin-right: 12px;margin-left: 20px">Yes</p>
+                            <span class="spanBox"> <img src="/tick.png"
+                                    style="height:15px; width:15px ; padding-top:1px; "> </span>
+                            <p class="customPTag" style="margin-right: 12px;margin-left: 20px">No</p>
+                            <% } %>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 101px">M.&nbsp;&nbsp; In case of Maternity </p>
+                    <% if(patientDetailsReleventClinicMaternityMaternity.includes('G')){ %>
+                        <span class="spanBox1"><img src="/tick.png"
+                                style="height:15px; width:15px ; padding-top:1px; "></span>
+                        <p class="customPTag" style="margin-left: 10px;margin-right: 20px">G</p>
+                        <% }else {%>
+                            <span class="spanBox1"></span>
+                            <p class="customPTag" style="margin-left: 10px;margin-right: 20px">G</p>
+                            <% } %>
+                                <% if(patientDetailsReleventClinicMaternityMaternity.includes('P')){ %>
+                                    <span class="spanBox1"><img src="/tick.png"
+                                            style="height:15px; width:15px ; padding-top:1px; "></span>
+                                    <p class="customPTag" style="margin-left: 10px;margin-right: 20px">P</p>
+                                    <% }else {%>
+                                        <span class="spanBox1"></span>
+                                        <p class="customPTag" style="margin-left: 10px;margin-right: 20px">P</p>
+                                        <% } %>
+                                            <% if(patientDetailsReleventClinicMaternityMaternity.includes('L')){ %>
+                                                <span class="spanBox1"><img src="/tick.png"
+                                                        style="height:15px; width:15px ; padding-top:1px; "></span>
+                                                <p class="customPTag" style="margin-left: 10px;margin-right: 20px">L</p>
+                                                <% }else {%>
+                                                    <span class="spanBox1"></span>
+                                                    <p class="customPTag" style="margin-left: 10px;margin-right: 20px">L
+                                                    </p>
+                                                    <% } %>
+                                                        <% if(patientDetailsReleventClinicMaternityMaternity.includes('A')){
+                                                            %>
+                                                            <span class="spanBox1"><img src="/tick.png"
+                                                                    style="height:15px; width:15px ; padding-top:1px; "></span>
+                                                            <p class="customPTag"
+                                                                style="margin-left: 10px;margin-right: 20px">A</p>
+                                                            <% }else {%>
+                                                                <span class="spanBox1"></span>
+                                                                <p class="customPTag"
+                                                                    style="margin-left: 10px;margin-right: 20px">A</p>
+                                                                <% } %>
+
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 101px;margin-left: 50px">i.&nbsp;&nbsp; expected date of
+                        Delivery </p>
+                    <span class="spanLine" style="width: 150px;text-align: center">
+                        <%-patientDetailsReleventClinicMaternityExpectedDateOfDelivery%> (DD/MM/YYYY)
+                    </span>
+                </div>
+                <h4 class="firstHeading" style="text-align: center;font-weight: 500;margin-top: 0px"><u>DETAILS OF
+                        PATIENT ADMITTED</u></h4>
+
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 220px">A.&nbsp;&nbsp; Date of admission </p>
+                    <span class="spanLine" style="width: 100px;text-align: center">
+                        <%-hospitalDetailsDateOfAdmission%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 221px">B.&nbsp;&nbsp;Time of admission </p>
+                    <span class="spanLine" style="width: 100px;text-align: center">
+                        <%-hospitalDetailsTimeOfAdmission%> ( HH :
+                            MM )
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 20px">M.&nbsp;&nbsp; Is this an emergency/planned
+                        hospitalization event: </p>
+                    <p class="customPTag" style="margin-right: 12px;margin-left: 10px">Emergency</p>
+                    <% if(hospitalDetailsEmergencyOrPlannedEvent.toUpperCase()==="EMERGENCY" ){ %>
+                        <span class="spanBox"><img src="/tick.png"
+                                style="height:15px; width:15px ; padding-top:1px; "></span>
+                        <% }else {%>
+                            <span class="spanBox1" style="color: #c2c2c2"></span>
+                            <% } %>
+                                <p class="customPTag" style="margin-right: 12px;margin-left: 10px">Planned</p>
+                                <% if(hospitalDetailsEmergencyOrPlannedEvent.toUpperCase()==="PLANNED" ){%>
+                                    <span class="spanBox"> <img src="/tick.png"
+                                            style="height:15px; width:15px ; padding-top:1px; "> </span>
+                                    <% }else {%>
+                                        <span class="spanBox1" style="color: #c2c2c2"> </span>
+                                        <% } %>
+                </div>
+
+
+            </div>
+
+        </div>
+
+        <div class="form-container" style="margin-top: 0px; padding-bottom: 20%;">
+            <div class="border">
+
+                <!-- <img height="50px" src="../static/dist/img/irda2.png" style="margin-top:10px;margin-left: 565px" width="100px"> -->
+
+
+
+
+                <div style="margin-top: -10px">
+                    <p class="customPTag" style="margin-right: 2px">D. &nbsp;&nbsp; Mandatory Past History of any
+                        chronic illness </p>
+                    <p class="customPTag" style="margin-right: 2px">if yes (Since month/year)</p>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 200px;margin-left: 50px">i.&nbsp;&nbsp; Diabetes </p>
+                    <span class="spanLine" style="width: 150px">
+                        <%-hospitalDetailsAnyPastHistoryDiabetesMonth%>/<%-hospitalDetailsAnyPastHistoryDiabetesYear%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 169px;margin-left: 50px">ii.&nbsp;&nbsp; Heart disease
+                    </p>
+                    <span class="spanLine" style="width: 150px">
+                        <%-hospitalDetailsAnyPastHistoryHeartDiseaseMonth%>/
+                            <%-hospitalDetailsAnyPastHistoryHeartDiseaseYear%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 164px;margin-left: 50px">iii.&nbsp;&nbsp; Hypertension
+                    </p>
+                    <span class="spanLine" style="width: 150px">
+                        <%-hospitalDetailsAnyPastHistoryHypertensionMonth%>/
+                            <%-hospitalDetailsAnyPastHistoryHypertensionYear%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 150px;margin-left: 50px">iv.&nbsp;&nbsp; Hyperlipidemias
+                    </p>
+                    <span class="spanLine" style="width: 150px">
+                        <%-hospitalDetailsAnyPastHistoryHyperlipidemiasMonth%>/
+                            <%-hospitalDetailsAnyPastHistoryHyperlipidemiasYear%>
+
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 170px;margin-left: 50px">v.&nbsp;&nbsp; Osteoarthritis
+                    </p>
+                    <span class="spanLine" style="width: 150px">
+                        <%-hospitalDetailsAnyPastHistoryOsteoarthritisMonth%>/
+                            <%-hospitalDetailsAnyPastHistoryOsteoarthritisYear%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 92px;margin-left: 50px">vi.&nbsp;&nbsp;
+                        Asthma/COPD/Bronchitis </p>
+                    <span class="spanLine" style="width: 150px">
+                        <%-hospitalDetailsAnyPastHistoryAsthmaCOPDBronchitisMonth%>/
+                            <%-hospitalDetailsAnyPastHistoryAsthmaCOPDBronchitisYear%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 200px;margin-left: 50px">vii.&nbsp;&nbsp; Cancer </p>
+                    <span class="spanLine" style="width: 150px">
+                        <%-hospitalDetailsAnyPastHistoryCancerMonth%>/ <%-hospitalDetailsAnyPastHistoryCancerYear%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 120px;margin-left: 50px">viii.&nbsp;&nbsp; Alcohol/Drug
+                        abuse </p>
+                    <span class="spanLine" style="width: 150px">
+                        <%-hospitalDetailsAnyPastHistoryAlcoholDragAbuseMonth%>/
+                            <%-hospitalDetailsAnyPastHistoryAlcoholDragAbuseYear%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 52px;margin-left: 50px">xi.&nbsp;&nbsp; Any HIV/or STD
+                        Related ailment </p>
+                    <span class="spanLine" style="width: 150px">
+                        <%-hospitalDetailsAnyPastHistoryAnyHIVOrAilmentsMonth%>/
+                            <%-hospitalDetailsAnyPastHistoryAnyHIVOrAilmentsYear%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 70px;margin-left: 50px">x.&nbsp;&nbsp; Any other ailment,
+                        give details </p>
+                    <span class="spanLine" style="width: 150px">
+                        <%-hospitalDetailsAnyPastHistoryAnyOtherAilments%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 26px">E. &nbsp;&nbsp; Expected number of Days/stay in
+                        hospital </p>
+                    <span class="spanLine" style="width: 200px">
+                        <%-hospitalDetailsDaysInHospital%>
+                    </span>
+                    <p class="customPTag" style="margin-right: 2px">Days</p>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 201px">F. &nbsp;&nbsp; Days in ICU </p>
+                    <span class="spanLine" style="width: 200px">
+                        <%-hospitalDetailsDaysInICU%>
+                    </span>
+                    <p class="customPTag" style="margin-right: 2px">Days</p>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 205px">G. &nbsp;&nbsp; Room Type </p>
+                    <span class="spanLine" style="width: 180px;font-size: 6px">
+                        <%-hospitalDetailsRoomType%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 12px">H. &nbsp;&nbsp; Per day room rent + nursing and
+                        service charges+ patients diet </p>
+                    <p class="customPTag" style="margin-right: 2px">Rs.</p>
+                    <span class="spanLine" style="width: 150px">
+                        <%-hospitalDetailsChargeListPerDayRoomRent%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 132px">I. &nbsp;&nbsp; Expected cost of investigation +
+                        diagnostic </p>
+                    <p class="customPTag" style="margin-right: 2px">Rs.</p>
+                    <span class="spanLine" style="width: 150px">
+                        <%-hospitalDetailsChargeListCostOfInvestigation%>
+                    </span>
+                </div>
+
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 311px">J. &nbsp;&nbsp; ICU charges </p>
+                    <p class="customPTag" style="margin-right: 2px">Rs.</p>
+                    <span class="spanLine" style="width: 150px">
+                        <%-hospitalDetailsChargeListIcuCharges%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 311px">K. &nbsp;&nbsp; OT charges</p>
+                    <p class="customPTag" style="margin-right: 2px">Rs.</p>
+                    <span class="spanLine" style="width: 150px">
+                        <%-hospitalDetailsChargeListOtCharges%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: -15px">L. &nbsp;&nbsp; Professional fees Surgeon
+                        +Anesthetist Fees +consultation Charges:</p>
+                    <p class="customPTag" style="margin-right: 2px">Rs.</p>
+                    <span class="spanLine" style="width: 150px">
+                        <%-hospitalDetailsChargeListProfessionalFeesSurgeon%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: -15px">M. &nbsp;&nbsp; Medicines + Consumables + Cost of
+                        Implants (if applicable please specify)</p>
+
+                </div>
+                <div style="margin-top: -40px">
+                    <p class="customPTag" style="margin-right: 2px;margin-left: 500px">Rs.</p>
+                    <span class="spanLine" style="width: 150px">
+                        <%- hospitalDetailsChargeListConsumables + hospitalDetailsChargeListCostOfImplant %>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 214px">N. &nbsp;&nbsp; Other hospital expenses if any</p>
+                    <p class="customPTag" style="margin-right: 2px">Rs.</p>
+                    <span class="spanLine" style="width: 150px">
+                        <%-hospitalDetailsChargeListOtherHospitalIfAny%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 117px">O. &nbsp;&nbsp; All-inclusive package charges if
+                        any applicable </p>
+                    <p class="customPTag" style="margin-right: 2px">Rs.</p>
+                    <span class="spanLine" style="width: 150px">
+                        <%-hospitalDetailsChargeListAllIncludingPackage%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 145px">P. &nbsp;&nbsp; Sum Total expected cost of
+                        hospitalization </p>
+                    <p class="customPTag" style="margin-right: 2px">Rs.</p>
+                    <span class="spanLine" style="width: 150px">
+                        <%-hospitalDetailsTotal%>
+                    </span>
+                </div>
+
+                <h4 class="firstHeading" style="text-align: center;font-weight: 900;margin-top: -4px"><u>DECLARATION</u>
+                </h4>
+                <h4 class="firstHeading" style="text-align: center;font-weight: 500;margin-top: -16px">(Please read very
+                    carefully)
+                </h4>
+
+                <div style="margin-top: -25px">
+                    <p class="customPTag" style="margin-right: 145px">We confirm having read understood and agreed to
+                        the Declarations of this form</p>
+                </div>
+                <div style="margin-top: -19px">
+                    <p class="customPTag" style="margin-right: 130px">a. &nbsp;&nbsp; Name of the treating doctor </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-hospitalDetailsDoctorDetailsName%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 212px">b. &nbsp;&nbsp; Qualification: </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-hospitalDetailsDoctorDetailsQualification%>
+                    </span>
+                </div>
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-right: 80px">c. &nbsp;&nbsp; Registration number with State code
+                    </p>
+                    <span class="spanLine" style="width: 250px">
+                        <%-hospitalDetailsDoctorDetailsRegistrationNo%>
+                    </span>
+                </div>
+                <div style="margin-top: 0px">
+                    <span class="spanBox" style="width: 140px;margin-left: 50px;height: 45px"></span>
+                    <span class="spanBox" style="width: 140px;margin-left: 200px;height: 45px"></span>
+                </div>
+                <div style="margin-top: 0px">
+                    <p class="customPTag" style="margin-right: 80px;margin-left: 80px">Hospital Seal</p>
+                    <p class="customPTag" style="margin-right: 80px;margin-left: 120px"><b>Patient/Insured Name and
+                            Sign</b></p>
+                </div>
+                <div style="margin-top: -24px">
+                    <p class="customPTag" style="margin-right: 80px;margin-left: 80px">(Must include Hospital ID)</p>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="form-container" style="margin-top: -150px; height:975px;">
+            <div class="border">
+
+                <!-- <img height="50px" src="../static/dist/img/irda2.png" style="margin-top:10px;margin-left: 565px" width="100px"> -->
+                <h4 class="firstHeading" style="text-align: center;font-weight: 900;margin-top: 0px"><u>DECLARATION BY
+                        THE PATIENT I REPRESENTATIVE</u>
+                </h4>
+                <div style="margin-top: 0px">
+                    <p class="customPTag" style="margin-right: 2px">a. 1 agrees to allow the hospital to submit all
+                        original documents pertaining to hospitalization to the Insurer/T.P.A after the discharge. I
+                        agree to sign on the Final Bill & the Discharge Summary, before my discharge. </p>
+                    <p class="customPTag" style="margin-right: 2px;margin-top: -10px">b. Payment to hospital is governed
+                        by the terms and conditions of the policy. In case the Insurer /TPA is not liable to settle the
+                        hospital bill, I undertake to settle the bill as per the terms and conditions of the policy.
+                    </p>
+                    <p class="customPTag" style="margin-right: 2px;margin-top: -10px">c. All non-medical expenses and
+                        expenses not relevant to current hospitalization and the amounts over & above the limit
+                        authorized by the Insurer/T.P.A not governed by the terms and conditions of the policy will be
+                        paid by me </p>
+                    <p class="customPTag" style="margin-right: 2px;margin-top: -10px">d. I hereby declare to abide by
+                        the terms and conditions of the policy and if at any time the facts disclosed by me are found to
+                        be false or incorrect I forfeit my claim and agree to indemnify the Insurer / T.P.A
+                    </p>
+                    <p class="customPTag" style="margin-right: 2px;margin-top: -10px">e. I agree and understand that
+                        T.P.A is in no way warranting the service of the hospital & that the Insurer /TPA is in no way
+                        guaranteeing that the services provided by the hospital will be of a particular quality or
+                        standard. </p>
+                    <p class="customPTag" style="margin-right: 2px;margin-top: -10px">f. I hereby warrant the truth of
+                        the forgoing particulars in every respect and I agree that if I have made or shall make any
+                        false or untrue statement, suppression or concealment with respect to the claim, my right to
+                        claim reimbursement
+                        of the said expenses shall be absolutely forfeited.</p>
+                    <p class="customPTag" style="margin-right: 2px;margin-top: -10px">g. I agree to indemnify the
+                        hospital against all expenses incurred on my behalf, which are not reimbursed by the Insurer /
+                        TPA</p>
+                    <p class="customPTag" style="margin-right: 2px;margin-top: -10px">h. "I/We authorize Insurance
+                        Company/TPA to contact me/us through mobile/email for any update on this claim"</p>
+                </div>
+
+                <div style="margin-top: -14px">
+                    <p class="customPTag" style="margin-left: 40px">a) &nbsp;&nbsp; Patient's / Insured's Name: </p>
+                    <span class="spanLine" style="width: 120px ; margin-left: 10px;">
+                        <%-patientDetailsName%>
+                    </span> <br>
+                    <div style="margin-top:-21px;"></div>
+                    <p class="customPTag" style="margin-left: 40px; ">b) &nbsp;&nbsp; Contact number: </p>
+                    <span class="spanLine" style="width: 120px; margin-left: 10px;">
+                        <%-patientDetailsContactNumber%>
+                    </span>
+                    <p class="customPTag" style="margin-left: 0px">c)e-mail Id (optional) </p>
+                    <span class="spanLine" style="width: 100px"></span>
+                </div>
+                <div style="margin-top: -20px">
+                    <p class="customPTag" style="margin-left: 40px">d) &nbsp;&nbsp; Patient's / Insured's Signature:
+                    </p>
+                    <span class="spanLine" style="width: 200px"></span>
+                </div>
+                <div style="margin-top: -20px">
+                    <p class="customPTag" style="margin-left: 40px"> &nbsp;&nbsp; Date: </p>
+                    <span class="spanLine" style="width: 150px"></span>
+                    <p class="customPTag" style="margin-left: 100px"> Time: </p>
+                    <span class="spanLine" style="width: 150px"></span>
+                </div>
+
+
+                <h4 class="firstHeading" style="text-align: center;font-weight: 900;margin-top: -1px"><u>HOSPITAL
+                        DECLARATION</u></h4>
+
+                <div style="margin-top: -20px">
+                    <p class="customPTag" style="margin-right: 2px">a. We have no objection to any authorized TPA
+                        /Insurance Company official verifying documents pertaining to hospitalization. </p>
+                    <p class="customPTag" style="margin-right: 2px;margin-top: -6px">b. All valid original documents
+                        duly countersigned by the insured/patient as per the checklist below will be sent to TPA /
+                        Insurance Company within 7 days of the patient's discharge. </p>
+                    <p class="customPTag" style="margin-right: 2px;margin-top: -6px">c. We agree that TPA / Insurance
+                        Company will not be liable to make the payment in the between the facts in this form and
+                        discharge summary or other documents</p>
+                    <p class="customPTag" style="margin-right: 2px;margin-top: -6px">d. The patient declaration has been
+                        signed by the patient or by his representative in our presence.</p>
+                    <p class="customPTag" style="margin-right: 2px;margin-top: -6px">e. We agree to provide
+                        clarifications for the queries raised regarding this hospitalization and we take the sole
+                        responsibility for any delay in offering clarifications</p>
+                    <p class="customPTag" style="margin-right: 2px;margin-top: -6px">f. We will abide by the terms and
+                        conditions agreed in the MOU.</p>
+                    <p class="customPTag" style="margin-right: 2px;margin-top: -6px">g. We confirm that no additional
+                        amount would be collected from the insured in excess of Agreed Package Rates except costs
+                        towards non-admissible amounts (including additional charges due to opting higher room rent than
+                        eligibility/choosing
+                        separate line of treatment which is not envisaged/considered in package).</p>
+                    <p class="customPTag" style="margin-right: 2px;margin-top: -6px">h. We confirm that no recoveries
+                        would be made from the deposit amount collected from the Insured except for costs towards
+                        non-admissible amounts (including additional charges due to opting higher room rent than
+                        eligibility/ choosing
+                        separate line of treatment which is not envisaged/considered in package). </p>
+                    <p class="customPTag" style="margin-right: 2px;margin-top: -6px">i. In the event of unauthorized
+                        recovery of any additional amount from the Insured in excess of Agreed Package Rates, the
+                        authorized TPA /Insurance Company reserves the right to recover the same from us (the Network
+                        Provider) and/or
+                        take necessary action, as provided under the MoU or applicable laws.
+                    </p>
+                </div>
+
+                <div style="margin-top: -10px">
+                    <p class="customPTag" style="margin-left: 40px">Hospital Seal</p>
+                    <p class="customPTag" style="margin-left: 400px">Doctor's Signature</p>
+                </div>
+
+                <div style="margin-top: 0px">
+                    <p class="customPTag" style="margin-left: 40px">Date:</p>
+                    <p class="customPTag" style="margin-left: 400px">Time</p>
+                </div>
+
+            </div>
+        </div>
+
+        <!-------------------------------End of forth PAge--------------------------->
+        <!-------------------------------End of fifth PAge--------------------------->
+
+        <!-------------------------------End of sixth Page--------------------------->
+
+        <!-------------------------------End of seventh Page------------------------->
+
+
+    </div>
+    <!-------invoice------>
+
+    <script>
+        window.onload = function () {
+            document.getElementById("download")
+                .addEventListener("click", () => {
+                    const invoice = this.document.getElementById("invoice");
+                    console.log(invoice);
+                    console.log(window);
+                    var opt = {
+                        margin: 0,
+                        filename: 'FHPL.pdf',
+                        image: {
+                            type: 'jpeg',
+                            quality: 0.98
+                        },
+                        html2canvas: {
+                            scale: 4
+                        },
+                        jsPDF: {
+                            unit: 'in',
+                            format: 'letter',
+                            orientation: 'portrait'
+                        }
+                    };
+                    html2pdf().from(invoice).set(opt).save();
+                })
+        }
+    </script>
+</body>
+
+</html>

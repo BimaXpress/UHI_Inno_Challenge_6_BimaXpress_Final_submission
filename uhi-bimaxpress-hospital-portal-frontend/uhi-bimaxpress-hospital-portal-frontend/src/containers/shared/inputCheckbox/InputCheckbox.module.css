@@ -1,0 +1,10 @@
+.inputCheckbox {
+    height: 18px;
+    width: 18.5px;
+    /* position: relative;
+    top: 2px; */
+}
+
+.inputCheckbox:focus {
+    box-shadow: none;
+}

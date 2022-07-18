@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c5554825.css",
+    "main.js": "/static/js/main.e0f84dae.js",
+    "static/media/yahooLogo.png": "/static/media/yahooLogo.3c7fc668f24fe1885787.png",
+    "static/media/googleLogo.jpg": "/static/media/googleLogo.3ecb0cbc4741472dc873.jpg",
+    "static/media/process.svg": "/static/media/process.1ac2894f5fb2f6e8c396deb0992c3ebc.svg",
+    "static/media/noun_query_3407971.svg": "/static/media/noun_query_3407971.c544b4cce49aaab034daa70ea8fdf1b1.svg",
+    "static/media/dischargedApproved.svg": "/static/media/dischargedApproved.da5c2b0ca67548552b4ab6482d0f9bb7.svg",
+    "static/media/reject.svg": "/static/media/reject.582add03202a0b33ea6aa999ad9d28a5.svg",
+    "index.html": "/index.html",
+    "static/media/approved.svg": "/static/media/approved.c57bb9d755a503f898d7f59b66957e16.svg",
+    "static/media/draft.svg": "/static/media/draft.8d12ed4040c842181d1a4d04821fd6e8.svg",
+    "static/media/down-arrow.svg": "/static/media/down-arrow.1cb6e58283eccc51df41.svg",
+    "static/media/eye.svg": "/static/media/eye.f0e7c0d352c6de9603b4e6be206c8a5c.svg",
+    "static/media/paperclip_black.svg": "/static/media/paperclip_black.1843bdc27b29b134e065bce9499dac7f.svg",
+    "static/media/paperclip.svg": "/static/media/paperclip.0a23508a5cb90fc64cd64342c1c7018c.svg",
+    "static/media/download.svg": "/static/media/download.944fbded8c4bfd2aa8a9a927ba946402.svg",
+    "static/media/align-center-alt.svg": "/static/media/align-center-alt.fa63017ff890dfc19232bba898c15593.svg",
+    "static/media/align_left.svg": "/static/media/align_left.324e19d1c52de548c5bb9343b911671e.svg",
+    "static/media/align_right.svg": "/static/media/align_right.6c8086a0b93deea10ecc2fc6ca3050a0.svg",
+    "static/media/bold.svg": "/static/media/bold.8ad2c6f19744161923f7ff78ac63a96c.svg",
+    "static/media/underline.svg": "/static/media/underline.87ff3ba2a2e0bedc5c2a954f55435d6e.svg",
+    "static/media/italic.svg": "/static/media/italic.cc7956da2baa88b4a8f80df449196a53.svg",
+    "static/media/filter.svg": "/static/media/filter.d28e49bf8843610b9dfb514e76749b3f.svg",
+    "main.c5554825.css.map": "/static/css/main.c5554825.css.map",
+    "main.e0f84dae.js.map": "/static/js/main.e0f84dae.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c5554825.css",
+    "static/js/main.e0f84dae.js"
+  ]
+}

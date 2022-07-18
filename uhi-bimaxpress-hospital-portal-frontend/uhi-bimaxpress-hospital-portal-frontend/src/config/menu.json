@@ -1,0 +1,333 @@
+[
+  {
+    "id": "quarterlyreviewprocess",
+    "top": true,
+    "title": "Quarterly Review Process",
+    "link": "/#",
+    "allowedRoles": [
+      "Prism-Avalon-Admin",
+      "Prism-Avalon-ClientServices",
+      "Prism-Avalon-CLO",
+      "Prism-Avalon-Policy"
+    ],
+    "enabled": true,
+    "visible":true,
+    "children": [
+      {
+        "id": "reviewqueue",
+        "title": "Review Queue",
+        "link": "/reviewqueue",
+        "allowedRoles": [
+          "Prism-Avalon-Admin",
+          "Prism-Avalon-Policy",
+          "Prism-Avalon-CLO"
+        ],
+        "enabled": true,
+        "visible":true
+      },
+      {
+        "id": "medicalpolicyreview",
+        "title": "Medical Policy Review",
+        "link": "/medical-policy-review",
+        "allowedRoles": [
+          "Prism-Avalon-Admin",
+          "Prism-Avalon-Policy",
+          "Prism-Avalon-CLO"
+        ],
+        "enabled": true,
+        "visible":false
+      },
+      {
+        "id": "coding",
+        "title": "Coding",
+        "link": "/coding",
+        "allowedRoles": [
+          "Prism-Avalon-Admin",
+          "Prism-Avalon-Policy",
+          "Prism-Avalon-CLO"
+        ],
+        "enabled": true,
+        "visible":false
+      },
+      {
+        "id": "translation",
+        "title": "Translation",
+        "link": "/translation",
+        "allowedRoles": [
+          "Prism-Avalon-Admin",
+          "Prism-Avalon-Policy",
+          "Prism-Avalon-CLO"
+        ],
+        "enabled": true,
+        "visible": false
+      },
+      {
+        "id": "releasedeployment",
+        "title": "Release Deployment",
+        "link": "/releasedeployment",
+        "allowedRoles": [
+          "Prism-Avalon-Admin",
+          "Prism-Avalon-Policy",
+          "Prism-Avalon-CLO"
+        ],
+        "enabled": true,
+        "visible": true
+      },
+      {
+        "id": "postadoptionpolicyreview",
+        "title": "Post Adoption Policy Review",
+        "link": "/postadoptionreview",
+        "allowedRoles": [
+          "Prism-Avalon-Admin",
+          "Prism-Avalon-Policy",
+          "Prism-Avalon-CLO"
+        ],
+        "enabled": true,
+        "visible": true
+      },
+      {
+        "id": "postadoptioncoding",
+        "title": "Post Adoption Coding",
+        "link": "/postadoptioncoding",
+        "allowedRoles": [
+          "Prism-Avalon-Admin",
+          "Prism-Avalon-Policy",
+          "Prism-Avalon-CLO"
+        ],
+        "enabled": true,
+        "visible": true
+      },
+      {
+        "id": "postAdoptionTranslation",
+        "title": "Post Adoption Translation",
+        "link": "/postadoptiontranslation",
+        "allowedRoles": [
+          "Prism-Avalon-Admin",
+          "Prism-Avalon-Policy",
+          "Prism-Avalon-CLO"
+        ],
+        "enabled": true,
+        "visible": true
+      },
+      {
+        "id": "configuration",
+        "title": "Post Adoption Configuration",
+        "link": "/configuration",
+        "allowedRoles": [
+          "Prism-Avalon-Admin",
+          "Prism-Avalon-Policy",
+          "Prism-Avalon-CLO"
+        ],
+        "enabled": true,
+        "visible": true
+      }
+    ]
+  },
+  {
+    "id": "cab",
+    "title": "CAB",
+    "link": "",
+    "allowedRoles": [
+      "Prism-Avalon-Admin",
+      "Prism-Avalon-Policy",
+      "Prism-Avalon-CLO",
+      "Prism-External-Cab"
+    ],
+    "enabled": true,
+    "visible": true,
+    "children": [
+      {
+        "id": "precab",
+        "title": "Pre CAB",
+        "link": "/precab",
+        "allowedRoles": [
+          "Prism-Avalon-Admin",
+          "Prism-Avalon-Policy",
+          "Prism-Avalon-CLO"
+        ],
+        "enabled": true,
+        "visible": true
+      },
+      {
+        "id": "cabpolicies",
+        "title": "Cab Review",
+        "link": "/cabpolicies",
+        "allowedRoles": [
+          "Prism-Avalon-Admin",
+          "Prism-Avalon-Policy",
+          "Prism-Avalon-CLO",
+          "Prism-External-Cab"
+        ],
+        "enabled": true,
+        "visible": true
+      },
+      {
+        "id": "cabreview",
+        "title": "CAB Review",
+        "link": "/cabreview",
+        "allowedRoles": [
+          "Prism-Avalon-Admin",
+          "Prism-Avalon-Policy",
+          "Prism-Avalon-CLO",
+          "Prism-External-Cab"
+        ],
+        "enabled": true,
+        "visible": false
+      },
+      {
+        "id": "cabreviewsummary",
+        "title": "CAB review Summary and Presentation",
+        "link": "/cabreviewsummary",
+        "allowedRoles": [
+          "Prism-Avalon-Admin",
+          "Prism-Avalon-Policy",
+          "Prism-Avalon-CLO",
+          "Prism-External-Cab"
+        ],
+        "enabled": true,
+        "visible": true
+      },
+      {
+        "id": "readyforhealthplan",
+        "title": "Ready For HealthPlan",
+        "link": "/readyforhealthplan",
+        "allowedRoles": [
+          "Prism-Avalon-Admin",
+          "Prism-Avalon-Policy",
+          "Prism-Avalon-CLO"
+        ],
+        "enabled": true,
+        "visible": true
+      }
+    ]
+  },
+  {
+    "id": "healthplan",
+    "title": "Health Plan",
+    "link": "/#",
+    "allowedRoles": [
+      "Prism-Avalon-Admin",
+      "Prism-Avalon-Policy",
+      "Prism-HP-BCBSNC_0020",
+      "Prism-Avalon-CLO"
+    ],
+    "enabled": true,
+    "visible": true,
+    "children": [
+      {
+        "id": "healthplanreview",
+        "title": "Policies for Review",
+        "link": "/healthplanpolicies",
+        "allowedRoles": [
+          "Prism-Avalon-Admin",
+          "Prism-Avalon-Policy",
+          "Prism-HP-BCBSNC_0020",
+          "Prism-Avalon-CLO"
+        ],
+        "enabled": true,
+        "visible": true
+      },
+      {
+        "id": "healthplanpolicydetail",
+        "title": "HealthPlan Policy Detail",
+        "link": "/healthplanpolicydetail",
+        "allowedRoles": [
+          "Prism-Avalon-Admin",
+          "Prism-Avalon-Policy",
+          "Prism-HP-BCBSNC_0020",
+          "Prism-Avalon-CLO"
+        ],
+        "enabled": true,
+        "visible": false
+      },
+      {
+        "id": "listoffinalpolicies",
+        "title": "List of Policies (Final Copy)",
+        "link": "/healthplan/finalpolicies",
+        "allowedRoles": [
+          "Prism-Avalon-Admin",
+          "Prism-Avalon-Policy",
+          "Prism-HP-BCBSNC_0020",
+          "Prism-Avalon-CLO"
+        ],
+        "enabled": true,
+        "visible": true
+      }
+    ]
+  },
+  {
+    "id": "policymanagement",
+    "title": "Policy Management",
+    "link": "/",
+    "allowedRoles": [
+      "Prism-Avalon-Admin",
+      "Prism-Avalon-Policy",
+      "Prism-Avalon-CLO"
+    ],
+    "enabled": true,
+    "visible": true,
+    "children":[
+      {    
+        "id": "basepolicies",
+        "title": "Avalon Base Policies",
+        "link": "/policymanagement",
+        "allowedRoles": [
+          "Prism-Avalon-Admin",
+          "Prism-Avalon-Policy",
+          "Prism-Avalon-CLO"
+        ],
+        "enabled": true,
+        "visible": true
+      },
+      {    
+        "id": "createnewpolicy",
+        "title": "Avalon Base Policies",
+        "link": "/create-new-policy",
+        "allowedRoles": [
+          "Prism-Avalon-Admin",
+          "Prism-Avalon-Policy",
+          "Prism-Avalon-CLO"
+        ],
+        "enabled": true,
+        "visible": false
+      },
+      {    
+        "id": "archivepolicies",
+        "title": "Archive Base Policies",
+        "link": "/archivepolicymanagement",
+        "allowedRoles": [
+          "Prism-Avalon-Admin",
+          "Prism-Avalon-Policy",
+          "Prism-Avalon-CLO"
+        ],
+        "enabled": true,
+        "visible": true
+      },
+      {    
+        "id": "clientpolicies",
+        "title": "Client Policies",
+        "link": "/clientpolicymanagement",
+        "allowedRoles": [
+          "Prism-Avalon-Admin",
+          "Prism-Avalon-Policy",
+          "Prism-Avalon-CLO"
+        ],
+        "enabled": true,
+        "visible": true
+      }
+    ]
+  },
+  {
+    "id": "reports",
+    "title": "Reports",
+    "link": "",
+    "allowedRoles": [
+      "Prism-Avalon-Admin",
+      "Prism-Avalon-Policy",
+      "Prism-Avalon-ClientServices",
+      "Prism-Avalon-CLO"
+    ],
+    "enabled": true,
+    "visible": true
+  }
+]

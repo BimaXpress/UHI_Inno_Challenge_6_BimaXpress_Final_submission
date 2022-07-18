@@ -1,0 +1,60 @@
+<svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="124"
+            height="32"
+            viewBox="0 0 124 32"
+          >
+            <g id="Group_52" data-name="Group 52" transform="translate(-50 -25)">
+              <text
+                id="BIMA"
+                transform="translate(50 52)"
+                fill="#fff"
+                font-size="20"
+                font-family="SegoeUI, Segoe UI"
+                letter-spacing="-0.01em"
+              >
+                <tspan x="0" y="0">
+                  BIMA
+                </tspan>
+              </text>
+              <text
+                id="PRESS"
+                transform="translate(120 52)"
+                fill="#fff"
+                font-size="20"
+                font-family="SegoeUI, Segoe UI"
+                letter-spacing="-0.01em"
+              >
+                <tspan x="0" y="0">
+                  PRESS
+                </tspan>
+              </text>
+              <g
+                id="Group_51"
+                data-name="Group 51"
+                transform="translate(-0.266 -0.315)"
+              >
+                <path
+                  id="Path_18"
+                  data-name="Path 18"
+                  d="M3022.655,38.611h4.858l3.452,3.324,20.073-16.621-20.073,22.374Z"
+                  transform="translate(-2920)"
+                  fill="#f6911d"
+                />
+                <path
+                  id="Path_19"
+                  data-name="Path 19"
+                  d="M3027.353,45.578l2.6,2.812-3.223,3.671h-5.466"
+                  transform="translate(-2920)"
+                  fill="#fff"
+                />
+                <path
+                  id="Path_20"
+                  data-name="Path 20"
+                  d="M3031.209,48.368l2.54-2.849,6.007,6.522H3034.5Z"
+                  transform="translate(-2920)"
+                  fill="#fff"
+                />
+              </g>
+            </g>
+          </svg>

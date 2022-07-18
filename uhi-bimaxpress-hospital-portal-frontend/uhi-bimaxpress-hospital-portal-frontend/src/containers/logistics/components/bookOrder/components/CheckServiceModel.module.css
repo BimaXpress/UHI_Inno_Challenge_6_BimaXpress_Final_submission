@@ -1,0 +1,30 @@
+.walletModalContainer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    border-radius: 10px;
+    outline: none;
+    margin: 0 16px;
+  }
+  
+  .overlayContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  /* @media only screen and (max-width: 768px) {
+    .overlayContainer {
+      left: 0;
+    }
+  } */
+  

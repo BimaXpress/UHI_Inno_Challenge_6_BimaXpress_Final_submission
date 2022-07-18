@@ -1,0 +1,68 @@
+/* .progessBarContainer {
+
+} */
+
+.progressbar {
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    border: none;
+}
+
+.progressbar::-webkit-scrollbar {
+    display: none;
+}
+
+.step {
+    width: 32px;
+    height: 32px;
+    aspect-ratio: 1;
+    border: 3px solid #f58b05;
+    opacity: 0.6;
+    font-size: 14px;
+    color: #f58b05;
+    border-radius: 50%;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 45px;
+    position: relative;
+    cursor: pointer;
+}
+
+.step:first-child {
+    margin: 0 45px 0 0;
+}
+
+.step:last-child {
+    margin: 0 0 0 45px;
+}
+
+.finish::before {
+    opacity: 1;
+}
+
+.active {
+    background-color: #f58b05;
+    opacity: 1;
+}
+
+.step:before {
+    content: '';
+    height: 3px;
+    width: 78px;
+    background-color: #f58b05;
+    position: absolute;
+    left: 36px;
+    opacity: 0.8;
+}
+
+.step_finall:before {
+    display: none;
+}
+
+.ckeckIcon {
+    color: white;
+    font-size: 20px;
+}
